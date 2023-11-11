@@ -15,9 +15,7 @@
 					@Body
 				</ChildContent>
 				<ErrorContent Context="ex">
-					@* @{ OnError(ex); } *@
-					@*calls custom handler*@
-					<pre>@ex.ToString()</pre> @*prints exception on page*@
+					<pre>@ex.ToString()</pre>
 				</ErrorContent>
 			</ErrorBoundary>
 		</article>
