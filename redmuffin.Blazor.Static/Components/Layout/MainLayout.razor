@@ -1,5 +1,5 @@
 ﻿@inherits LayoutComponentBase
-@inject ILogger<MainLayout> Logger
+@* @inject ILogger<MainLayout> Logger *@
 
 <div class="page">
 	<div class="sidebar">
@@ -17,11 +17,11 @@
 	</main>
 </div>
 
-@code
-{
-	protected override void OnAfterRender(bool firstRender)
-	{
-		Logger.LogWarning("MainLayout OnInitialized(v1)");
-		base.OnInitialized();
-	}
-}
+@* @code *@
+@* { *@
+@* 	protected override void OnAfterRender(bool firstRender) *@
+@* 	{ *@
+@* 		Logger.LogWarning("MainLayout OnInitialized(v1)"); *@
+@* 		base.OnInitialized(); *@
+@* 	} *@
+@* } *@
