@@ -1,16 +1,25 @@
 ﻿@inherits LayoutComponentBase
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+	<div class="sidebar">
+		<NavMenu/>
+	</div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+	<main>
+		<div class="top-row px-4">
+			<a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+		</div>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+		<article class="content px-4">
+			<ErrorBoundary>
+				<ChildContent>
+					@Body
+				</ChildContent>
+				<ErrorContent Context="ex">
+					@* @{ OnError(ex); } *@
+					@*calls custom handler*@
+					<pre>@ex.ToString()</pre> @*prints exception on page*@
+				</ErrorContent>
+			</ErrorBoundary>
+		</article>
+	</main>
 </div>
