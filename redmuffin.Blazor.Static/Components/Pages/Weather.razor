@@ -37,10 +37,13 @@ else
 }
 
 @code {
+	[Inject] ILogger<Weather> Logger { get; set; } = null!;
+
 	private WeatherForecast[]? _forecasts;
 
     protected override async Task OnInitializedAsync()
     {
+        Logger.LogWarning("Weather OnInitializedAsync(v1)");
         _forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
     }
 
