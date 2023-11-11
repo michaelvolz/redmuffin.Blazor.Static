@@ -37,7 +37,12 @@ else
 }
 
 @code {
-    private WeatherForecast[]? forecasts;
+	protected override void OnAfterRender(bool firstRender)
+	{
+		throw new InvalidOperationException();
+	}
+
+	private WeatherForecast[]? forecasts;
 
     protected override async Task OnInitializedAsync()
     {
