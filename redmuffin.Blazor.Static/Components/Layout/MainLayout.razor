@@ -1,4 +1,6 @@
 ﻿@inherits LayoutComponentBase
+@inject ILogger<MainLayout> Logger
+
 <div class="page">
 	<div class="sidebar">
 		<NavMenu/>
@@ -14,3 +16,12 @@
 		</article>
 	</main>
 </div>
+
+@code
+{
+	protected override void OnAfterRender(bool firstRender)
+	{
+		Logger.LogWarning("MainLayout OnInitialized(v1)");
+		base.OnInitialized();
+	}
+}
