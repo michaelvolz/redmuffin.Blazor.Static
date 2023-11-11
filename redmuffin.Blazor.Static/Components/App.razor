@@ -1,5 +1,5 @@
-﻿@* <ErrorBoundary> *@
-@* 	<ChildContent> *@
+﻿<ErrorBoundary>
+	<ChildContent>
 
 		<Router AppAssembly="@typeof(App).Assembly">
 			<Found Context="routeData">
@@ -14,12 +14,12 @@
 			</NotFound>
 		</Router>
 
-@* 	</ChildContent> *@
-@* 	<ErrorContent Context="errorException"> *@
-@* *@
-@* 		<div class="blazor-error-boundary"> *@
-@* 			<pre>Boom! @errorException.ToString()</pre> *@
-@* 		</div> *@
-@* *@
-@* 	</ErrorContent> *@
-@* </ErrorBoundary> *@
+	</ChildContent>
+	<ErrorContent Context="errorException">
+
+		<div class="blazor-error-boundary">
+			<pre>Boom! @errorException.ToString()</pre>
+		</div>
+
+	</ErrorContent>
+</ErrorBoundary>
