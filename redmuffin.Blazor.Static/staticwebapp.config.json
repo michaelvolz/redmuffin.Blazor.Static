@@ -2,47 +2,53 @@
   "trailingSlash": "auto",
   "routes": [
     {
+      "route": "/*",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=600"
+      }
+    },
+    {
       "route": "/index.html",
       "headers": {
         "Cache-Control": "must-revalidate, max-age=600"
       }
     },
     {
-      "route": "/css/*",
+      "route": "/*.{js,css,ico,png,gif,jpg,jpeg,json}",
       "headers": {
         "Cache-Control": "must-revalidate, max-age=15770000"
       }
     },
-    {
-      "route": "/css/bootstrap/*",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=15770000"
-      }
-    },
-    {
-      "route": "/sample-data/*",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=15770000"
-      }
-    },
-    {
-      "route": "/_framework*",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=600"
-      }
-    },
-    {
-      "route": "/favicon.png",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=15770000"
-      }
-    },
-    {
-      "route": "/icon-192.png",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=15770000"
-      }
-    }
+    // {
+    //   "route": "/css/bootstrap/*",
+    //   "headers": {
+    //     "Cache-Control": "must-revalidate, max-age=15770000"
+    //   }
+    // },
+    // {
+    //   "route": "/sample-data/*",
+    //   "headers": {
+    //     "Cache-Control": "must-revalidate, max-age=15770000"
+    //   }
+    // },
+    // {
+    //   "route": "/_framework*",
+    //   "headers": {
+    //     "Cache-Control": "must-revalidate, max-age=600"
+    //   }
+    // },
+    // {
+    //   "route": "/favicon.png",
+    //   "headers": {
+    //     "Cache-Control": "must-revalidate, max-age=15770000"
+    //   }
+    // },
+    // {
+    //   "route": "/icon-192.png",
+    //   "headers": {
+    //     "Cache-Control": "must-revalidate, max-age=15770000"
+    //   }
+    // }
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
