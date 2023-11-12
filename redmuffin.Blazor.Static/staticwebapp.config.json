@@ -1,14 +1,39 @@
 {
-    "trailingSlash": "auto",
-    "route": "/*",
-    "headers": {
-        "Cache-Control": "public, must-revalidate, max-age=600"
+  "trailingSlash": "auto",
+  "routes": [
+    {
+      "route": "/index.html",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=600"
+      }
     },
-    "navigationFallback": {
-        "rewrite": "/index.html",
-        "exclude": [
-            "/sample-data/*",
-            "/css/*"
-        ]
+    {
+      "route": "/bootstrap.min.css",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=600"
+      }
+    },
+    {
+      "route": "/_framework*",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=600"
+      }
+    },
+    {
+      "route": "/favicon.ico",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=15770000"
+      }
     }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/sample-data/*",
+      "/css/*"
+    ]
+  },
+  "mimeTypes": {
+    ".json": "text/json"
+  }
 }
