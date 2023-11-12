@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- <WasmEnableSIMD>false</WasmEnableSIMD> -->
     <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>full</TrimMode>
+    <!-- <TrimMode>full</TrimMode> -->
   </PropertyGroup>
 
   <ItemGroup>
