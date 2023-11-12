@@ -1,9 +1,25 @@
 {
   "trailingSlash": "auto",
-  "route": "/*",
-  "headers": {
-    "Cache-Control": "public, must-revalidate, max-age=555"
-  },
+  "routes": [
+    {
+      "route": "/*",
+      "headers": {
+        "Cache-Control": "public, must-revalidate, max-age=599"
+      }
+    },
+    {
+      "route": "/framework/*",
+      "headers": {
+        "Cache-Control": "public, must-revalidate, max-age=588"
+      }
+    },
+    {
+      "route": "/css/*",
+      "headers": {
+        "Cache-Control": "public, must-revalidate, max-age=577"
+      }
+    }
+  ],
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
