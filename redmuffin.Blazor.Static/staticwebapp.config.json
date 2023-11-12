@@ -8,9 +8,21 @@
       }
     },
     {
-      "route": "/bootstrap.min.css",
+      "route": "/css/*",
       "headers": {
-        "Cache-Control": "must-revalidate, max-age=600"
+        "Cache-Control": "must-revalidate, max-age=15770000"
+      }
+    },
+    {
+      "route": "/css/bootstrap/*",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=15770000"
+      }
+    },
+    {
+      "route": "/sample-data/*",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=15770000"
       }
     },
     {
@@ -20,7 +32,13 @@
       }
     },
     {
-      "route": "/favicon.ico",
+      "route": "/favicon.png",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=15770000"
+      }
+    },
+    {
+      "route": "/icon-192.png",
       "headers": {
         "Cache-Control": "must-revalidate, max-age=15770000"
       }
