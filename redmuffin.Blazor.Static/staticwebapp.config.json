@@ -8,12 +8,6 @@
       }
     },
     {
-      "route": "/index.html",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=600"
-      }
-    },
-    {
       "route": "/*.{js,css,ico,png,gif,jpg,jpeg,json}",
       "headers": {
         "Cache-Control": "must-revalidate, max-age=15770000"
