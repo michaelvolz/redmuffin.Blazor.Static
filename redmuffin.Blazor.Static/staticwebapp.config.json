@@ -4,31 +4,31 @@
     {
       "route": "/",
       "headers": {
-        "Cache-Control": "must-revalidate, max-age=555"
+        "Cache-Control": "must-revalidate, max-age=604800"
       }
     },
     {
       "route": "/index.html",
       "headers": {
-        "Cache-Control": "must-revalidate, max-age=599"
+        "Cache-Control": "must-revalidate, max-age=604800"
       }
     },
     {
       "route": "/css/*",
       "headers": {
-        "Cache-Control": "must-revalidate, max-age=588"
+        "Cache-Control": "must-revalidate, max-age=604800"
       }
     },
     {
       "route": "/_framework/*",
       "headers": {
-        "Cache-Control": "must-revalidate, max-age=577"
+        "Cache-Control": "must-revalidate, max-age=604800"
       }
     },
     {
       "route": "/favicon.png",
       "headers": {
-        "Cache-Control": "must-revalidate, max-age=566"
+        "Cache-Control": "must-revalidate, max-age=604800"
       }
     }
   ],
