@@ -4,7 +4,7 @@
     {
       "route": "/*",
       "headers": {
-        "Cache-Control": "must-revalidate, max-age=600"
+        "Cache-Control": "must-revalidate, max-age=588"
       }
     },
     {
@@ -13,18 +13,18 @@
         "Cache-Control": "must-revalidate, max-age=599"
       }
     },
-    {
-      "route": "/_framework/*",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=599"
-      }
-    },
-    {
-      "route": "/css/*",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=599"
-      }
-    },
+    // {
+    //   "route": "/_framework/*",
+    //   "headers": {
+    //     "Cache-Control": "must-revalidate, max-age=599"
+    //   }
+    // },
+    // {
+    //   "route": "/css/*",
+    //   "headers": {
+    //     "Cache-Control": "must-revalidate, max-age=599"
+    //   }
+    // },
     // {
     //   "route": "/css/bootstrap/*",
     //   "headers": {
