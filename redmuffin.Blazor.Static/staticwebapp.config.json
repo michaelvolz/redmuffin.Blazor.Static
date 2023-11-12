@@ -2,7 +2,7 @@
   "trailingSlash": "auto",
   "routes": [
     {
-      "route": "/index.html",
+      "route": "/",
       "headers": {
         "Cache-Control": "must-revalidate, max-age=555"
       }
