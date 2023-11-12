@@ -1,75 +1,14 @@
 {
   "trailingSlash": "auto",
-  "routes": [
-    {
-      "route": "/*",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=588"
-      }
-    },
-    {
-      "route": "/*.{js,css,ico,png,gif,jpg,jpeg,json}",
-      "headers": {
-        "Cache-Control": "must-revalidate, max-age=599"
-      }
-    },
-    // {
-    //   "route": "/_framework/*",
-    //   "headers": {
-    //     "Cache-Control": "must-revalidate, max-age=599"
-    //   }
-    // },
-    // {
-    //   "route": "/css/*",
-    //   "headers": {
-    //     "Cache-Control": "must-revalidate, max-age=599"
-    //   }
-    // },
-    // {
-    //   "route": "/css/bootstrap/*",
-    //   "headers": {
-    //     "Cache-Control": "must-revalidate, max-age=599"
-    //   }
-    // },
-    // {
-    //   "route": "/css/bootstrap/*",
-    //   "headers": {
-    //     "Cache-Control": "must-revalidate, max-age=15770000"
-    //   }
-    // },
-    // {
-    //   "route": "/sample-data/*",
-    //   "headers": {
-    //     "Cache-Control": "must-revalidate, max-age=15770000"
-    //   }
-    // },
-    // {
-    //   "route": "/_framework*",
-    //   "headers": {
-    //     "Cache-Control": "must-revalidate, max-age=600"
-    //   }
-    // },
-    // {
-    //   "route": "/favicon.png",
-    //   "headers": {
-    //     "Cache-Control": "must-revalidate, max-age=15770000"
-    //   }
-    // },
-    // {
-    //   "route": "/icon-192.png",
-    //   "headers": {
-    //     "Cache-Control": "must-revalidate, max-age=15770000"
-    //   }
-    // }
-  ],
+  "route": "/*",
+  "headers": {
+    "Cache-Control": "public, must-revalidate, max-age=555"
+  },
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
       "/sample-data/*",
       "/css/*"
     ]
-  },
-  "mimeTypes": {
-    ".json": "text/json"
   }
 }
