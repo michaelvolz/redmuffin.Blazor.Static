@@ -2,13 +2,13 @@
   "trailingSlash": "auto",
   "routes": [
     {
-      "route": "/*",
+      "route": "/",
       "headers": {
         "Cache-Control": "public, must-revalidate, max-age=599"
       }
     },
     {
-      "route": "/framework/*",
+      "route": "/framework/",
       "headers": {
         "Cache-Control": "public, must-revalidate, max-age=588"
       }
