@@ -14,7 +14,19 @@
       }
     },
     {
+      "route": "/redmuffin.Blazor.Static.styles.css",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=604800"
+      }
+    },
+    {
       "route": "/css/*",
+      "headers": {
+        "Cache-Control": "must-revalidate, max-age=604800"
+      }
+    },
+    {
+      "route": "/sample-data/*",
       "headers": {
         "Cache-Control": "must-revalidate, max-age=604800"
       }
