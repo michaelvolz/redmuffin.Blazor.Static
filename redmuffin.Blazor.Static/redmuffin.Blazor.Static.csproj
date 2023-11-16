@@ -13,7 +13,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <WasmEnableSIMD>true</WasmEnableSIMD>
     <PublishTrimmed>false</PublishTrimmed>
-    <TrimMode>full</TrimMode>
+    <!-- <TrimMode>full</TrimMode> -->
   </PropertyGroup>
 
   <ItemGroup>
