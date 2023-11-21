@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		.github\workflows\codeql.yml = .github\workflows\codeql.yml
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
+		tools\install-libman.ps1 = tools\install-libman.ps1
 		markdown-cheat-sheet.md = markdown-cheat-sheet.md
 		README.md = README.md
 		.github\workflows\sonarcloud.yml = .github\workflows\sonarcloud.yml
