@@ -15,10 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
 		tools\install-libman.ps1 = tools\install-libman.ps1
+		libman.json = libman.json
 		markdown-cheat-sheet.md = markdown-cheat-sheet.md
 		README.md = README.md
 		.github\workflows\sonarcloud.yml = .github\workflows\sonarcloud.yml
-		.vs\VSWorkspaceState.json = .vs\VSWorkspaceState.json
 	EndProjectSection
 EndProject
 Global
