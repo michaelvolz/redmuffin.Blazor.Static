@@ -28,8 +28,8 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "redmuffin.Blazor.Static" # App source code path
-          api_location: "redmuffin.Api" # Api source code path - optional
+          app_location: "src/redmuffin.Blazor.Static" # App source code path
+          api_location: "src/redmuffin.Api" # Api source code path - optional
           output_location: "wwwroot" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
@@ -45,6 +45,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LIVELY_CLIFF_0945BE603 }}
           repo_token: ${{ secrets.SONAR_PR_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "close"
-          app_location: "redmuffin.Blazor.Static" # App source code path
-          api_location: "redmuffin.Api" # Api source code path - optional
+          app_location: "src/redmuffin.Blazor.Static" # App source code path
+          api_location: "src/redmuffin.Api" # Api source code path - optional
           output_location: "wwwroot" # Built app content directory - optional
