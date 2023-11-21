@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34302.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "redmuffin.Blazor.Static", "redmuffin.Blazor.Static\redmuffin.Blazor.Static.csproj", "{D9ADB30C-BA1B-4438-AB86-39218049483F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "redmuffin.Blazor.Static", "src\redmuffin.Blazor.Static\redmuffin.Blazor.Static.csproj", "{D9ADB30C-BA1B-4438-AB86-39218049483F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{35F3AA64-4519-477B-A0F0-BDCD1DCFFD8A}"
 	ProjectSection(SolutionItems) = preProject
