@@ -1,82 +1,37 @@
 ﻿<!-- Navigation bar -->
-<nav class="navbar is-link is-fixed-top">
-	<div class="navbar-brand">
-		<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</div>
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">redmuffin.Blazor.Static</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
 
-	<div id="navbarExampleTransparentExample" class="navbar-menu">
-		<div class="navbar-end">
-			<a class="navbar-item" href="#about">
-				<span class="icon">
-					<i class="fas fa-info"></i>
-				</span>
-				<span>About</span>
-			</a>
-			<a class="navbar-item" href="#services">
-				<span class="icon">
-					<i class="fas fa-bars"></i>
-				</span>
-				<span>Services</span>
-			</a>
-			<a class="navbar-item" href="#resume">
-				<span class="icon">
-					<i class="fas fa-file-alt"></i>
-				</span>
-				<span>Resume</span>
-			</a>
-			<a class="navbar-item" href="#portfolio">
-				<span class="icon">
-					<i class="fas fa-th-list"></i>
-				</span>
-				<span>Portfolio</span>
-			</a>
-			<a class="navbar-item" href="#contact">
-				<span class="icon">
-					<i class="fas fa-envelope"></i>
-				</span>
-				<span>Contact</span>
-			</a>
-		</div>
-	</div>
-</nav>
-
-@* <div class="top-row ps-3 navbar navbar-dark"> *@
-@*     <div class="container-fluid"> *@
-@*         <a class="navbar-brand" href="">redmuffin.Blazor.Static</a> *@
-@*         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu"> *@
-@*             <span class="navbar-toggler-icon"></span> *@
-@*         </button> *@
-@*     </div> *@
-@* </div> *@
-@* *@
-@* <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu"> *@
-@*     <nav class="flex-column"> *@
-@*         <div class="nav-item px-3"> *@
-@*             <NavLink class="nav-link" href="" Match="NavLinkMatch.All"> *@
-@*                 <span class="bi bi-house-door-fill" aria-hidden="true"></span> Home *@
-@*             </NavLink> *@
-@*         </div> *@
-@*         <div class="nav-item px-3"> *@
-@*             <NavLink class="nav-link" href="counter"> *@
-@*                 <span class="bi bi-plus-square-fill" aria-hidden="true"></span> Counter *@
-@*             </NavLink> *@
-@*         </div> *@
-@*         <div class="nav-item px-3"> *@
-@*             <NavLink class="nav-link" href="weather"> *@
-@*                 <span class="bi bi-list-nested" aria-hidden="true"></span> Weather *@
-@*             </NavLink> *@
-@*         </div> *@
-@* 	    <div class="nav-item px-3"> *@
-@* 		    <NavLink class="nav-link" href="example"> *@
-@* 			    <span class="bi" aria-hidden="true"></span> Example *@
-@* 		    </NavLink> *@
-@* 	    </div> *@
-@*     </nav> *@
-@* </div> *@
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="bi bi-plus-square-fill" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="weather">
+                <span class="bi bi-list-nested" aria-hidden="true"></span> Weather
+            </NavLink>
+        </div>
+	    <div class="nav-item px-3">
+		    <NavLink class="nav-link" href="example">
+			    <span class="bi" aria-hidden="true"></span> Example
+		    </NavLink>
+	    </div>
+    </nav>
+</div>
 
 @code {
     private bool _collapseNavMenu = true;
