@@ -1,1 +1,1 @@
-dotnet tool install -g Microsoft.Web.LibraryManager.Cli
+dotnet tool install Microsoft.Web.LibraryManager.Cli
