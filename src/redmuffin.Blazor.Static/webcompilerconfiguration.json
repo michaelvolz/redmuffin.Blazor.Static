@@ -40,7 +40,7 @@
   },
   "CompilerSettings": {
     "Ignore": [
-      "**/lib/**/*"
+      "lib/**/*"
     ],
     "Sass": {
       "IndentType": "Space",
