@@ -1,8 +1,3 @@
-<!-- <script type="text/javascript"> -->
-<!--     caches.delete("blazor-resources-/").then(function (e) { -->
-<!--         console.log("'blazor-resources-/' cache deleted"); -->
-<!--     }); -->
-<!-- </script> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,30 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>redmuffin.Blazor.Static</title>
     <base href="/" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="favicon.png" rel="icon" type="image/png" />
     <link href="css/foundation-root.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/app.min.css" />
-    <link rel="stylesheet" href="redmuffin.Blazor.Static.styles.css" />
-    <script>
-        setTimeout(() => {
-            document.getElementById("result").style = "display: block";
-        }, 500); 
-    </script>
+    <link href="css/app.min.css" rel="stylesheet" />
+    <link href="redmuffin.Blazor.Static.styles.css" rel="stylesheet" />
 </head>
 
 <body>
     <div id="app">
-        <div id="result" name="result" style="display: none;">
-            <svg class="loading-progress">
-                <circle r="40%" cx="50%" cy="50%" />
-                <circle r="40%" cx="50%" cy="50%" />
-            </svg>
-            <object data="/Version.txt" type="text/plain" width="45"
-                style="margin: 0; padding: 0; height: 45px; overflow: hidden;">
-                <a href="/Version.txt">No Support?</a>
-            </object>
-            <div class="loading-progress-text"></div>
-        </div>
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
     </div>
 
     <div id="blazor-error-ui">
