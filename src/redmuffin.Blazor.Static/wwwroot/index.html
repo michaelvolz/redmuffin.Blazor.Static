@@ -7,30 +7,8 @@
     <title>redmuffin.Blazor.Static</title>
     <base href="/" />
     <link href="favicon.png" rel="icon" type="image/png" />
-    <script type="text/javascript">
-        var lnk = document.createElement('link');
-        lnk.type = 'text/css';
-        lnk.rel = 'stylesheet';
-        if (/redmuffin\.de/.test(window.top.location.host)) {
-            lnk.href = 'css/foundation-root.min.css.gz';
-            document.getElementsByTagName('head')[0].appendChild(lnk);
-        } else {
-            lnk.href = 'css/foundation-root.min.css';
-            document.getElementsByTagName('head')[0].appendChild(lnk);
-        }
-    </script>
-    <script type="text/javascript">
-        var lnk = document.createElement('link');
-        lnk.type = 'text/css';
-        lnk.rel = 'stylesheet';
-        if (/redmuffin\.de/.test(window.top.location.host)) {
-            lnk.href = 'css/app.min.css.gz';
-            document.getElementsByTagName('head')[0].appendChild(lnk);
-        } else {
-            lnk.href = 'css/app.min.css';
-            document.getElementsByTagName('head')[0].appendChild(lnk);
-        }
-    </script>
+    <link href="css/foundation-root.min.css" rel="stylesheet" />
+    <link href="css/app.min.css" rel="stylesheet" />
     <!-- <link href="redmuffin.Blazor.Static.styles.css" rel="stylesheet" /> -->
 </head>
 

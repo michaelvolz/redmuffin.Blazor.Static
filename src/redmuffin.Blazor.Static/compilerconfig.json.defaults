@@ -60,12 +60,12 @@
     "css": {
       "enabled": true,
       "termSemicolons": true,
-      "gzip": true
+      "gzip": false
     },
     "javascript": {
       "enabled": true,
       "termSemicolons": true,
-      "gzip": true
+      "gzip": false
     }
   }
 }
