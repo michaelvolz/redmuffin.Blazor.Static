@@ -35,7 +35,7 @@
       "SourceMap": false,
       "InlineSourceMap": false,
       "SourceMapIncludeContents": false,
-      "OmitSourceMapUrl": true
+      "OmitSourceMapUrl": false
     }
   },
   "CompilerSettings": {
