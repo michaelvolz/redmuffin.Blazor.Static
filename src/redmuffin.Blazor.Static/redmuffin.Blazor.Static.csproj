@@ -5,15 +5,15 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <!-- <WasmEnableSIMD>false</WasmEnableSIMD> -->
-    <!-- <PublishTrimmed>true</PublishTrimmed> -->
-    <!-- <TrimMode>full</TrimMode> -->
+    <WasmEnableSIMD>false</WasmEnableSIMD>
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>full</TrimMode>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <!-- <WasmEnableSIMD>true</WasmEnableSIMD> -->
-    <!-- <PublishTrimmed>false</PublishTrimmed> -->
-    <!-- <TrimMode>full</TrimMode> -->
+    <WasmEnableSIMD>true</WasmEnableSIMD>
+    <PublishTrimmed>false</PublishTrimmed>
+    <TrimMode>full</TrimMode>
   </PropertyGroup>
 
   <!-- <Target Name="ToolRestore" BeforeTargets="PreBuildEvent"> -->
