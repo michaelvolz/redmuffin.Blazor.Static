@@ -2,5 +2,17 @@
   {
     "outputFile": "wwwroot/css/foundation-root.css",
     "inputFile": "wwwroot/css/foundation-root.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/bulma-root.css",
+    "inputFile": "wwwroot/css/bulma-root.sass"
+  },
+  {
+    "outputFile": "wwwroot/css/bootstrap-root.css",
+    "inputFile": "wwwroot/css/bootstrap-root.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/app.css",
+    "inputFile": "wwwroot/css/app.scss"
   }
 ]
