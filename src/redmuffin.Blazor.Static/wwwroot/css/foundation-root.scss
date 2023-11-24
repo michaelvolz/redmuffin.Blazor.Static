@@ -3,7 +3,10 @@
 @import "../lib/foundation-sites/scss/foundation";
 @include foundation-everything(true, true);
 
+html, body {
+    background-color: lightblue;
+}
 
-html,body {background-color: lightblue;}
-
-h1{ outline: 0;}
+h1 {
+    outline: 0;
+}
