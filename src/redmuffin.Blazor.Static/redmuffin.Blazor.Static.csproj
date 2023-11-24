@@ -16,32 +16,7 @@
     <!-- <TrimMode>full</TrimMode> -->
   </PropertyGroup>
 
-  <!-- <Target Name="ToolRestore" BeforeTargets="PreBuildEvent"> -->
-  <!--   <Exec Command="dotnet tool update excubo.webcompiler" StandardOutputImportance="high" /> -->
-  <!-- </Target> -->
-    
-  <!-- <Target Name="CompileStaticAssets" AfterTargets="AfterBuild"> -->
-  <!--   <Exec Command="dotnet tool run webcompiler -r wwwroot -c webcompilerconfiguration.json" StandardOutputImportance="high" /> -->
-  <!-- </Target> -->
-  
-  <!-- <ItemGroup> -->
-  <!--   <Watch Include="**\*.scss;**\*.sass" /> -->
-  <!-- </ItemGroup> -->
-  
-  <!-- <ItemGroup> -->
-  <!--   <Content Remove="compilerconfig.json" /> -->
-  <!-- </ItemGroup> -->
-  <!-- -->
-  <!-- <ItemGroup> -->
-  <!--   <_ContentIncludedByDefault Remove="compilerconfig.json" /> -->
-  <!-- </ItemGroup> -->
-  <!-- -->
-  <!-- <ItemGroup> -->
-  <!--   <None Include="compilerconfig.json" /> -->
-  <!-- </ItemGroup> -->
-  
   <ItemGroup>
-    <!-- <PackageReference Include="BuildWebCompiler2022" Version="1.14.10" /> -->
     <PackageReference Include="Markdig" Version="0.33.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
