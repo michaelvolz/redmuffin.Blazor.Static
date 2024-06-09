@@ -6,8 +6,8 @@
 
 <p role="status">Current count: @_currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-<button class="btn btn-danger" @onclick="ThrowException">Error</button>
+<button class="button" @onclick="IncrementCount">Click me</button>
+<button class="button alert" @onclick="ThrowException">Throw-Error</button>
 
 @code {
 	private int _currentCount;
