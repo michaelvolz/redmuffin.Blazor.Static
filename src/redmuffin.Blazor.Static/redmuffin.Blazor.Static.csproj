@@ -7,14 +7,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <WasmEnableSIMD>false</WasmEnableSIMD>
     <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>full</TrimMode>
+    <TrimMode>partial</TrimMode>
     <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <WasmEnableSIMD>false</WasmEnableSIMD>
     <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>full</TrimMode>
+    <TrimMode>partial</TrimMode>
   </PropertyGroup>
 
   <ItemGroup>
