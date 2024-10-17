@@ -19,8 +19,8 @@
 
   <ItemGroup>
     <PackageReference Include="Markdig" Version="0.37.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.8" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.10" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +37,17 @@
 
   <ItemGroup>
     <AdditionalFiles Remove="C:\Users\flynn\.nuget\packages\microsoft.visualstudio.threading.analyzers\17.8.14\build\AdditionalFiles\vs-threading.MembersRequiringMainThread.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Meziantou.Analyzer" Version="2.0.170">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Update="Roslynator.CodeAnalysis.Analyzers" Version="4.12.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
