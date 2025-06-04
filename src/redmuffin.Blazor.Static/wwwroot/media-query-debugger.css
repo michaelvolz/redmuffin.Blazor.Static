@@ -1,0 +1,92 @@
+﻿/* ======================================
+
+    +Credits+
+    Originally posted at Webdesign Tuts+
+    Article: A Basic Responsive Grid (Plus Handy CSS3 Media Query Reporter)
+    By: David Cochran on Nov 30th 2011 with 38 comments
+    Link: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/a-basic-responsive-grid-plus-handy-css3-media-query-reporter/
+
+    Modified and Packaged for Nuget by: Ed Charbeneau (twitter:@EdCharbeneau)
+    
+ 
+========================================= */
+
+/* ======================================
+
+MediaQuery Debugger
+
+========================================= */
+ 
+body { padding-top: 0;}
+
+body:after {
+    font-size: 300%;
+    font-weight: bold;
+    position: fixed;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+    background-color: hsla(1,60%,40%,0.3);
+    color: #fff;
+    z-index: -999;
+}
+
+@media only screen and (min-width: 0) {
+    #mainNavigation { margin-bottom: 90px;}
+    body:after {
+        content: "less than 320px";
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    body:after {
+        content: "320 to 480px, iphone 3s";
+        background-color: hsla(90,60%,40%,0.3);
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    #mainNavigation { margin-bottom: 42px;}
+    body:after {
+        content: "480 to 768px";
+        background-color: hsla(180,60%,40%,0.3);
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    #mainNavigation { margin-bottom: 38px;}
+    body:after {
+        content: "640 to 768px, iphone 4";
+        background-color: hsla(180,60%,40%,0.3);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body:after {
+        content: "768 to 1024px";
+        background-color: hsla(270,60%,40%,0.3);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body:after {
+        content: "1024 and up, desktop";
+        background-color: hsla(360,60%,40%,0.3);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body:after {
+        content: "1200 and up, desktop";
+        background-color: hsla(450,60%,40%,0.3);
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    body:after {
+        content: "1440 and up, desktop";
+        background-color: hsla(90,60%,40%,0.3);
+    }
+}
+

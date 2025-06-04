@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		.gitignore = .gitignore
 		.github\workflows\azure-static-web-apps-lively-cliff-0945be603.yml = .github\workflows\azure-static-web-apps-lively-cliff-0945be603.yml
 		.github\workflows\codeql.yml = .github\workflows\codeql.yml
+		.github\copilot-instructions.md = .github\copilot-instructions.md
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
 		tools\install-libman.ps1 = tools\install-libman.ps1
