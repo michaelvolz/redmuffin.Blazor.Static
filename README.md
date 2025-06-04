@@ -10,3 +10,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/michaelvolz/OpenGraphTilemakerReborn)
 
 ## Using [Markdig](https://github.com/xoofx/markdig) for Markdown integration
+
+---
+
+**Target Framework:** .NET 9 (ASP.NET 9, Blazor WebAssembly 9)
