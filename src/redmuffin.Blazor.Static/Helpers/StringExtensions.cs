@@ -1,4 +1,3 @@
-#pragma warning disable SA1300
 namespace redmuffin.Blazor.Static.Helpers;
 
 public static class StringExtensions
