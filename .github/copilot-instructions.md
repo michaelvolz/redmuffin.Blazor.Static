@@ -12,6 +12,19 @@ This repository contains a C# Blazor WebAssembly project targeting .NET 8, devel
 - **Dependency Injection:** Use Blazor's built-in dependency injection for services.
 - **State Management:** Prefer built-in Blazor state management patterns (e.g., cascading parameters, DI services).
 
+## Professional Standards for ASP.NET Core / Blazor Projects
+
+- **Accessibility:** Ensure all components are accessible (use semantic HTML, ARIA roles, keyboard navigation, and proper color contrast).
+- **Security:** Validate all user input, prevent XSS/CSRF, and never expose secrets or sensitive data in client-side code.
+- **Performance:** Use asynchronous APIs, lazy load components, and optimize static assets for fast load times.
+- **Responsive Design:** Use mobile-first, responsive layouts with SCSS/CSS; test on multiple device sizes.
+- **API Communication:** Use strong-typed HttpClient injections; prefer minimal APIs in .NET for backend.
+- **Testing:** Write unit, integration, and accessibility tests (bUnit, xUnit, Playwright). Test both UI and backend logic.
+- **Documentation:** Maintain clear XML documentation, keep README up to date, and generate API docs (Swagger/OpenAPI).
+- **Minimal JavaScript:** Use C# and Blazor features for all client-side logic unless absolutely necessary; if JS is required, use JS interop with clear separation.
+- **Modern C# Patterns:** Use records for immutable data, file-scoped namespaces, nullable reference types, and concise object initialization.
+- **Copilot Guidance:** Prefer generating C# code, complete XML comments, and suggest unit-testable methods. Avoid JS, CSS, or HTML suggestions unless explicitly requested.
+
 ## Prefer C# 12 and 13 Language Features
 
 ### Primary Constructors
