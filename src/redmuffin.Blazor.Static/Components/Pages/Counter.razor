@@ -1,5 +1,7 @@
 ﻿@page "/counter"
 
+@using redmuffin.Blazor.Static.Helpers
+
 <PageTitle>Counter</PageTitle>
 
 <h1>Counter</h1>
@@ -22,4 +24,9 @@
 		throw new InvalidOperationException();
 	}
 
+	private void ReverseStringExample()
+	{
+		string original = "Blazor";
+		string reversed = original.ReverseString() ?? string.Empty; // Fix for CS8600: Ensure reversed is not null
+	}
 }

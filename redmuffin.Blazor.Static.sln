@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		.github\workflows\sonarcloud.yml = .github\workflows\sonarcloud.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redmuffin.Blazor.Static.Tests", "tests\redmuffin.Blazor.Static.Tests\redmuffin.Blazor.Static.Tests.csproj", "{0B9FDD37-73E0-4E09-8965-425A97F2E6C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D9ADB30C-BA1B-4438-AB86-39218049483F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9ADB30C-BA1B-4438-AB86-39218049483F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9ADB30C-BA1B-4438-AB86-39218049483F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B9FDD37-73E0-4E09-8965-425A97F2E6C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9FDD37-73E0-4E09-8965-425A97F2E6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9FDD37-73E0-4E09-8965-425A97F2E6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9FDD37-73E0-4E09-8965-425A97F2E6C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
