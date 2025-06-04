@@ -271,37 +271,6 @@ public class MyClass {
 	- Semantic HTML for clear structure.
 	- Tools like **Lighthouse** for audits.
         
-## Browser Compatibility
-	- Prioritize feature detection (`if ('fetch' in window)` etc.).
-        - Support latest two stable releases of major browsers:
-	- Firefox, Chrome, Edge, Safari (macOS/iOS)
-        - Emphasize progressive enhancement with polyfills or bundlers (e.g., **Babel**, **Vite**) as needed.
-            
-## PHP Requirements
-	- **Target Version**: PHP 8.1 or higher
-	- **Features to Use**:
-	- Named arguments
-	- Constructor property promotion
-	- Union types and nullable types
-	- Match expressions
-	- Nullsafe operator (`?->`)
-	- Attributes instead of annotations
-	- Typed properties with appropriate type declarations
-	- Return type declarations
-	- Enumerations (`enum`)
-	- Readonly properties
-	- Emphasize strict property typing in all generated code.
-	- **Coding Standards**:
-	- Follow PSR-12 coding standards
-	- Use strict typing with `declare(strict_types=1);`
-	- Prefer composition over inheritance
-	- Use dependency injection
-	- **Static Analysis:**
-	- Include PHPDoc blocks compatible with PHPStan or Psalm for static analysis
-	- **Error Handling:**
-	- Use exceptions consistently for error handling and avoid suppressing errors.
-	- Provide meaningful, clear exception messages and proper exception types.
-            
 ## HTML/CSS Requirements
 	- **HTML**:
 	- Use HTML5 semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<search>`, etc.)
@@ -367,7 +336,7 @@ public class MyClass {
 	- Consider a central error handler function or global event (e.g., `window.addEventListener('unhandledrejection')`) to consolidate reporting.
 	- Carefully handle and validate JSON responses, incorrect HTTP status codes, etc.
             
-## Folder Structure
+<!--## Folder Structure
 	Follow this structured directory layout:
 
 		project-root/
@@ -391,17 +360,17 @@ public class MyClass {
 		├── logs/                 # Server and application logs
 		├── scripts/              # Scripts for deployment, setup, etc.
 		└── temp/                 # Temporary/cache files
+-->
 
-
-## Documentation Requirements
+<!--## Documentation Requirements
 	- Include JSDoc comments for JavaScript/TypeScript.
 	- Document complex functions with clear examples.
 	- Maintain concise Markdown documentation.
 	- Minimum docblock info: `param`, `return`, `throws`, `author`
-    
-## Database Requirements (SQLite 3.46+)
+-->    
+<!--## Database Requirements (SQLite 3.46+)
 	- Leverage JSON columns, generated columns, strict mode, foreign keys, check constraints, and transactions.
-    
+-->    
 ## Security Considerations
 	- Sanitize all user inputs thoroughly.
 	- Parameterize database queries.
