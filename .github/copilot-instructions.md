@@ -203,8 +203,7 @@ public class MyClass {
 - Follow the repository’s code review and contribution guidelines.
 
 # COPILOT EDITS OPERATIONAL GUIDELINES
-
-[See community feedback on copilot-instructions.md](https://www.reddit.com/r/ChatGPTCoding/comments/1jl6gll/copilotinstructionsmd_has_helped_me_so_much/)
+<!--[See community feedback on copilot-instructions.md](https://www.reddit.com/r/ChatGPTCoding/comments/1jl6gll/copilotinstructionsmd_has_helped_me_so_much/)-->
 
 ## PRIME DIRECTIVE
 	Avoid working on more than one file at a time.
