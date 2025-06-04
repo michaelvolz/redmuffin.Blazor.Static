@@ -12,12 +12,18 @@ This repository contains a C# Blazor WebAssembly project targeting .NET 8, devel
 - **Dependency Injection:** Use Blazor's built-in dependency injection for services.
 - **State Management:** Prefer built-in Blazor state management patterns (e.g., cascading parameters, DI services).
 
+## UI Styling
+
+- **CSS Framework:** Use [Zurb Foundation](https://get.foundation/) CSS for all UI components and layouts.
+- **Custom Styles:** If Foundation does not provide the required styles, use custom SCSS/CSS located in the `wwwroot/css` or `wwwroot/scss` folders.
+- **No Bootstrap or Bulma:** Do not use Bootstrap, Bulma, or any other CSS frameworks.
+- **Responsive Design:** Ensure all layouts are responsive using Foundation's grid and utility classes, or custom CSS as needed.
+
 ## Professional Standards for ASP.NET Core / Blazor Projects
 
 - **Accessibility:** Ensure all components are accessible (use semantic HTML, ARIA roles, keyboard navigation, and proper color contrast).
 - **Security:** Validate all user input, prevent XSS/CSRF, and never expose secrets or sensitive data in client-side code.
 - **Performance:** Use asynchronous APIs, lazy load components, and optimize static assets for fast load times.
-- **Responsive Design:** Use mobile-first, responsive layouts with SCSS/CSS; test on multiple device sizes.
 - **API Communication:** Use strong-typed HttpClient injections; prefer minimal APIs in .NET for backend.
 - **Testing:** Write unit, integration, and accessibility tests (bUnit, xUnit, Playwright). Test both UI and backend logic.
 - **Documentation:** Maintain clear XML documentation, keep README up to date, and generate API docs (Swagger/OpenAPI).
