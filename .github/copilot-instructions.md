@@ -191,6 +191,7 @@ public class MyClass {
 - Validate user input and handle exceptions gracefully.
 - Write XML documentation for public classes and methods.
 - Prefer minimal JavaScript interop; use C# and Blazor features when possible.
+- Always add the line number and the filename when you reference code.
 
 ## Testing
 
