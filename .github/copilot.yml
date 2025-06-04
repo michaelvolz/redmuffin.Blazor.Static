@@ -1,0 +1,16 @@
+﻿# GitHub Copilot configuration file
+# See https://docs.github.com/en/copilot/configuring-github-copilot/copilot-configuration-reference for details
+
+# Enable Copilot suggestions for all users and code by default
+enabled: true
+
+# Optional: Uncomment the following section to restrict Copilot to only specific users or teams
+# allow:
+#   users:
+#     - "your-github-username"
+
+# Optional: Uncomment to block Copilot suggestions for specific files or directories
+# block:
+#   paths:
+#     - "secrets/"
+#     - "private/"
