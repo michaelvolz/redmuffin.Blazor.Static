@@ -86,7 +86,7 @@ dotnet_style_require_accessibility_modifiers = for_non_interface_members:suggest
 # ReSharper properties
 resharper_csharp_max_line_length = 160
 resharper_enforce_line_ending_style = true
-resharper_force_attribute_style = join
+resharper_force_attribute_style = separate_line
 resharper_max_attribute_length_for_same_line = 76
 resharper_trailing_comma_in_multiline_lists = true
 
