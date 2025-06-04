@@ -1,4 +1,5 @@
 using redmuffin.Blazor.Static.Helpers;
+
 #pragma warning disable CA1707
 
 namespace redmuffin.Blazor.Static.Tests.Helpers;
