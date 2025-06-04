@@ -1,11 +1,12 @@
 ﻿# GitHub Copilot Instructions
 
-This repository contains a C# Blazor WebAssembly project targeting .NET 8, developed using Visual Studio 2022.
+This repository contains a C# Blazor WebAssembly project targeting .NET 9, developed using Visual Studio 2022.
 
 ## Coding Guidelines
 
-- **Framework:** Use Blazor WebAssembly with .NET 8 APIs and features.
-- **Language:** All code should be written in C# unless otherwise specified.
+- **Framework:** Use Blazor WebAssembly with .NET 9 APIs and features.
+- **Target Framework:** .NET 9 (ASP.NET 9, Blazor WebAssembly 9)
+- - **Language:** All code should be written in C# unless otherwise specified.
 - **Component Structure:** Prefer Razor components (`.razor` files) for UI. Use partial classes for code-behind logic when needed.
 - **Naming Conventions:** Follow standard C# naming conventions (PascalCase for classes, camelCase for variables and parameters).
 - **Async Programming:** Use `async`/`await` for asynchronous operations.
