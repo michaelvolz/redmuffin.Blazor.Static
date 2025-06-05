@@ -9,23 +9,6 @@
         "scss/**/*.scss",
         "_vendor/**/*.scss"
       ]
-    },
-    {
-      "library": "bootstrap@5.3.2",
-      "destination": "wwwroot/lib/bootstrap/",
-      "files": [
-        "scss/**/*.scss",
-        "dist/js/*.js",
-        "dist/js/*.js.map"
-      ]
-    },
-    {
-      "library": "bulma@0.9.4",
-      "destination": "wwwroot/lib/bulma/",
-      "files": [
-        "*.sass",
-        "sass/**/*.sass"
-      ]
     }
   ]
 }
