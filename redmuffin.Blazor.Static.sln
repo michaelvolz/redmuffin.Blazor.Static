@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		tools\install-libman.ps1 = tools\install-libman.ps1
 		libman.json = libman.json
 		markdown-cheat-sheet.md = markdown-cheat-sheet.md
-		README.md = README.md
+		README_.md = README_.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redmuffin.Blazor.Static.Tests", "tests\redmuffin.Blazor.Static.Tests\redmuffin.Blazor.Static.Tests.csproj", "{0B9FDD37-73E0-4E09-8965-425A97F2E6C9}"

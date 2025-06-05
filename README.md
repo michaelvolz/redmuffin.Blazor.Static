@@ -1,4 +1,4 @@
-﻿# redmuffin.Blazor.Static (preview - alpha)
+# redmuffin.Blazor.Static (preview - alpha)
 
 [![Build Status](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/azure-static-web-apps-lively-cliff-0945be603.yml/badge.svg)](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/azure-static-web-apps-lively-cliff-0945be603.yml)
 [![CodeQL](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/codeql.yml/badge.svg)](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/codeql.yml)
@@ -133,5 +133,3 @@ This project is licensed under the [Unlicense](https://unlicense.org/).
 - [Zurb Foundation](https://get.foundation/) for the CSS framework
 - [GitHub Copilot](https://github.com/features/copilot) for AI code assistance
 - [Visual Studio](https://visualstudio.microsoft.com/) for development environment
-
---- 
