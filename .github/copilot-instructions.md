@@ -15,9 +15,8 @@ This repository contains a C# Blazor WebAssembly project targeting .NET 9, devel
 
 ## Coding Guidelines
 
-- **Framework:** Use Blazor WebAssembly with .NET 9 APIs and features.
 - **Target Framework:** .NET 9 (ASP.NET 9, Blazor WebAssembly 9)
-- - **Language:** All code should be written in C# unless otherwise specified.
+- **Language:** All code should be written in C# unless otherwise specified.
 - **Component Structure:** Prefer Razor components (`.razor` files) for UI. Use partial classes for code-behind logic when needed.
 - **Naming Conventions:** Follow standard C# naming conventions (PascalCase for classes, camelCase for variables and parameters).
 - **Async Programming:** Use `async`/`await` for asynchronous operations.
@@ -28,7 +27,6 @@ This repository contains a C# Blazor WebAssembly project targeting .NET 9, devel
 
 - **CSS Framework:** Use [Zurb Foundation](https://get.foundation/) CSS for all UI components and layouts.
 - **Custom Styles:** If Foundation does not provide the required styles, use custom SCSS/CSS located in the `wwwroot/css` or `wwwroot/scss` folders.
-- **No Bootstrap or Bulma:** Do not use Bootstrap, Bulma, or any other CSS frameworks.
 - **Responsive Design:** Ensure all layouts are responsive using Foundation's grid and utility classes, or custom CSS as needed.
 
 ## Professional Standards for ASP.NET Core / Blazor Projects
@@ -189,12 +187,32 @@ public class MyClass {
 
 ## File Organization
 
-- Place UI components in the `Components` folder.
-- Place services in the `Services` folder.
-- Place shared models in the `Shared` folder.
+- Place seperata features in the `Features` folder.
+ - Features should be organized by functionality, with each feature in its own subfolder.
+ - Features include CSS, Code Behind, and Razor files.
 - Static assets (CSS, JS, images) should go in the `wwwroot` folder.
 - Place Test Projects in a separate `tests` folder at the root of the repository.
 - Place Projects in a `src` folder at the root of the repository.
+
+<pre>
+Follow this structured directory layout:
+   project-root/
+   ├── src/                                # Application source code
+   │   ├── Main Project/
+   │   │   ├── Features/                   # Features organized by functionality
+   │   │   │   ├── Feature-1/              # Feature files
+   │   │   │   ├── Feature-2/
+   │   │   │   ├── Feature-N/
+   │   │   ├── wwwroot/                    # Static assets
+   │   │   │   ├── css/                    # CSS files
+   │   │   │   ├── lib/                    # Libraries (e.g., Zurb Foundation)
+   │   │   │   ├── sample-data/            # Sample data files
+   │   ├── Sub- or Component-Project-1/    # Sub-projects or components
+   │   ├── Sub- or Component-Project-2/
+   │   ├── Sub- or Component-Project-N/
+   ├── tests/                              # Unit and integration tests
+   ├── scripts/                            # Scripts for deployment, setup, etc.
+</pre>
 
 ## Best Practices
 
@@ -216,7 +234,6 @@ public class MyClass {
 - Follow the repository’s code review and contribution guidelines.
 
 # COPILOT EDITS OPERATIONAL GUIDELINES
-<!--[See community feedback on copilot-instructions.md](https://www.reddit.com/r/ChatGPTCoding/comments/1jl6gll/copilotinstructionsmd_has_helped_me_so_much/)-->
 
 ## PRIME DIRECTIVE
 	Avoid working on more than one file at a time.
@@ -235,6 +252,7 @@ public class MyClass {
                    - Estimated number of separate edits required
                 
             3. Format your plan as:
+
 ## PROPOSED EDIT PLAN
 	Working with: [filename]
 	Total planned edits: [number]
@@ -308,81 +326,6 @@ public class MyClass {
 	- Prioritize modern, performant fonts and variable fonts for smaller file sizes
 	- Use modern units (`rem`, `vh`, `vw`) instead of traditional pixels (`px`) for better responsiveness
             
-## JavaScript Requirements
-		    
-	- **Minimum Compatibility**: ECMAScript 2020 (ES11) or higher
-	- **Features to Use**:
-	- Arrow functions
-	- Template literals
-	- Destructuring assignment
-	- Spread/rest operators
-	- Async/await for asynchronous code
-	- Classes with proper inheritance when OOP is needed
-	- Object shorthand notation
-	- Optional chaining (`?.`)
-	- Nullish coalescing (`??`)
-	- Dynamic imports
-	- BigInt for large integers
-	- `Promise.allSettled()`
-	- `String.prototype.matchAll()`
-	- `globalThis` object
-	- Private class fields and methods
-	- Export * as namespace syntax
-	- Array methods (`map`, `filter`, `reduce`, `flatMap`, etc.)
-	- **Avoid**:
-	- `var` keyword (use `const` and `let`)
-	- jQuery or any external libraries
-	- Callback-based asynchronous patterns when promises can be used
-	- Internet Explorer compatibility
-	- Legacy module formats (use ES modules)
-	- Limit use of `eval()` due to security risks
-	- **Performance Considerations:**
-	- Recommend code splitting and dynamic imports for lazy loading
-	**Error Handling**:
-	- Use `try-catch` blocks **consistently** for asynchronous and API calls, and handle promise rejections explicitly.
-	- Differentiate among:
-	- **Network errors** (e.g., timeouts, server errors, rate-limiting)
-	- **Functional/business logic errors** (logical missteps, invalid user input, validation failures)
-	- **Runtime exceptions** (unexpected errors such as null references)
-	- Provide **user-friendly** error messages (e.g., “Something went wrong. Please try again shortly.”) and log more technical details to dev/ops (e.g., via a logging service).
-	- Consider a central error handler function or global event (e.g., `window.addEventListener('unhandledrejection')`) to consolidate reporting.
-	- Carefully handle and validate JSON responses, incorrect HTTP status codes, etc.
-            
-<!--## Folder Structure
-	Follow this structured directory layout:
-
-		project-root/
-		├── api/                  # API handlers and routes
-		├── config/               # Configuration files and environment variables
-		├── data/                 # Databases, JSON files, and other storage
-		├── public/               # Publicly accessible files (served by web server)
-		│   ├── assets/
-		│   │   ├── css/
-		│   │   ├── js/
-		│   │   ├── images/
-		│   │   ├── fonts/
-		│   └── index.html
-		├── src/                  # Application source code
-		│   ├── controllers/
-		│   ├── models/
-		│   ├── views/
-		│   └── utilities/
-		├── tests/                # Unit and integration tests
-		├── docs/                 # Documentation (Markdown files)
-		├── logs/                 # Server and application logs
-		├── scripts/              # Scripts for deployment, setup, etc.
-		└── temp/                 # Temporary/cache files
--->
-
-<!--## Documentation Requirements
-	- Include JSDoc comments for JavaScript/TypeScript.
-	- Document complex functions with clear examples.
-	- Maintain concise Markdown documentation.
-	- Minimum docblock info: `param`, `return`, `throws`, `author`
--->    
-<!--## Database Requirements (SQLite 3.46+)
-	- Leverage JSON columns, generated columns, strict mode, foreign keys, check constraints, and transactions.
--->    
 ## Security Considerations
 	- Sanitize all user inputs thoroughly.
 	- Parameterize database queries.
