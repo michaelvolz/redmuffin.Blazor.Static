@@ -3,7 +3,10 @@ using System.Text.Json;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Components;
 
-namespace redmuffin.Blazor.Static.Features.Pages.WeatherPage;
+//using JetBrains.Annotations;
+//using Microsoft.AspNetCore.Components;
+
+namespace redmuffin.Blazor.StaticWeb.Features.Pages.WeatherPage;
 
 public partial class Weather
 {

@@ -1,7 +1,7 @@
 ﻿using JetBrains.Annotations;
-using redmuffin.Blazor.Static.Features.App_Code;
+using redmuffin.Blazor.StaticWeb.Features.App;
 
-namespace redmuffin.Blazor.Static.Features.Pages.CounterPage;
+namespace redmuffin.Blazor.StaticWeb.Features.Pages.CounterPage;
 
 public partial class Counter
 {

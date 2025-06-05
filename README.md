@@ -1,4 +1,4 @@
-# redmuffin.Blazor.Static (preview - alpha)
+# redmuffin.Blazor.StaticWeb (preview - alpha)
 
 [![Build Status](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/azure-static-web-apps-lively-cliff-0945be603.yml/badge.svg)](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/azure-static-web-apps-lively-cliff-0945be603.yml)
 [![CodeQL](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/codeql.yml/badge.svg)](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/codeql.yml)
@@ -13,7 +13,7 @@
 
 ## Overview
 
-**redmuffin.Blazor.Static** is a Blazor WebAssembly project targeting .NET 9, designed for building modern, performant, and maintainable static web applications. The solution leverages [Markdig](https://github.com/xoofx/markdig) for Markdown integration and follows best practices for accessibility, security, and maintainability.
+**redmuffin.Blazor.StaticWeb** is a Blazor WebAssembly project targeting .NET 9, designed for building modern, performant, and maintainable static web applications. The solution leverages [Markdig](https://github.com/xoofx/markdig) for Markdown integration and follows best practices for accessibility, security, and maintainability.
 
 ---
 
@@ -60,7 +60,7 @@
 - Install the [WebCompiler 2022+ extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) in Visual Studio.
 
 3. **Open the solution:**
-- Open `redmuffin.Blazor.Static.sln` in Visual Studio 2022.
+- Open `redmuffin.Blazor.StaticWeb.sln` in Visual Studio 2022.
 
 4. **Restore and build:**
 - Restore NuGet packages and build the solution.

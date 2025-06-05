@@ -1,7 +1,6 @@
-using redmuffin.Blazor.Static.Features.App_Code;
-using Xunit;
+using redmuffin.Blazor.StaticWeb.Features.App;
 
-namespace redmuffin.Blazor.Static.Tests.Helpers;
+namespace redmuffin.Blazor.StaticWeb.Tests.Features.App;
 
 public class StringExtensionsTests
 {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.Components.Web;
-using redmuffin.Blazor.Static.Features.App_Layout;
+using redmuffin.Blazor.StaticWeb.Features.App_Layout;
 
-namespace redmuffin.Blazor.Static;
+namespace redmuffin.Blazor.StaticWeb;
 
 public partial class App
 {

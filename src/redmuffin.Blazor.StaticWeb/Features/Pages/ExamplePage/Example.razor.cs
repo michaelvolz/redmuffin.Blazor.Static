@@ -1,7 +1,7 @@
 ﻿using Markdig;
 using Microsoft.AspNetCore.Components;
 
-namespace redmuffin.Blazor.Static.Features.Pages.ExamplePage;
+namespace redmuffin.Blazor.StaticWeb.Features.Pages.ExamplePage;
 
 public partial class Example
 {

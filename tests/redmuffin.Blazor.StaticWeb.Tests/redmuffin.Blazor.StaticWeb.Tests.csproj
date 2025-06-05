@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\redmuffin.Blazor.Static\redmuffin.Blazor.Static.csproj" />
+    <ProjectReference Include="..\..\src\redmuffin.Blazor.StaticWeb\redmuffin.Blazor.StaticWeb.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,11 +31,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EditorConfigFiles Remove="C:\Users\flynn\Projects\redmuffin.Blazor.Static\tests\redmuffin.Blazor.Static.Tests\.editorconfig" />
+    <EditorConfigFiles Remove="C:\Users\flynn\Projects\redmuffin.Blazor.StaticWeb\tests\redmuffin.Blazor.StaticWeb.Tests\.editorconfig" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="C:\Users\flynn\Projects\redmuffin.Blazor.Static\tests\redmuffin.Blazor.Static.Tests\.editorconfig" />
+    <None Include="C:\Users\flynn\Projects\redmuffin.Blazor.StaticWeb\tests\redmuffin.Blazor.StaticWeb.Tests\.editorconfig" />
   </ItemGroup>
 
   <ItemGroup>

@@ -11,7 +11,7 @@
     <Authors>Michael A. Volz</Authors>
     <FileVersion>$(Version)</FileVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>
-    <Product>redmuffin.Blazor.Static</Product>
+    <Product>redmuffin.Blazor.StaticWeb</Product>
     <NeutralLanguage>en</NeutralLanguage>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>

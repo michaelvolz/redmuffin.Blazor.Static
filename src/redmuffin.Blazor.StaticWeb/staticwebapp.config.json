@@ -14,7 +14,7 @@
       }
     },
     {
-      "route": "/redmuffin.Blazor.Static.styles.css",
+      "route": "/redmuffin.Blazor.StaticWeb.styles.css",
       "headers": {
         "Cache-Control": "must-revalidate, max-age=604800"
       }
