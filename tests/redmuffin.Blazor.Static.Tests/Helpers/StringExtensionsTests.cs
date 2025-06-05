@@ -1,4 +1,5 @@
 using redmuffin.Blazor.Static.Helpers;
+using Xunit;
 
 namespace redmuffin.Blazor.Static.Tests.Helpers;
 
