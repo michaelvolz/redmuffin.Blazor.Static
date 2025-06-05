@@ -1,22 +1,15 @@
-﻿@page "/example"
-@using Markdig
-@inject HttpClient Http
+﻿using Markdig;
+using Microsoft.AspNetCore.Components;
 
-<PageTitle>Counter</PageTitle>
+namespace redmuffin.Blazor.Static.Features.Pages.ExamplePage;
 
-<h1>Example</h1>
-
-<div>@_markdownText</div>
-
-
-@code {
-
-	private MarkupString _markdownText = new MarkupString("n/a");
+public partial class Example
+{
+	private MarkupString _markdownText = new("n/a");
 
 	protected override async Task OnInitializedAsync()
 	{
 		var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
 		if (Http != null) _markdownText = new MarkupString(Markdown.ToHtml(await Http.GetStringAsync("Example.md"), pipeline));
 	}
-
 }

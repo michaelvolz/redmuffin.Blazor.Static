@@ -52,4 +52,8 @@
     <PackageReference Update="Roslynator.Formatting.Analyzers" Version="4.13.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Components\" />
+  </ItemGroup>
+
 </Project>
