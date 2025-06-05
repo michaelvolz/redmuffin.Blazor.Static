@@ -7,8 +7,8 @@
     Link: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/a-basic-responsive-grid-plus-handy-css3-media-query-reporter/
 
     Modified and Packaged for Nuget by: Ed Charbeneau (twitter:@EdCharbeneau)
-    
- 
+
+
 ========================================= */
 
 /* ======================================
@@ -16,7 +16,7 @@
 MediaQuery Debugger
 
 ========================================= */
- 
+
 body { padding-top: 0;}
 
 body:after {
@@ -90,3 +90,5 @@ body:after {
     }
 }
 
+
+/*# sourceMappingURL=C:\Users\flynn\Projects\redmuffin.Blazor.Static\src\redmuffin.Blazor.Static\wwwroot\css\media-query-debugger.css.map */
