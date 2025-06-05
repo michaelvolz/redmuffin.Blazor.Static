@@ -64,7 +64,7 @@ dotnet_diagnostic.SA1515.severity = none
 
 # Microsoft.CodeAnalysis.NetAnalyzers
 dotnet_diagnostic.CA1032.severity = none
-
+dotnet_diagnostic.CA1707.severity = none
 
 # Microsoft .NET properties
 csharp_new_line_before_members_in_object_initializers = false

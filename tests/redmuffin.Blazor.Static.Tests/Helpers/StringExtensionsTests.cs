@@ -1,4 +1,4 @@
-using redmuffin.Blazor.Static.Features.App;
+using redmuffin.Blazor.Static.Features.App_Code;
 using Xunit;
 
 namespace redmuffin.Blazor.Static.Tests.Helpers;

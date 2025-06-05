@@ -1,5 +1,5 @@
 ﻿using JetBrains.Annotations;
-using redmuffin.Blazor.Static.Features.App;
+using redmuffin.Blazor.Static.Features.App_Code;
 
 namespace redmuffin.Blazor.Static.Features.Pages.CounterPage;
 

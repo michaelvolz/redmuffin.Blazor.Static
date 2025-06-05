@@ -53,7 +53,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Components\" />
+    <Folder Include="Features\App_Components\" />
   </ItemGroup>
 
 </Project>
