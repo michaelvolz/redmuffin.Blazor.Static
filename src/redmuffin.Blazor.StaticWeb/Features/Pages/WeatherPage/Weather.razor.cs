@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace redmuffin.Blazor.StaticWeb.Features.Pages.WeatherPage;
 
-public partial class Weather
+public partial class Weather : ComponentBase
 {
 	private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web);
 

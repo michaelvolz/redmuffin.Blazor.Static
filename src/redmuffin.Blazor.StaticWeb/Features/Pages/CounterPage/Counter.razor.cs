@@ -1,9 +1,10 @@
 ﻿using JetBrains.Annotations;
+using Microsoft.AspNetCore.Components;
 using redmuffin.Blazor.StaticWeb.Features.App;
 
 namespace redmuffin.Blazor.StaticWeb.Features.Pages.CounterPage;
 
-public partial class Counter
+public partial class Counter : ComponentBase
 {
 	private int _currentCount;
 

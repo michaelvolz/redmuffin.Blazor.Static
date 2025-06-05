@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace redmuffin.Blazor.StaticWeb.Features.Pages.ExamplePage;
 
-public partial class Example
+public partial class Example : ComponentBase
 {
 	private MarkupString _markdownText = new("n/a");
 
