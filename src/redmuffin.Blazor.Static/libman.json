@@ -3,7 +3,7 @@
   "defaultProvider": "unpkg",
   "libraries": [
     {
-      "library": "foundation-sites@6.8.1",
+      "library": "foundation-sites@6.9.0",
       "destination": "wwwroot/lib/foundation-sites/",
       "files": [
         "scss/**/*.scss",
