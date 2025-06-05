@@ -114,12 +114,6 @@ The project follows a [feature folder structure](https://blog.ndepend.com/featur
 
 ---
 
-## Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
 ## License
 
 This project is licensed under the [Unlicense](https://unlicense.org/).
