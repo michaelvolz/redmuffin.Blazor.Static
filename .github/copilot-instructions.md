@@ -2,6 +2,17 @@
 
 This repository contains a C# Blazor WebAssembly project targeting .NET 9, developed using Visual Studio 2022.
 
+# GitHub Copilot Instructions for Commit Messages
+
+- Use Conventional Commits: `<type>(<scope>): <short description>`.
+  - Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`.
+  - Scopes: `blazor`, `api`, `ui`, `db`, `auth`.
+  - Keep first line <72 characters.
+- Include a 2-3 sentence body explaining *what* changed and *why*.
+- Focus on .NET 9 and Blazor conventions (e.g., Razor, SignalR, EF Core).
+- Example: `feat(blazor): add login component`
+  - Created `Login.razor` with form validation. Integrated EF Core for user auth. Follows .NET 9 Blazor standards.
+
 ## Coding Guidelines
 
 - **Framework:** Use Blazor WebAssembly with .NET 9 APIs and features.
