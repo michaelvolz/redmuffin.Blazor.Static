@@ -81,3 +81,9 @@
 code {
     color: #c02d76;
 }
+
+// Always show scrollbars (cross-browser)
+html {
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}
