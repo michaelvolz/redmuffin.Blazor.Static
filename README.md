@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/azure-static-web-apps-lively-cliff-0945be603.yml/badge.svg)](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/azure-static-web-apps-lively-cliff-0945be603.yml)
 [![CodeQL](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/codeql.yml/badge.svg)](https://github.com/michaelvolz/redmuffin.Blazor.Static/actions/workflows/codeql.yml)
-[![SonarQube](https://sonarcloud.io/api/project_badges/measure?project=michaelvolz_redmuffin.Blazor.StaticWeb&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=michaelvolz_redmuffin.Blazor.Static)
+[![SonarQube](https://sonarcloud.io/api/project_badges/measure?project=michaelvolz_redmuffin.Blazor.StaticWeb&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=michaelvolz_redmuffin.Blazor.StaticWeb)
 [![Last Commit (master)](https://img.shields.io/github/last-commit/michaelvolz/redmuffin.Blazor.Static/master.svg)](https://github.com/michaelvolz/redmuffin.Blazor.Static/commits/master)
 
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](https://en.wikipedia.org/wiki/Unlicense)
