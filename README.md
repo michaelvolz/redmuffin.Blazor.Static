@@ -38,6 +38,10 @@
 - SCSS/CSS asset pipeline
 - Automated builds and code analysis
 - Dependabot integration
+- Feature folder structure for project organization
+- CodeQL-enabled for advanced code security analysis
+- EditorConfig for consistent code style and formatting
+- Directory.Build.props for centralized project configuration
 
 ---
 
@@ -111,6 +115,12 @@ The project follows a [feature folder structure](https://blog.ndepend.com/featur
 
 - **[GitHub Copilot](https://github.com/features/copilot)**  
   An AI-powered code completion tool that assists with writing code, documentation, and tests, improving productivity and code quality.
+
+- **[EditorConfig](https://editorconfig.org/)**  
+  A file-based format for defining and maintaining consistent coding styles between different editors and IDEs.
+
+- **[Directory.Build.props](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets)**  
+  Centralizes common MSBuild properties for all projects in the repository, ensuring consistent build configuration.
 
 ---
 
