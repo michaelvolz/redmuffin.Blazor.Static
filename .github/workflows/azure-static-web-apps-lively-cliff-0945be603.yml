@@ -46,6 +46,7 @@ jobs:
           DOC_FILES=(
             "README.md"
             ".github/copilot-instructions.md"
+            ".github/instructions/*.md"
             # Add more documentation files here as needed
             # "CHANGELOG.md"
             # "docs/*.md"
