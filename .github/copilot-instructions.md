@@ -114,15 +114,20 @@ This repository is a C# Blazor WebAssembly project targeting .NET 9, built with 
 ## 7. File & Directory Organization
 
 - **Features:**  
-  - `src/MainProject/Features/FeatureName/` (Razor, code-behind, CSS)
+  - Place each feature in its own subfolder: `src/MainProject/Features/FeatureName/`
+    - Include Razor components, code-behind, and feature-specific CSS here.
+- **Feature Subcomponents:**  
+  - Place reusable or nested components in: `src/MainProject/Features/FeatureName/Components/`
 - **Static Assets:**  
-  - `src/MainProject/wwwroot/` (css, lib, sample-data)
+  - Place all static assets in: `src/MainProject/wwwroot/`
+    - Use subfolders: `css/`, `scss/`, `lib/`, `sample-data/`
 - **Tests:**  
-  - `tests/` (unit/integration)
+  - Place all unit, integration, and component tests in: `tests/`
+    - Mirror the main project structure for clarity.
 - **Scripts:**  
-  - `scripts/` (deployment, setup)
-- **Subprojects:**  
-  - `src/SubProjectName/`
+  - Place deployment, setup, and utility scripts in: `scripts/`
+- **Subprojects/Component Projects:**  
+  - Place additional projects in: `src/SubProjectName/`
 
 **Directory Layout:**
 <pre>
@@ -130,9 +135,21 @@ project-root/
 ├── src/
 │   ├── MainProject/
 │   │   ├── Features/
+│   │   │   ├── Feature-1/
+│   │   │   │   ├── Components/
+│   │   │   ├── Feature-2/
+│   │   │   ├── Feature-N/
 │   │   ├── wwwroot/
-│   ├── SubProject1/
+│   │   │   ├── css/
+│   │   │   ├── scss/
+│   │   │   ├── lib/
+│   │   │   ├── sample-data/
+│   ├── SubProject-1/
+│   ├── SubProject-2/
+│   ├── SubProject-N/
 ├── tests/
+│   ├── MainProject.Tests/
+│   ├── SubProject-1.Tests/
 ├── scripts/
 </pre>
 
