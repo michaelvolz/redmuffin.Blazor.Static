@@ -11,20 +11,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		.github\workflows\azure-static-web-apps-lively-cliff-0945be603.yml = .github\workflows\azure-static-web-apps-lively-cliff-0945be603.yml
-		.github\instructions\Blazor.md = .github\instructions\Blazor.md
 		.github\workflows\codeql.yml = .github\workflows\codeql.yml
 		.github\copilot-instructions.md = .github\copilot-instructions.md
-		.github\instructions\CSharp.md = .github\instructions\CSharp.md
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
 		tools\install-libman.ps1 = tools\install-libman.ps1
 		libman.json = libman.json
 		markdown-cheat-sheet.md = markdown-cheat-sheet.md
-		.github\instructions\Powershell.md = .github\instructions\Powershell.md
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redmuffin.Blazor.StaticWeb.Tests", "tests\redmuffin.Blazor.StaticWeb.Tests\redmuffin.Blazor.StaticWeb.Tests.csproj", "{0B9FDD37-73E0-4E09-8965-425A97F2E6C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Copilot Instructions", "Copilot Instructions", "{0652538E-1D5F-6121-6BBF-D1367D210D62}"
+	ProjectSection(SolutionItems) = preProject
+		.github\copilot-instructions.md = .github\copilot-instructions.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instructions", "Instructions", "{1E5315D5-9FD9-D0B7-CF8A-5A02695B7EE1}"
+	ProjectSection(SolutionItems) = preProject
+		.github\instructions\Blazor.instructions.md = .github\instructions\Blazor.instructions.md
+		.github\instructions\CSharp.instructions.md = .github\instructions\CSharp.instructions.md
+		.github\instructions\Powershell.instructions.md = .github\instructions\Powershell.instructions.md
+		Example.instruction.md = Example.instruction.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prompts", "Prompts", "{1042B09C-CD63-0B34-1D4B-7FE7A2FDFA8E}"
+	ProjectSection(SolutionItems) = preProject
+		SecurityReviewAPI.prompt.md = SecurityReviewAPI.prompt.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +58,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E5315D5-9FD9-D0B7-CF8A-5A02695B7EE1} = {0652538E-1D5F-6121-6BBF-D1367D210D62}
+		{1042B09C-CD63-0B34-1D4B-7FE7A2FDFA8E} = {0652538E-1D5F-6121-6BBF-D1367D210D62}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0087A1A-355D-4454-AE85-D0509704B21F}
