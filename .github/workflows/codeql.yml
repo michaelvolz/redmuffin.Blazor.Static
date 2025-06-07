@@ -62,7 +62,13 @@ jobs:
     - name: Check for changes in README.md or copilot-instructions.md
       id: check_files
       run: |
-        CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
+        if [ -z "${{ github.event.before }}" ]; then
+          echo "Commit reference is unavailable. Using default branch as base."
+          BASE_REF="origin/${{ github.event.repository.default_branch }}"
+        else
+          BASE_REF="${{ github.event.before }}"
+        fi
+        CHANGED_FILES=$(git diff --name-only $BASE_REF ${{ github.sha }})
         echo "Changed files: $CHANGED_FILES"
         if [[ "$CHANGED_FILES" =~ ^(README\.md|\.github/copilot-instructions\.md)(\s|$) && ! "$CHANGED_FILES" =~ [^README\.md|\.github/copilot-instructions\.md] ]]; then
           echo "Only README.md and/or copilot-instructions.md were changed. Skipping workflow."
