@@ -207,4 +207,3 @@ project-root/
 ---
 
 *For additional details, see README or project-specific docs.*
-
