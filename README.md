@@ -139,3 +139,5 @@ This project is licensed under the [Unlicense](https://unlicense.org/).
 - [Zurb Foundation](https://get.foundation/) for the CSS framework
 - [GitHub Copilot](https://github.com/features/copilot) for AI code assistance
 - [Visual Studio](https://visualstudio.microsoft.com/) for development environment
+
+---
