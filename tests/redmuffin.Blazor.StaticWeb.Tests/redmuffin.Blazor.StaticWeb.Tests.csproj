@@ -1,4 +1,4 @@
-  <Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -36,12 +36,6 @@
 
   <ItemGroup>
     <None Include="C:\Users\flynn\Projects\redmuffin.Blazor.StaticWeb\tests\redmuffin.Blazor.StaticWeb.Tests\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="JetBrains.Annotations" Version="2025.1.0-eap1" />
-    <PackageReference Update="Roslynator.CodeAnalysis.Analyzers" Version="4.13.1" />
-    <PackageReference Update="Roslynator.Formatting.Analyzers" Version="4.13.1" />
   </ItemGroup>
 
 </Project>
