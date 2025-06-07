@@ -59,33 +59,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Check for changes in README.md or copilot-instructions.md
-      id: check_files
-      run: |
-        # Determine the base reference
-        if git cat-file -e ${{ github.event.before }} 2>/dev/null; then
-          BASE_REF="${{ github.event.before }}"
-        else
-          echo "Invalid or inaccessible commit reference. Using default branch as base."
-          BASE_REF="origin/${{ github.event.repository.default_branch }}"
-        fi
-
-        # Get the list of changed files
-        CHANGED_FILES=$(git diff --name-only $BASE_REF ${{ github.sha }} || echo "")
-        echo "Changed files: $CHANGED_FILES"
-
-        # Check if only README.md and/or copilot-instructions.md were changed
-        if [[ "$CHANGED_FILES" =~ ^(README\.md|\.github/copilot-instructions\.md)(\s|$) && ! "$CHANGED_FILES" =~ [^README\.md|\.github/copilot-instructions\.md] ]]; then
-          echo "Only README.md and/or copilot-instructions.md were changed. Skipping workflow."
-          echo "skip=true" >> $GITHUB_ENV
-        else
-          echo "skip=false" >> $GITHUB_ENV
-        fi
-
-    - name: Exit if only README.md or copilot-instructions.md were changed
-      if: env.skip == 'true'
-      run: exit 0
-
     # Add any setup steps before running the `github/codeql-action/init` action.
     # This includes steps like installing compilers or runtimes (`actions/setup-node`
     # or others). This is typically only required for manual builds.
