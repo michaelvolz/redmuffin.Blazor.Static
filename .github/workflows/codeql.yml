@@ -102,7 +102,7 @@ jobs:
     steps:
       - name: Skip CodeQL Analysis
         run: |
-          echo "Only documentation files (README.md or copilot-instructions.md) changed."
+          echo "Only documentation files ($CHANGED_FILES) changed."
           echo "Skipping CodeQL analysis as no code changes were detected."
 
   analyze:

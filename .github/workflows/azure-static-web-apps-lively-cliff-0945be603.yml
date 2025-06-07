@@ -32,6 +32,8 @@ permissions:
 jobs:
   check_changes:
     runs-on: ubuntu-latest
+    # Skip this check for scheduled runs - always run analysis on schedule
+    if: github.event_name != 'schedule'
     outputs:
       should_skip: ${{ steps.check.outputs.should_skip }}
     steps:
@@ -41,6 +43,30 @@ jobs:
       - name: Check if only documentation files changed
         id: check
         run: |
+          # Define documentation files to skip analysis for
+          # Add new files to this list as needed (one per line)
+          DOC_FILES=(
+            "README.md"
+            ".github/copilot-instructions.md"
+            # Add more documentation files here as needed
+            # "docs/*.md"
+            # "CONTRIBUTING.md"
+            # etc.
+          )
+
+          # Build regex pattern from file list
+          PATTERN=""
+          for file in "${DOC_FILES[@]}"; do
+            if [[ -n "$PATTERN" ]]; then
+              PATTERN="$PATTERN|"
+            fi
+            # Escape dots in filenames for regex
+            ESCAPED_FILE=$(echo "$file" | sed 's/\./\\./g')
+            PATTERN="${PATTERN}${ESCAPED_FILE}"
+          done
+
+          echo "Using file pattern: $PATTERN"
+
           # For PRs, compare with the base branch
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
             echo "Checking PR changes..."
@@ -53,7 +79,7 @@ jobs:
 
           # If empty diff (first commit or error), don't skip
           if [[ -z "$CHANGED_FILES" ]]; then
-            echo "Empty diff detected - not skipping deploy"
+            echo "Empty diff detected - not skipping analysis"
             echo "should_skip=false" >> $GITHUB_OUTPUT
             exit 0
           fi
@@ -62,17 +88,17 @@ jobs:
           TOTAL_CHANGED=$(echo "$CHANGED_FILES" | wc -l)
 
           # Count how many of our docs files changed
-          DOC_FILES_CHANGED=$(echo "$CHANGED_FILES" | grep -E "README\.md|\.github/copilot-instructions\.md" | wc -l)
+          DOC_FILES_CHANGED=$(echo "$CHANGED_FILES" | grep -E "$PATTERN" | wc -l)
 
           echo "Total files changed: $TOTAL_CHANGED"
           echo "Doc files changed: $DOC_FILES_CHANGED"
 
-          # If only doc files changed and they exist in the changed files list, skip deployment
+          # If only doc files changed and they exist in the changed files list, skip analysis
           if [[ $DOC_FILES_CHANGED -gt 0 && $DOC_FILES_CHANGED -eq $TOTAL_CHANGED ]]; then
-            echo "Only documentation files changed, skipping deployment"
+            echo "Only documentation files changed, skipping CodeQL analysis"
             echo "should_skip=true" >> $GITHUB_OUTPUT
           else
-            echo "Code files changed, proceeding with deployment"
+            echo "Code files changed, proceeding with CodeQL analysis"
             echo "should_skip=false" >> $GITHUB_OUTPUT
           fi
 
@@ -118,7 +144,7 @@ jobs:
     steps:
       - name: Skip Deployment
         run: |
-          echo "Only documentation files (README.md or copilot-instructions.md) changed."
+          echo "Only documentation files ($CHANGED_FILES) changed."
           echo "Skipping deployment process as no code changes were detected."
 
   close_pull_request_job:
