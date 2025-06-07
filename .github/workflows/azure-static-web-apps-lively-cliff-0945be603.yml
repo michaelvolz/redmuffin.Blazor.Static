@@ -30,17 +30,70 @@ permissions:
   contents: read
 
 jobs:
-  build_and_deploy_job:
-    permissions:
-      contents: read # for actions/checkout to fetch code
-      pull-requests: write # for Azure/static-web-apps-deploy to comment on PRs
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+  check_changes:
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
+    outputs:
+      should_skip: ${{ steps.check.outputs.should_skip }}
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: 0  # Fetch all history to properly check changes
+      - name: Check if only documentation files changed
+        id: check
+        run: |
+          # For PRs, compare with the base branch
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            echo "Checking PR changes..."
+            CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
+          # For pushes, compare with previous commit
+          else
+            echo "Checking push changes..."
+            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
+          fi
+
+          # If empty diff (first commit or error), don't skip
+          if [[ -z "$CHANGED_FILES" ]]; then
+            echo "Empty diff detected - not skipping deploy"
+            echo "should_skip=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Count all changed files
+          TOTAL_CHANGED=$(echo "$CHANGED_FILES" | wc -l)
+
+          # Count how many of our docs files changed
+          DOC_FILES_CHANGED=$(echo "$CHANGED_FILES" | grep -E "README\.md|\.github/copilot-instructions\.md" | wc -l)
+
+          echo "Total files changed: $TOTAL_CHANGED"
+          echo "Doc files changed: $DOC_FILES_CHANGED"
+
+          # If only doc files changed and they exist in the changed files list, skip deployment
+          if [[ $DOC_FILES_CHANGED -gt 0 && $DOC_FILES_CHANGED -eq $TOTAL_CHANGED ]]; then
+            echo "Only documentation files changed, skipping deployment"
+            echo "should_skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "Code files changed, proceeding with deployment"
+            echo "should_skip=false" >> $GITHUB_OUTPUT
+          fi
+
+  build_and_deploy_job:
+    needs: check_changes
+    if: |
+      (github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')) &&
+      needs.check_changes.outputs.should_skip != 'true'
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      pull-requests: write # for Azure/static-web-apps-deploy to comment on PRs
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
+    steps:
+      - name: Log deployment decision
+        run: echo "Proceeding with deployment as non-documentation files were changed."
+
+      - uses: actions/checkout@v4
+        with:
           submodules: true
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -54,6 +107,19 @@ jobs:
           api_location: ${{ env.API_LOCATION }}
           app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
           ###### End of Repository/Build Configurations ######
+
+  docs_only_changed_job:
+    needs: check_changes
+    if: |
+      (github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')) &&
+      needs.check_changes.outputs.should_skip == 'true'
+    runs-on: ubuntu-latest
+    name: Documentation Only Changed
+    steps:
+      - name: Skip Deployment
+        run: |
+          echo "Only documentation files (README.md or copilot-instructions.md) changed."
+          echo "Skipping deployment process as no code changes were detected."
 
   close_pull_request_job:
     permissions:
