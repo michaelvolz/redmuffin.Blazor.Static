@@ -51,12 +51,23 @@ This repository is a C# Blazor WebAssembly project targeting .NET 9, built with 
   - Semantic HTML, ARIA roles, keyboard navigation, color contrast
   - Labels for all form fields
   - Alt/aria-label for media
+  - Ensure all UI changes comply with WCAG 2.1 AA (AAA where feasible)
+  - Use semantic HTML5 and ARIA roles throughout
+  - Audit accessibility with Lighthouse or similar tools as needed
 - **Performance:**  
   - Optimize static assets
   - Use lazy loading for components/assets
+- **HTML/CSS/Assets:**  
+  - Use modern CSS (Grid, Flexbox, variables, nesting, dark mode)
+  - Optimize images (WebP, AVIF), use `loading="lazy"`, `srcset`, and SEO tags
 - **Minimal JavaScript:**  
   - Use C#/Blazor for client logic
   - JS interop only if necessary, with clear separation
+- **Security & Quality:**  
+  - Sanitize all user inputs and parameterize queries.
+  - Enforce strong Content Security Policy (CSP).
+  - Use secure cookies, RBAC, and internal logging/monitoring.
+  - Ensure all code builds and passes tests before submitting a pull request.
 
 ---
 
@@ -168,22 +179,33 @@ project-root/
 
 ## 9. Copilot Edits Operational Guidelines
 
-- **Prime Directive:**  
-  - Edit one file at a time; avoid simultaneous edits
-  - For large/complex changes, create a detailed plan before editing
-- **Edit Protocol:**  
-  - Propose plan, get approval, execute stepwise, confirm after each edit
-  - Show before/after snippets and explain changes
-- **Refactoring:**  
-  - Break into logical, functional chunks; maintain working state
-- **Accessibility:**  
-  - WCAG 2.1 AA (AAA where feasible)
-  - Use Lighthouse for audits
-- **HTML/CSS:**  
-  - Use semantic HTML5, ARIA, responsive design, modern CSS (Grid, Flexbox, variables, nesting, dark mode, etc.)
-  - Optimize images (WebP, AVIF), use `loading="lazy"`, `srcset`, SEO tags
-- **Security:**  
-  - Sanitize inputs, parameterize queries, enforce CSP, secure cookies, RBAC, logging/monitoring
+- **General Principles:**
+  - Edit only one file at a time to prevent merge conflicts and file corruption.
+  - For large or complex changes, always start with a clear, step-by-step plan before making any edits.
+  - Communicate your plan and await explicit approval before proceeding with each step.
+
+- **Edit Workflow:**
+  1. **Planning:**  
+     - Outline all functions/sections to modify, the order of changes, dependencies, and estimated number of edits.
+     - Present the plan for review and approval.
+  2. **Execution:**  
+     - Make one conceptual change per edit.
+     - After each edit, show before/after snippets and a concise explanation.
+     - Confirm completion and request approval before the next step.
+     - If new changes are discovered, pause and update the plan for approval.
+  3. **Refactoring:**  
+     - Break work into logical, independently functional chunks.
+     - Ensure each intermediate state is functional and builds successfully.
+     - Temporary duplication is acceptable for large refactors if it maintains stability.
+
+- **Error Handling & Communication:**
+  - Clearly indicate progress after each edit (e.g., "✅ Completed edit [#] of [total]. Ready for next edit?").
+  - If you encounter blockers or ambiguities, pause and request clarification.
+  - Reference code by filename and line number when discussing changes.
+
+- **Adherence to Project Standards:**
+  - Follow all repository coding, testing, and documentation standards.
+  - Prefer C# and Blazor features over JavaScript or custom HTML/CSS unless explicitly required.
 
 ---
 
