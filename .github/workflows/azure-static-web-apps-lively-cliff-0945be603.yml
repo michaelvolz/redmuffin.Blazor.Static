@@ -38,6 +38,19 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
+      - name: Check for changes in README.md or copilot-instructions.md
+        id: check_files
+        run: |
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
+          echo "Changed files: $CHANGED_FILES"
+          if [[ "$CHANGED_FILES" =~ ^(README\.md|\.github/copilot-instructions\.md)(\s|$) && ! "$CHANGED_FILES" =~ [^README\.md|\.github/copilot-instructions\.md] ]]; then
+            echo "Only README.md and/or copilot-instructions.md were changed. Skipping workflow."
+            echo "skip=true" >> $GITHUB_ENV
+          else
+            echo "skip=false" >> $GITHUB_ENV
+      - name: Exit if only README.md or copilot-instructions.md were changed
+        if: env.skip == 'true'
+        run: exit 0
       - uses: actions/checkout@v4
         with:
           submodules: true
