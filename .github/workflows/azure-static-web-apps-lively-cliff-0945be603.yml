@@ -142,7 +142,7 @@ jobs:
     steps:
       - name: Skip Deployment
         run: |
-          echo "Only documentation files (README.md or copilot-instructions.md) changed."
+          echo "Only documentation files ($CHANGED_FILES) changed."
           echo "Skipping deployment process as no code changes were detected."
 
   close_pull_request_job:
