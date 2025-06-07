@@ -1,3 +1,4 @@
+<!--https://code.visualstudio.com/docs/copilot/copilot-customization#_reusable-prompt-files-experimental-->
 ---
 mode: 'edit'
 description: 'Perform a REST API security review'
