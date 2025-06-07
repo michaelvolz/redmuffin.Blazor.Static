@@ -163,6 +163,7 @@ project-root/
 ├── tests/
 │   ├── MainProject.Tests/
 │   ├── SubProject-1.Tests/
+│   ├── ...
 ├── scripts/
 </pre>
 
