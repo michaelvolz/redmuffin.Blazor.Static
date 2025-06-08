@@ -8,6 +8,10 @@
     }
   ],
   "servers": {
+    "fetch": {
+      "command": "docker",
+      "args": [ "run", "-i", "--rm", "mcp/fetch" ]
+    },
     "github": {
       "type": "stdio",
       "command": "docker",
@@ -23,13 +27,13 @@
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_pat}"
       }
     },
-    "fetch": {
-      "command": "docker",
-      "args": [ "run", "-i", "--rm", "mcp/fetch" ]
-    },
     "time": {
       "command": "docker",
       "args": [ "run", "-i", "--rm", "mcp/time" ]
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
     }
   }
 }
