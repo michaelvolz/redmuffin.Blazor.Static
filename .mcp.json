@@ -26,6 +26,10 @@
     "fetch": {
       "command": "docker",
       "args": [ "run", "-i", "--rm", "mcp/fetch" ]
+    },
+    "time": {
+      "command": "docker",
+      "args": [ "run", "-i", "--rm", "mcp/time" ]
     }
   }
 }
