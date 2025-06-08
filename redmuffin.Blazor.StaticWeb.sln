@@ -20,6 +20,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redmuffin.Blazor.StaticWeb.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Copilot Instructions", "Copilot Instructions", "{0652538E-1D5F-6121-6BBF-D1367D210D62}"
 	ProjectSection(SolutionItems) = preProject
+		.mcp.json = .mcp.json
 		.github\copilot-instructions.md = .github\copilot-instructions.md
 	EndProjectSection
 EndProject
