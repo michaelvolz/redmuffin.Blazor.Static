@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.Components.Web;
-using redmuffin.Blazor.StaticWeb.Features.AppLayout;
+using redmuffin.Blazor.StaticWeb.Core.Layout;
 
 namespace redmuffin.Blazor.StaticWeb;
 

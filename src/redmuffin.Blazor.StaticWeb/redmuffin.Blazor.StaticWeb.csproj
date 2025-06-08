@@ -40,7 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\AppComponents\" />
+    <Folder Include="Features\Shared\" />
   </ItemGroup>
 
 </Project>
