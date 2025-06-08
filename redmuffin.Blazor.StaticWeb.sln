@@ -10,14 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		.github\workflows\azure-static-web-apps-lively-cliff-0945be603.yml = .github\workflows\azure-static-web-apps-lively-cliff-0945be603.yml
-		.github\workflows\codeql.yml = .github\workflows\codeql.yml
-		.github\copilot-instructions.md = .github\copilot-instructions.md
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
-		tools\install-libman.ps1 = tools\install-libman.ps1
-		libman.json = libman.json
-		markdown-cheat-sheet.md = markdown-cheat-sheet.md
+		src\redmuffin.Blazor.StaticWeb\wwwroot\sample-data\markdown-cheat-sheet.md = src\redmuffin.Blazor.StaticWeb\wwwroot\sample-data\markdown-cheat-sheet.md
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -32,8 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instructions", "Instruction
 	ProjectSection(SolutionItems) = preProject
 		.github\instructions\Blazor.instructions.md = .github\instructions\Blazor.instructions.md
 		.github\instructions\CSharp.instructions.md = .github\instructions\CSharp.instructions.md
-		.github\instructions\Powershell.instructions.md = .github\instructions\Powershell.instructions.md
 		Example.instruction.md = Example.instruction.md
+		.github\instructions\Powershell.instructions.md = .github\instructions\Powershell.instructions.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prompts", "Prompts", "{1042B09C-CD63-0B34-1D4B-7FE7A2FDFA8E}"
