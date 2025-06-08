@@ -28,7 +28,9 @@
 - [Project Structure](#project-structure)
 - [Technology Stack](#technology-stack)
 - [Contributing](#contributing)
+- [Build and Deployment](#build-and-deployment)
 - [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -44,6 +46,7 @@
 - CodeQL-enabled for advanced code security analysis
 - EditorConfig for consistent code style and formatting
 - Directory.Build.props for centralized project configuration
+- Unit testing with xUnit and coverage analysis with Coverlet
 
 ---
 
@@ -60,23 +63,21 @@
 
 ## Getting Started
 
-1. **Clone the repository:**
+1. **Clone the repository:**git clone https://github.com/michaelvolz/redmuffin.Blazor.Static.git
 2. **Install prerequisites:**
-- Ensure Visual Studio 2022 and .NET 9 SDK are installed.
-- Install the [WebCompiler 2022+ extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) in Visual Studio.
+   - Ensure Visual Studio 2022 and .NET 9 SDK are installed.
+   - Install the [WebCompiler 2022+ extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) in Visual Studio.
 
 3. **Open the solution:**
-- Open `redmuffin.Blazor.StaticWeb.sln` in Visual Studio 2022.
+   - Open `redmuffin.Blazor.StaticWeb.sln` in Visual Studio 2022.
 
-4. **Restore and build:**
-- Restore NuGet packages and build the solution.
-
+4. **Restore and build:**dotnet restore
+   dotnet build
 ---
 
 ## Usage
 
-- Run the project using Visual Studio or the .NET CLI:
-- The application will be available at `https://localhost:5001` (or the configured port).
+- Run the project using Visual Studio or the .NET CLI:dotnet run --project src/redmuffin.Blazor.StaticWeb- The application will be available at `https://localhost:5001` (or the configured port).
 
 ---
 
@@ -88,6 +89,8 @@ The project follows a [feature folder structure](https://blog.ndepend.com/featur
 
 ## Technology Stack
 
+### Core Technologies
+
 - **[C#](https://learn.microsoft.com/en-us/dotnet/csharp/)**  
   A modern, object-oriented programming language developed by Microsoft. The project utilizes the latest C# 12/13 features for concise, robust, and maintainable code.
 
@@ -97,14 +100,20 @@ The project follows a [feature folder structure](https://blog.ndepend.com/featur
 - **[.NET Core / .NET 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)**  
   A cross-platform, high-performance framework for building modern cloud, web, and desktop applications. The project targets .NET 9 for the latest features and performance improvements.
 
+### Frontend and Styling
+
 - **[SCSS (Sass)](https://sass-lang.com/documentation/syntax#scss)**  
   A powerful CSS preprocessor that adds variables, nesting, and modularization to CSS. SCSS is compiled to standard CSS using WebCompiler for maintainable and scalable stylesheets.
 
 - **[Zurb Foundation](https://get.foundation/)**  
   A responsive front-end framework providing a robust grid system, UI components, and accessibility features. Used as the primary CSS framework for consistent and accessible design.
 
+### Markdown and Rendering
+
 - **[Markdig Renderer](https://github.com/xoofx/markdig)**  
   A fast, extensible Markdown processor for .NET. Markdig is used to render Markdown content within the application.
+
+### Build and Analysis Tools
 
 - **[LibMan (Library Manager)](https://learn.microsoft.com/en-us/aspnet/core/client-side/libman/)**  
   A lightweight, client-side library acquisition tool for web projects. LibMan is used to manage third-party client-side libraries such as Foundation.
@@ -115,6 +124,16 @@ The project follows a [feature folder structure](https://blog.ndepend.com/featur
 - **[WebCompiler](https://github.com/madskristensen/WebCompiler)**  
   A Visual Studio extension for compiling SCSS, LESS, and other preprocessor files into CSS. Ensures that styles are always up to date and optimized.
 
+### Testing and Coverage
+
+- **[xUnit](https://xunit.net/)**  
+  A free, open-source, community-focused unit testing tool for .NET. Used for testing the application.
+
+- **[Coverlet](https://github.com/coverlet-coverage/coverlet)**  
+  A cross-platform code coverage framework for .NET, integrated with xUnit.
+
+### Development Tools
+
 - **[GitHub Copilot](https://github.com/features/copilot)**  
   An AI-powered code completion tool that assists with writing code, documentation, and tests, improving productivity and code quality.
 
@@ -123,6 +142,20 @@ The project follows a [feature folder structure](https://blog.ndepend.com/featur
 
 - **[Directory.Build.props](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets)**  
   Centralizes common MSBuild properties for all projects in the repository, ensuring consistent build configuration.
+
+---
+
+## Build and Deployment
+
+### Build
+
+- Use the following commands to build the project:dotnet build
+### Deployment
+
+- The project is configured for deployment to Azure Static Web Apps. Follow these steps:
+  1. Create an Azure Static Web App resource.
+  2. Link the GitHub repository to the Azure resource.
+  3. Push changes to the `main` branch to trigger deployment.
 
 ---
 
@@ -139,5 +172,6 @@ This project is licensed under the [Unlicense](https://unlicense.org/).
 - [Zurb Foundation](https://get.foundation/) for the CSS framework
 - [GitHub Copilot](https://github.com/features/copilot) for AI code assistance
 - [Visual Studio](https://visualstudio.microsoft.com/) for development environment
+- [Coverlet](https://github.com/coverlet-coverage/coverlet) for code coverage
 
 ---
