@@ -63,7 +63,7 @@
 
 ## Getting Started
 
-1. **Clone the repository:**git clone https://github.com/michaelvolz/redmuffin.Blazor.Static.git
+1. **Clone the repository:** `git clone https://github.com/michaelvolz/redmuffin.Blazor.Static.git`
 2. **Install prerequisites:**
    - Ensure Visual Studio 2022 and .NET 9 SDK are installed.
    - Install the [WebCompiler 2022+ extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) in Visual Studio.
@@ -71,19 +71,19 @@
 3. **Open the solution:**
    - Open `redmuffin.Blazor.StaticWeb.sln` in Visual Studio 2022.
 
-4. **Restore and build:**dotnet restore
+4. **Restore and build:** `dotnet restore`
    dotnet build
 ---
 
 ## Usage
 
-- Run the project using Visual Studio or the .NET CLI:dotnet run --project src/redmuffin.Blazor.StaticWeb- The application will be available at `https://localhost:5001` (or the configured port).
+- Run the project using Visual Studio or the .NET CLI: `dotnet run --project src/redmuffin.Blazor.StaticWeb` - The application will be available at `https://localhost:5001` (or the configured port).
 
 ---
 
 ## Project Structure
 
-The project follows a [feature folder structure](https://blog.ndepend.com/feature-folders-are-superior-to-layered-architecture/) to organize code by feature rather than by technical layer. This approach improves maintainability and scalability by grouping related components, services, and assets together.
+The project follows a [feature folder structure](https://dev.to/smotastic/layer-vs-feature-architecture-3cko) to organize code by feature rather than by technical layer. This approach improves maintainability and scalability by grouping related components, services, and assets together.
 
 ---
 
