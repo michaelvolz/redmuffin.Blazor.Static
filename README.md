@@ -55,6 +55,9 @@
 - **Visual Studio 2022** (17.8 or later) with the following workloads:
   - ASP.NET and web development
 - **.NET 9 SDK**
+- **Docker Desktop**  
+  [Download from Docker website](https://www.docker.com/products/docker-desktop/)
+  - Required for GitHub Copilot MCP server functionality
 - **WebCompiler 2022+** Visual Studio 2022 extension  
   [Download from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler)
   - Required for compiling SCSS/LESS files to CSS via `compilerconfig.json`
@@ -136,6 +139,7 @@ The project follows a [feature folder structure](https://dev.to/smotastic/layer-
 
 - **[GitHub Copilot](https://github.com/features/copilot)**  
   An AI-powered code completion tool that assists with writing code, documentation, and tests, improving productivity and code quality.
+  - Requires Docker Desktop for MCP server functionality
 
 - **[EditorConfig](https://editorconfig.org/)**  
   A file-based format for defining and maintaining consistent coding styles between different editors and IDEs.
