@@ -1,6 +1,6 @@
-using redmuffin.Blazor.StaticWeb.Features.App;
+using redmuffin.Blazor.StaticWeb.Core;
 
-namespace redmuffin.Blazor.StaticWeb.Tests.Features.App;
+namespace redmuffin.Blazor.StaticWeb.Tests.Core;
 
 public class StringExtensionsTests
 {

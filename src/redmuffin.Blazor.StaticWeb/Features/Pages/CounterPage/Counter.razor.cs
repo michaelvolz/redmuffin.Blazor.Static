@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 using Microsoft.AspNetCore.Components;
-using redmuffin.Blazor.StaticWeb.Features.App;
+using redmuffin.Blazor.StaticWeb.Core;
 
 namespace redmuffin.Blazor.StaticWeb.Features.Pages.CounterPage;
 
