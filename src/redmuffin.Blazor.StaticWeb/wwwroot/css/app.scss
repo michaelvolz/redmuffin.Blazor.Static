@@ -91,13 +91,15 @@ html {
 // Custom: Make navigation items larger and add more space above nav
 nav ul.breadcrumbs {
     font-size: 1.25rem; // Larger text for nav items
-    padding-top: 1rem; // More space above nav
+    padding-top: .5rem; // More space above nav
+    padding-bottom: 0.5rem;
 }
 nav ul.breadcrumbs li {
+    padding: 0.5rem 0.25rem;
+    line-height: 1.6;
 }
-
 nav ul.breadcrumbs i.fa {
     font-size: 1.1rem;
-    margin-right: 0rem;
+    margin-right: 0.5rem;
     vertical-align: middle;
 }

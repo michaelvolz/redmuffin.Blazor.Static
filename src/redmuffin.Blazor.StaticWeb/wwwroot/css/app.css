@@ -89,11 +89,17 @@ html {
 
 nav ul.breadcrumbs {
   font-size: 1.25rem;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+nav ul.breadcrumbs li {
+  padding: 0.5rem 0.25rem;
+  line-height: 1.6;
 }
 
 nav ul.breadcrumbs i.fa {
   font-size: 1.1rem;
-  margin-right: 0rem;
+  margin-right: 0.5rem;
   vertical-align: middle;
 }
