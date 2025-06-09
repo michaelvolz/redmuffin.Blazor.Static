@@ -4,21 +4,6 @@
       "command": "docker",
       "args": [ "run", "-i", "--rm", "mcp/fetch" ]
     },
-    "github": {
-      "type": "stdio",
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "-e",
-        "GITHUB_TOKEN",
-        "ghcr.io/github/github-mcp-server"
-      ],
-      "env": {
-        "GITHUB_TOKEN": "${env:GITHUB_TOKEN}"
-      }
-    },
     "time": {
       "command": "docker",
       "args": [ "run", "-i", "--rm", "mcp/time" ]
