@@ -5,6 +5,8 @@
 $foundation-palette: ( "primary": $steel-blue, "secondary": $ultra-violet, "success": $yellow-green, "warning": $sunglow, "alert": $bittersweet, );
 @include foundation-everything(true, true);
 
+@import "../lib/font-awesome-sass/assets/stylesheets/_font-awesome";
+
 html, body {
     background-color: white;
 }

@@ -1,7 +1,10 @@
 ﻿[
   {
     "outputFile": "wwwroot/css/foundation-root.css",
-    "inputFile": "wwwroot/css/foundation-root.scss"
+    "inputFile": "wwwroot/css/foundation-root.scss",
+    "options": {
+      "loadPaths": "lib/font-awesome-sass/assets/stylesheets"
+    }
   },
   {
     "outputFile": "wwwroot/css/app.css",
