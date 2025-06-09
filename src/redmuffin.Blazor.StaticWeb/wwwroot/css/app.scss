@@ -87,3 +87,17 @@ html {
     overflow-y: scroll;
     scrollbar-gutter: stable;
 }
+
+// Custom: Make navigation items larger and add more space above nav
+nav ul.breadcrumbs {
+    font-size: 1.25rem; // Larger text for nav items
+    padding-top: 1rem; // More space above nav
+}
+nav ul.breadcrumbs li {
+}
+
+nav ul.breadcrumbs i.fa {
+    font-size: 1.1rem;
+    margin-right: 0rem;
+    vertical-align: middle;
+}

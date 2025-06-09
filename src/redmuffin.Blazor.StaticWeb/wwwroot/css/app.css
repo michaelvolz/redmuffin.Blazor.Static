@@ -86,3 +86,14 @@ html {
   overflow-y: scroll;
   scrollbar-gutter: stable;
 }
+
+nav ul.breadcrumbs {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+}
+
+nav ul.breadcrumbs i.fa {
+  font-size: 1.1rem;
+  margin-right: 0rem;
+  vertical-align: middle;
+}
