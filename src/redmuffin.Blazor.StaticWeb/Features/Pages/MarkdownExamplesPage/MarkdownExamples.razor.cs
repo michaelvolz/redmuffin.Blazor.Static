@@ -1,9 +1,9 @@
 ﻿using Markdig;
 using Microsoft.AspNetCore.Components;
 
-namespace redmuffin.Blazor.StaticWeb.Features.Pages.ExamplePage;
+namespace redmuffin.Blazor.StaticWeb.Features.Pages.MarkdownExamplesPage;
 
-public partial class Example : ComponentBase
+public partial class MarkdownExamples : ComponentBase
 {
 	private MarkupString _markdownText = new("n/a");
 
