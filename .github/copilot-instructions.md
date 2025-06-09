@@ -4,7 +4,7 @@ This repository is a C# Blazor WebAssembly project targeting .NET 9, built with 
 
 ---
 
-## 0. Follow these steps for each interaction:
+<!--## 0. Follow these steps for each interaction:
 
 1. User Identification:
    - You should assume that you are interacting with default_user
@@ -26,7 +26,7 @@ This repository is a C# Blazor WebAssembly project targeting .NET 9, built with 
    - If any new information was gathered during the interaction, update your memory as follows:
      a) Create entities for recurring organizations, people, and significant events
      b) Connect them to the current entities using relations
-     b) Store facts about them as observations
+     b) Store facts about them as observations-->
 
 ## 1. Commit Message Standards
 
