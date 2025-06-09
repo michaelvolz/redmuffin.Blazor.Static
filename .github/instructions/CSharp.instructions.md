@@ -56,3 +56,34 @@ applyTo: "**/*.cs"
 - Use dependency injection and mocking libraries for unit tests.
 - Avoid static classes when testability is important.
 - Write unit tests using xUnit, NUnit, or MSTest with clear Arrange/Act/Assert structure.
+
+Coding standards, domain knowledge, and preferences that AI should follow.
+
+## Namespaces
+- Use file-scoped namespaces that match the folder structure.
+
+## Immutability
+- Prefer immutable types unless mutability is requested.
+- Prefer records over classes for immutable types.
+
+## Files Organization
+- Define one type per file.
+
+## Record Design
+- Define record's properties on the same line with the record declaration.
+- Accompany each record `<name>` with `<name>Factory` static factory class.
+- Place the factory class in the same file as the record.
+- Expose static `Create` method in the factory class for instantiation.
+- Place argument validation in the `Create` method.
+- Never use record's constructor when there is a factory method.
+- Use immutable collections in records unless requested otherwise.
+- Use `ImmutableList<T>` in records whenever possible.
+- Define record behavior in extension methods in other static classes.
+
+## Discriminated Unions Design
+- Prefer using records for discriminated unions.
+- Derive specific types from a base abstract record.
+- Define the entire discriminated union in one file.
+- Define one static factories class per discriminated union.
+- Expose one static factory method per variant.
+- Follow all rules for record design when designing a discriminated union.
