@@ -1,4 +1,17 @@
 ﻿@charset "UTF-8";
+/**
+ * Foundation for Sites
+ * Version 6.9.0
+ * https://get.foundation
+ * Licensed under MIT Open Source
+ */
+@media print, screen and (min-width: 40em) {
+  .reveal.large, .reveal.small, .reveal.tiny, .reveal {
+    right: auto;
+    left: auto;
+    margin: 0 auto;
+  }
+}
 /* SCSS HEX */
 /*$bittersweet: #ff595eff;
 $sunglow: #ffca3aff;
@@ -25,19 +38,6 @@ $gradient-top-left: linear-gradient(225deg, #ff595eff, #ffca3aff, #8ac926ff, #19
 $gradient-bottom-left: linear-gradient(315deg, #ff595eff, #ffca3aff, #8ac926ff, #1982c4ff, #6a4c93ff);
 $gradient-radial: radial-gradient(#ff595eff, #ffca3aff, #8ac926ff, #1982c4ff, #6a4c93ff);
 */
-/**
- * Foundation for Sites
- * Version 6.9.0
- * https://get.foundation
- * Licensed under MIT Open Source
- */
-@media print, screen and (min-width: 40em) {
-  .reveal.large, .reveal.small, .reveal.tiny, .reveal {
-    right: auto;
-    left: auto;
-    margin: 0 auto;
-  }
-}
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -560,15 +560,15 @@ select:not([multiple]) {
 }
 
 .is-invalid-input:not(:focus) {
-  border-color: rgb(255, 89, 94);
-  background-color: rgb(254.1, 237.5, 238);
+  border-color: #cc4b37;
+  background-color: rgb(249, 236.1, 234.1);
 }
 .is-invalid-input:not(:focus)::placeholder {
-  color: rgb(255, 89, 94);
+  color: #cc4b37;
 }
 
 .is-invalid-label {
-  color: rgb(255, 89, 94);
+  color: #cc4b37;
 }
 
 .form-error {
@@ -577,7 +577,7 @@ select:not([multiple]) {
   margin-bottom: 1rem;
   font-size: 0.75rem;
   font-weight: bold;
-  color: rgb(255, 89, 94);
+  color: #cc4b37;
 }
 .form-error.is-visible {
   display: block;
@@ -716,12 +716,12 @@ h6, .h6 {
 }
 a {
   line-height: inherit;
-  color: rgb(25, 130, 196);
+  color: #1779ba;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, a:focus {
-  color: rgb(21.5, 111.8, 168.56);
+  color: rgb(19.78, 104.06, 159.96);
 }
 a img {
   border: 0;
@@ -3060,143 +3060,143 @@ ul.no-bullet, ol.no-bullet {
   margin-left: 0;
 }
 .button, .button.disabled, .button[disabled], .button.disabled:hover, .button[disabled]:hover, .button.disabled:focus, .button[disabled]:focus {
-  background-color: rgb(25, 130, 196);
+  background-color: #1779ba;
   color: #fefefe;
 }
 .button:hover, .button:focus {
-  background-color: rgb(21.25, 110.5, 166.6);
+  background-color: rgb(19.55, 102.85, 158.1);
   color: #fefefe;
 }
 .button.primary, .button.primary.disabled, .button.primary[disabled], .button.primary.disabled:hover, .button.primary[disabled]:hover, .button.primary.disabled:focus, .button.primary[disabled]:focus {
-  background-color: rgb(25, 130, 196);
-  color: #0a0a0a;
+  background-color: #1779ba;
+  color: #fefefe;
 }
 .button.primary:hover, .button.primary:focus {
-  background-color: rgb(20, 104, 156.8);
-  color: #0a0a0a;
+  background-color: rgb(18.4, 96.8, 148.8);
+  color: #fefefe;
 }
 .button.secondary, .button.secondary.disabled, .button.secondary[disabled], .button.secondary.disabled:hover, .button.secondary[disabled]:hover, .button.secondary.disabled:focus, .button.secondary[disabled]:focus {
-  background-color: rgb(106, 76, 147);
+  background-color: #767676;
   color: #fefefe;
 }
 .button.secondary:hover, .button.secondary:focus {
-  background-color: rgb(84.8, 60.8, 117.6);
+  background-color: rgb(94.4, 94.4, 94.4);
   color: #fefefe;
 }
 .button.success, .button.success.disabled, .button.success[disabled], .button.success.disabled:hover, .button.success[disabled]:hover, .button.success.disabled:focus, .button.success[disabled]:focus {
-  background-color: rgb(138, 201, 38);
+  background-color: #3adb76;
   color: #0a0a0a;
 }
 .button.success:hover, .button.success:focus {
-  background-color: rgb(110.4, 160.8, 30.4);
+  background-color: rgb(34.2386266094, 187.3613733906, 91.3030042918);
   color: #0a0a0a;
 }
 .button.warning, .button.warning.disabled, .button.warning[disabled], .button.warning.disabled:hover, .button.warning[disabled]:hover, .button.warning.disabled:focus, .button.warning[disabled]:focus {
-  background-color: rgb(255, 202, 58);
+  background-color: #ffae00;
   color: #0a0a0a;
 }
 .button.warning:hover, .button.warning:focus {
-  background-color: rgb(250.4, 183.0335025381, 0);
+  background-color: rgb(204, 139.2, 0);
   color: #0a0a0a;
 }
 .button.alert, .button.alert.disabled, .button.alert[disabled], .button.alert.disabled:hover, .button.alert[disabled]:hover, .button.alert.disabled:focus, .button.alert[disabled]:focus {
-  background-color: rgb(255, 89, 94);
-  color: #0a0a0a;
+  background-color: #cc4b37;
+  color: #fefefe;
 }
 .button.alert:hover, .button.alert:focus {
-  background-color: rgb(255, 20.2, 27.2722891566);
-  color: #0a0a0a;
+  background-color: rgb(165.0996015936, 58.6103585657, 42.1003984064);
+  color: #fefefe;
 }
 .button.hollow, .button.hollow:hover, .button.hollow:focus, .button.hollow.disabled, .button.hollow.disabled:hover, .button.hollow.disabled:focus, .button.hollow[disabled], .button.hollow[disabled]:hover, .button.hollow[disabled]:focus {
   background-color: transparent;
 }
 .button.hollow, .button.hollow.disabled, .button.hollow[disabled], .button.hollow.disabled:hover, .button.hollow[disabled]:hover, .button.hollow.disabled:focus, .button.hollow[disabled]:focus {
-  border: 1px solid rgb(25, 130, 196);
-  color: rgb(25, 130, 196);
+  border: 1px solid #1779ba;
+  color: #1779ba;
 }
 .button.hollow:hover, .button.hollow:focus {
-  border-color: rgb(12.5, 65, 98);
-  color: rgb(12.5, 65, 98);
+  border-color: rgb(11.5, 60.5, 93);
+  color: rgb(11.5, 60.5, 93);
 }
 .button.hollow.primary, .button.hollow.primary.disabled, .button.hollow.primary[disabled], .button.hollow.primary.disabled:hover, .button.hollow.primary[disabled]:hover, .button.hollow.primary.disabled:focus, .button.hollow.primary[disabled]:focus {
-  border: 1px solid rgb(25, 130, 196);
-  color: rgb(25, 130, 196);
+  border: 1px solid #1779ba;
+  color: #1779ba;
 }
 .button.hollow.primary:hover, .button.hollow.primary:focus {
-  border-color: rgb(12.5, 65, 98);
-  color: rgb(12.5, 65, 98);
+  border-color: rgb(11.5, 60.5, 93);
+  color: rgb(11.5, 60.5, 93);
 }
 .button.hollow.secondary, .button.hollow.secondary.disabled, .button.hollow.secondary[disabled], .button.hollow.secondary.disabled:hover, .button.hollow.secondary[disabled]:hover, .button.hollow.secondary.disabled:focus, .button.hollow.secondary[disabled]:focus {
-  border: 1px solid rgb(106, 76, 147);
-  color: rgb(106, 76, 147);
+  border: 1px solid #767676;
+  color: #767676;
 }
 .button.hollow.secondary:hover, .button.hollow.secondary:focus {
-  border-color: rgb(53, 38, 73.5);
-  color: rgb(53, 38, 73.5);
+  border-color: #3b3b3b;
+  color: #3b3b3b;
 }
 .button.hollow.success, .button.hollow.success.disabled, .button.hollow.success[disabled], .button.hollow.success.disabled:hover, .button.hollow.success[disabled]:hover, .button.hollow.success.disabled:focus, .button.hollow.success[disabled]:focus {
-  border: 1px solid rgb(138, 201, 38);
-  color: rgb(138, 201, 38);
+  border: 1px solid #3adb76;
+  color: #3adb76;
 }
 .button.hollow.success:hover, .button.hollow.success:focus {
-  border-color: rgb(69, 100.5, 19);
-  color: rgb(69, 100.5, 19);
+  border-color: rgb(21.3991416309, 117.1008583691, 57.0643776824);
+  color: rgb(21.3991416309, 117.1008583691, 57.0643776824);
 }
 .button.hollow.warning, .button.hollow.warning.disabled, .button.hollow.warning[disabled], .button.hollow.warning.disabled:hover, .button.hollow.warning[disabled]:hover, .button.hollow.warning.disabled:focus, .button.hollow.warning[disabled]:focus {
-  border: 1px solid rgb(255, 202, 58);
-  color: rgb(255, 202, 58);
+  border: 1px solid #ffae00;
+  color: #ffae00;
 }
 .button.hollow.warning:hover, .button.hollow.warning:focus {
-  border-color: rgb(156.5, 114.3959390863, 0);
-  color: rgb(156.5, 114.3959390863, 0);
+  border-color: rgb(127.5, 87, 0);
+  color: rgb(127.5, 87, 0);
 }
 .button.hollow.alert, .button.hollow.alert.disabled, .button.hollow.alert[disabled], .button.hollow.alert.disabled:hover, .button.hollow.alert[disabled]:hover, .button.hollow.alert.disabled:focus, .button.hollow.alert[disabled]:focus {
-  border: 1px solid rgb(255, 89, 94);
-  color: rgb(255, 89, 94);
+  border: 1px solid #cc4b37;
+  color: #cc4b37;
 }
 .button.hollow.alert:hover, .button.hollow.alert:focus {
-  border-color: rgb(172, 0, 5.1807228916);
-  color: rgb(172, 0, 5.1807228916);
+  border-color: rgb(103.187250996, 36.6314741036, 26.312749004);
+  color: rgb(103.187250996, 36.6314741036, 26.312749004);
 }
 .button.clear, .button.clear:hover, .button.clear:focus, .button.clear.disabled, .button.clear.disabled:hover, .button.clear.disabled:focus, .button.clear[disabled], .button.clear[disabled]:hover, .button.clear[disabled]:focus {
   border-color: transparent;
   background-color: transparent;
 }
 .button.clear, .button.clear.disabled, .button.clear[disabled], .button.clear.disabled:hover, .button.clear[disabled]:hover, .button.clear.disabled:focus, .button.clear[disabled]:focus {
-  color: rgb(25, 130, 196);
+  color: #1779ba;
 }
 .button.clear:hover, .button.clear:focus {
-  color: rgb(12.5, 65, 98);
+  color: rgb(11.5, 60.5, 93);
 }
 .button.clear.primary, .button.clear.primary.disabled, .button.clear.primary[disabled], .button.clear.primary.disabled:hover, .button.clear.primary[disabled]:hover, .button.clear.primary.disabled:focus, .button.clear.primary[disabled]:focus {
-  color: rgb(25, 130, 196);
+  color: #1779ba;
 }
 .button.clear.primary:hover, .button.clear.primary:focus {
-  color: rgb(12.5, 65, 98);
+  color: rgb(11.5, 60.5, 93);
 }
 .button.clear.secondary, .button.clear.secondary.disabled, .button.clear.secondary[disabled], .button.clear.secondary.disabled:hover, .button.clear.secondary[disabled]:hover, .button.clear.secondary.disabled:focus, .button.clear.secondary[disabled]:focus {
-  color: rgb(106, 76, 147);
+  color: #767676;
 }
 .button.clear.secondary:hover, .button.clear.secondary:focus {
-  color: rgb(53, 38, 73.5);
+  color: #3b3b3b;
 }
 .button.clear.success, .button.clear.success.disabled, .button.clear.success[disabled], .button.clear.success.disabled:hover, .button.clear.success[disabled]:hover, .button.clear.success.disabled:focus, .button.clear.success[disabled]:focus {
-  color: rgb(138, 201, 38);
+  color: #3adb76;
 }
 .button.clear.success:hover, .button.clear.success:focus {
-  color: rgb(69, 100.5, 19);
+  color: rgb(21.3991416309, 117.1008583691, 57.0643776824);
 }
 .button.clear.warning, .button.clear.warning.disabled, .button.clear.warning[disabled], .button.clear.warning.disabled:hover, .button.clear.warning[disabled]:hover, .button.clear.warning.disabled:focus, .button.clear.warning[disabled]:focus {
-  color: rgb(255, 202, 58);
+  color: #ffae00;
 }
 .button.clear.warning:hover, .button.clear.warning:focus {
-  color: rgb(156.5, 114.3959390863, 0);
+  color: rgb(127.5, 87, 0);
 }
 .button.clear.alert, .button.clear.alert.disabled, .button.clear.alert[disabled], .button.clear.alert.disabled:hover, .button.clear.alert[disabled]:hover, .button.clear.alert.disabled:focus, .button.clear.alert[disabled]:focus {
-  color: rgb(255, 89, 94);
+  color: #cc4b37;
 }
 .button.clear.alert:hover, .button.clear.alert:focus {
-  color: rgb(172, 0, 5.1807228916);
+  color: rgb(103.187250996, 36.6314741036, 26.312749004);
 }
 .button.disabled, .button[disabled] {
   opacity: 0.25;
@@ -3218,22 +3218,22 @@ ul.no-bullet, ol.no-bullet {
   margin-left: 1em;
 }
 .button.dropdown.hollow::after, .button.dropdown.clear::after {
-  border-top-color: rgb(25, 130, 196);
+  border-top-color: #1779ba;
 }
 .button.dropdown.hollow.primary::after, .button.dropdown.clear.primary::after {
-  border-top-color: rgb(25, 130, 196);
+  border-top-color: #1779ba;
 }
 .button.dropdown.hollow.secondary::after, .button.dropdown.clear.secondary::after {
-  border-top-color: rgb(106, 76, 147);
+  border-top-color: #767676;
 }
 .button.dropdown.hollow.success::after, .button.dropdown.clear.success::after {
-  border-top-color: rgb(138, 201, 38);
+  border-top-color: #3adb76;
 }
 .button.dropdown.hollow.warning::after, .button.dropdown.clear.warning::after {
-  border-top-color: rgb(255, 202, 58);
+  border-top-color: #ffae00;
 }
 .button.dropdown.hollow.alert::after, .button.dropdown.clear.alert::after {
-  border-top-color: rgb(255, 89, 94);
+  border-top-color: #cc4b37;
 }
 .button.arrow-only::after {
   top: -0.1em;
@@ -3287,135 +3287,135 @@ a.button:hover, a.button:focus {
   flex: 1 1 0px;
 }
 .button-group.primary .button, .button-group.primary .button.disabled, .button-group.primary .button[disabled], .button-group.primary .button.disabled:hover, .button-group.primary .button[disabled]:hover, .button-group.primary .button.disabled:focus, .button-group.primary .button[disabled]:focus {
-  background-color: rgb(25, 130, 196);
-  color: #0a0a0a;
+  background-color: #1779ba;
+  color: #fefefe;
 }
 .button-group.primary .button:hover, .button-group.primary .button:focus {
-  background-color: rgb(20, 104, 156.8);
-  color: #0a0a0a;
+  background-color: rgb(18.4, 96.8, 148.8);
+  color: #fefefe;
 }
 .button-group.secondary .button, .button-group.secondary .button.disabled, .button-group.secondary .button[disabled], .button-group.secondary .button.disabled:hover, .button-group.secondary .button[disabled]:hover, .button-group.secondary .button.disabled:focus, .button-group.secondary .button[disabled]:focus {
-  background-color: rgb(106, 76, 147);
+  background-color: #767676;
   color: #fefefe;
 }
 .button-group.secondary .button:hover, .button-group.secondary .button:focus {
-  background-color: rgb(84.8, 60.8, 117.6);
+  background-color: rgb(94.4, 94.4, 94.4);
   color: #fefefe;
 }
 .button-group.success .button, .button-group.success .button.disabled, .button-group.success .button[disabled], .button-group.success .button.disabled:hover, .button-group.success .button[disabled]:hover, .button-group.success .button.disabled:focus, .button-group.success .button[disabled]:focus {
-  background-color: rgb(138, 201, 38);
+  background-color: #3adb76;
   color: #0a0a0a;
 }
 .button-group.success .button:hover, .button-group.success .button:focus {
-  background-color: rgb(110.4, 160.8, 30.4);
+  background-color: rgb(34.2386266094, 187.3613733906, 91.3030042918);
   color: #0a0a0a;
 }
 .button-group.warning .button, .button-group.warning .button.disabled, .button-group.warning .button[disabled], .button-group.warning .button.disabled:hover, .button-group.warning .button[disabled]:hover, .button-group.warning .button.disabled:focus, .button-group.warning .button[disabled]:focus {
-  background-color: rgb(255, 202, 58);
+  background-color: #ffae00;
   color: #0a0a0a;
 }
 .button-group.warning .button:hover, .button-group.warning .button:focus {
-  background-color: rgb(250.4, 183.0335025381, 0);
+  background-color: rgb(204, 139.2, 0);
   color: #0a0a0a;
 }
 .button-group.alert .button, .button-group.alert .button.disabled, .button-group.alert .button[disabled], .button-group.alert .button.disabled:hover, .button-group.alert .button[disabled]:hover, .button-group.alert .button.disabled:focus, .button-group.alert .button[disabled]:focus {
-  background-color: rgb(255, 89, 94);
-  color: #0a0a0a;
+  background-color: #cc4b37;
+  color: #fefefe;
 }
 .button-group.alert .button:hover, .button-group.alert .button:focus {
-  background-color: rgb(255, 20.2, 27.2722891566);
-  color: #0a0a0a;
+  background-color: rgb(165.0996015936, 58.6103585657, 42.1003984064);
+  color: #fefefe;
 }
 .button-group.hollow .button, .button-group.hollow .button:hover, .button-group.hollow .button:focus, .button-group.hollow .button.disabled, .button-group.hollow .button.disabled:hover, .button-group.hollow .button.disabled:focus, .button-group.hollow .button[disabled], .button-group.hollow .button[disabled]:hover, .button-group.hollow .button[disabled]:focus {
   background-color: transparent;
 }
 .button-group.hollow .button, .button-group.hollow .button.disabled, .button-group.hollow .button[disabled], .button-group.hollow .button.disabled:hover, .button-group.hollow .button[disabled]:hover, .button-group.hollow .button.disabled:focus, .button-group.hollow .button[disabled]:focus {
-  border: 1px solid rgb(25, 130, 196);
-  color: rgb(25, 130, 196);
+  border: 1px solid #1779ba;
+  color: #1779ba;
 }
 .button-group.hollow .button:hover, .button-group.hollow .button:focus {
-  border-color: rgb(12.5, 65, 98);
-  color: rgb(12.5, 65, 98);
+  border-color: rgb(11.5, 60.5, 93);
+  color: rgb(11.5, 60.5, 93);
 }
 .button-group.hollow.primary .button, .button-group.hollow.primary .button.disabled, .button-group.hollow.primary .button[disabled], .button-group.hollow.primary .button.disabled:hover, .button-group.hollow.primary .button[disabled]:hover, .button-group.hollow.primary .button.disabled:focus, .button-group.hollow.primary .button[disabled]:focus, .button-group.hollow .button.primary, .button-group.hollow .button.primary.disabled, .button-group.hollow .button.primary[disabled], .button-group.hollow .button.primary.disabled:hover, .button-group.hollow .button.primary[disabled]:hover, .button-group.hollow .button.primary.disabled:focus, .button-group.hollow .button.primary[disabled]:focus {
-  border: 1px solid rgb(25, 130, 196);
-  color: rgb(25, 130, 196);
+  border: 1px solid #1779ba;
+  color: #1779ba;
 }
 .button-group.hollow.primary .button:hover, .button-group.hollow.primary .button:focus, .button-group.hollow .button.primary:hover, .button-group.hollow .button.primary:focus {
-  border-color: rgb(12.5, 65, 98);
-  color: rgb(12.5, 65, 98);
+  border-color: rgb(11.5, 60.5, 93);
+  color: rgb(11.5, 60.5, 93);
 }
 .button-group.hollow.secondary .button, .button-group.hollow.secondary .button.disabled, .button-group.hollow.secondary .button[disabled], .button-group.hollow.secondary .button.disabled:hover, .button-group.hollow.secondary .button[disabled]:hover, .button-group.hollow.secondary .button.disabled:focus, .button-group.hollow.secondary .button[disabled]:focus, .button-group.hollow .button.secondary, .button-group.hollow .button.secondary.disabled, .button-group.hollow .button.secondary[disabled], .button-group.hollow .button.secondary.disabled:hover, .button-group.hollow .button.secondary[disabled]:hover, .button-group.hollow .button.secondary.disabled:focus, .button-group.hollow .button.secondary[disabled]:focus {
-  border: 1px solid rgb(106, 76, 147);
-  color: rgb(106, 76, 147);
+  border: 1px solid #767676;
+  color: #767676;
 }
 .button-group.hollow.secondary .button:hover, .button-group.hollow.secondary .button:focus, .button-group.hollow .button.secondary:hover, .button-group.hollow .button.secondary:focus {
-  border-color: rgb(53, 38, 73.5);
-  color: rgb(53, 38, 73.5);
+  border-color: #3b3b3b;
+  color: #3b3b3b;
 }
 .button-group.hollow.success .button, .button-group.hollow.success .button.disabled, .button-group.hollow.success .button[disabled], .button-group.hollow.success .button.disabled:hover, .button-group.hollow.success .button[disabled]:hover, .button-group.hollow.success .button.disabled:focus, .button-group.hollow.success .button[disabled]:focus, .button-group.hollow .button.success, .button-group.hollow .button.success.disabled, .button-group.hollow .button.success[disabled], .button-group.hollow .button.success.disabled:hover, .button-group.hollow .button.success[disabled]:hover, .button-group.hollow .button.success.disabled:focus, .button-group.hollow .button.success[disabled]:focus {
-  border: 1px solid rgb(138, 201, 38);
-  color: rgb(138, 201, 38);
+  border: 1px solid #3adb76;
+  color: #3adb76;
 }
 .button-group.hollow.success .button:hover, .button-group.hollow.success .button:focus, .button-group.hollow .button.success:hover, .button-group.hollow .button.success:focus {
-  border-color: rgb(69, 100.5, 19);
-  color: rgb(69, 100.5, 19);
+  border-color: rgb(21.3991416309, 117.1008583691, 57.0643776824);
+  color: rgb(21.3991416309, 117.1008583691, 57.0643776824);
 }
 .button-group.hollow.warning .button, .button-group.hollow.warning .button.disabled, .button-group.hollow.warning .button[disabled], .button-group.hollow.warning .button.disabled:hover, .button-group.hollow.warning .button[disabled]:hover, .button-group.hollow.warning .button.disabled:focus, .button-group.hollow.warning .button[disabled]:focus, .button-group.hollow .button.warning, .button-group.hollow .button.warning.disabled, .button-group.hollow .button.warning[disabled], .button-group.hollow .button.warning.disabled:hover, .button-group.hollow .button.warning[disabled]:hover, .button-group.hollow .button.warning.disabled:focus, .button-group.hollow .button.warning[disabled]:focus {
-  border: 1px solid rgb(255, 202, 58);
-  color: rgb(255, 202, 58);
+  border: 1px solid #ffae00;
+  color: #ffae00;
 }
 .button-group.hollow.warning .button:hover, .button-group.hollow.warning .button:focus, .button-group.hollow .button.warning:hover, .button-group.hollow .button.warning:focus {
-  border-color: rgb(156.5, 114.3959390863, 0);
-  color: rgb(156.5, 114.3959390863, 0);
+  border-color: rgb(127.5, 87, 0);
+  color: rgb(127.5, 87, 0);
 }
 .button-group.hollow.alert .button, .button-group.hollow.alert .button.disabled, .button-group.hollow.alert .button[disabled], .button-group.hollow.alert .button.disabled:hover, .button-group.hollow.alert .button[disabled]:hover, .button-group.hollow.alert .button.disabled:focus, .button-group.hollow.alert .button[disabled]:focus, .button-group.hollow .button.alert, .button-group.hollow .button.alert.disabled, .button-group.hollow .button.alert[disabled], .button-group.hollow .button.alert.disabled:hover, .button-group.hollow .button.alert[disabled]:hover, .button-group.hollow .button.alert.disabled:focus, .button-group.hollow .button.alert[disabled]:focus {
-  border: 1px solid rgb(255, 89, 94);
-  color: rgb(255, 89, 94);
+  border: 1px solid #cc4b37;
+  color: #cc4b37;
 }
 .button-group.hollow.alert .button:hover, .button-group.hollow.alert .button:focus, .button-group.hollow .button.alert:hover, .button-group.hollow .button.alert:focus {
-  border-color: rgb(172, 0, 5.1807228916);
-  color: rgb(172, 0, 5.1807228916);
+  border-color: rgb(103.187250996, 36.6314741036, 26.312749004);
+  color: rgb(103.187250996, 36.6314741036, 26.312749004);
 }
 .button-group.clear .button, .button-group.clear .button:hover, .button-group.clear .button:focus, .button-group.clear .button.disabled, .button-group.clear .button.disabled:hover, .button-group.clear .button.disabled:focus, .button-group.clear .button[disabled], .button-group.clear .button[disabled]:hover, .button-group.clear .button[disabled]:focus {
   border-color: transparent;
   background-color: transparent;
 }
 .button-group.clear .button, .button-group.clear .button.disabled, .button-group.clear .button[disabled], .button-group.clear .button.disabled:hover, .button-group.clear .button[disabled]:hover, .button-group.clear .button.disabled:focus, .button-group.clear .button[disabled]:focus {
-  color: rgb(25, 130, 196);
+  color: #1779ba;
 }
 .button-group.clear .button:hover, .button-group.clear .button:focus {
-  color: rgb(12.5, 65, 98);
+  color: rgb(11.5, 60.5, 93);
 }
 .button-group.clear.primary .button, .button-group.clear.primary .button.disabled, .button-group.clear.primary .button[disabled], .button-group.clear.primary .button.disabled:hover, .button-group.clear.primary .button[disabled]:hover, .button-group.clear.primary .button.disabled:focus, .button-group.clear.primary .button[disabled]:focus, .button-group.clear .button.primary, .button-group.clear .button.primary.disabled, .button-group.clear .button.primary[disabled], .button-group.clear .button.primary.disabled:hover, .button-group.clear .button.primary[disabled]:hover, .button-group.clear .button.primary.disabled:focus, .button-group.clear .button.primary[disabled]:focus {
-  color: rgb(25, 130, 196);
+  color: #1779ba;
 }
 .button-group.clear.primary .button:hover, .button-group.clear.primary .button:focus, .button-group.clear .button.primary:hover, .button-group.clear .button.primary:focus {
-  color: rgb(12.5, 65, 98);
+  color: rgb(11.5, 60.5, 93);
 }
 .button-group.clear.secondary .button, .button-group.clear.secondary .button.disabled, .button-group.clear.secondary .button[disabled], .button-group.clear.secondary .button.disabled:hover, .button-group.clear.secondary .button[disabled]:hover, .button-group.clear.secondary .button.disabled:focus, .button-group.clear.secondary .button[disabled]:focus, .button-group.clear .button.secondary, .button-group.clear .button.secondary.disabled, .button-group.clear .button.secondary[disabled], .button-group.clear .button.secondary.disabled:hover, .button-group.clear .button.secondary[disabled]:hover, .button-group.clear .button.secondary.disabled:focus, .button-group.clear .button.secondary[disabled]:focus {
-  color: rgb(106, 76, 147);
+  color: #767676;
 }
 .button-group.clear.secondary .button:hover, .button-group.clear.secondary .button:focus, .button-group.clear .button.secondary:hover, .button-group.clear .button.secondary:focus {
-  color: rgb(53, 38, 73.5);
+  color: #3b3b3b;
 }
 .button-group.clear.success .button, .button-group.clear.success .button.disabled, .button-group.clear.success .button[disabled], .button-group.clear.success .button.disabled:hover, .button-group.clear.success .button[disabled]:hover, .button-group.clear.success .button.disabled:focus, .button-group.clear.success .button[disabled]:focus, .button-group.clear .button.success, .button-group.clear .button.success.disabled, .button-group.clear .button.success[disabled], .button-group.clear .button.success.disabled:hover, .button-group.clear .button.success[disabled]:hover, .button-group.clear .button.success.disabled:focus, .button-group.clear .button.success[disabled]:focus {
-  color: rgb(138, 201, 38);
+  color: #3adb76;
 }
 .button-group.clear.success .button:hover, .button-group.clear.success .button:focus, .button-group.clear .button.success:hover, .button-group.clear .button.success:focus {
-  color: rgb(69, 100.5, 19);
+  color: rgb(21.3991416309, 117.1008583691, 57.0643776824);
 }
 .button-group.clear.warning .button, .button-group.clear.warning .button.disabled, .button-group.clear.warning .button[disabled], .button-group.clear.warning .button.disabled:hover, .button-group.clear.warning .button[disabled]:hover, .button-group.clear.warning .button.disabled:focus, .button-group.clear.warning .button[disabled]:focus, .button-group.clear .button.warning, .button-group.clear .button.warning.disabled, .button-group.clear .button.warning[disabled], .button-group.clear .button.warning.disabled:hover, .button-group.clear .button.warning[disabled]:hover, .button-group.clear .button.warning.disabled:focus, .button-group.clear .button.warning[disabled]:focus {
-  color: rgb(255, 202, 58);
+  color: #ffae00;
 }
 .button-group.clear.warning .button:hover, .button-group.clear.warning .button:focus, .button-group.clear .button.warning:hover, .button-group.clear .button.warning:focus {
-  color: rgb(156.5, 114.3959390863, 0);
+  color: rgb(127.5, 87, 0);
 }
 .button-group.clear.alert .button, .button-group.clear.alert .button.disabled, .button-group.clear.alert .button[disabled], .button-group.clear.alert .button.disabled:hover, .button-group.clear.alert .button[disabled]:hover, .button-group.clear.alert .button.disabled:focus, .button-group.clear.alert .button[disabled]:focus, .button-group.clear .button.alert, .button-group.clear .button.alert.disabled, .button-group.clear .button.alert[disabled], .button-group.clear .button.alert.disabled:hover, .button-group.clear .button.alert[disabled]:hover, .button-group.clear .button.alert.disabled:focus, .button-group.clear .button.alert[disabled]:focus {
-  color: rgb(255, 89, 94);
+  color: #cc4b37;
 }
 .button-group.clear.alert .button:hover, .button-group.clear.alert .button:focus, .button-group.clear .button.alert:hover, .button-group.clear .button.alert:focus {
-  color: rgb(172, 0, 5.1807228916);
+  color: rgb(103.187250996, 36.6314741036, 26.312749004);
 }
 .button-group.no-gaps .button {
   margin-right: -0.0625rem;
@@ -3500,28 +3500,28 @@ a.button:hover, a.button:focus {
   line-height: 1;
   white-space: nowrap;
   cursor: default;
-  background: rgb(25, 130, 196);
+  background: #1779ba;
   color: #fefefe;
 }
 .label.primary {
-  background: rgb(25, 130, 196);
-  color: #0a0a0a;
+  background: #1779ba;
+  color: #fefefe;
 }
 .label.secondary {
-  background: rgb(106, 76, 147);
+  background: #767676;
   color: #fefefe;
 }
 .label.success {
-  background: rgb(138, 201, 38);
+  background: #3adb76;
   color: #0a0a0a;
 }
 .label.warning {
-  background: rgb(255, 202, 58);
+  background: #ffae00;
   color: #0a0a0a;
 }
 .label.alert {
-  background: rgb(255, 89, 94);
-  color: #0a0a0a;
+  background: #cc4b37;
+  color: #fefefe;
 }
 
 .progress {
@@ -3551,7 +3551,7 @@ a.button:hover, a.button:focus {
   display: block;
   width: 0%;
   height: 100%;
-  background-color: rgb(25, 130, 196);
+  background-color: #1779ba;
 }
 
 .progress-meter-text {
@@ -3599,7 +3599,7 @@ a.button:hover, a.button:focus {
   width: 1.4rem;
   height: 1.4rem;
   border-radius: 0;
-  background-color: rgb(25, 130, 196);
+  background-color: #1779ba;
   transition: all 0.2s ease-in-out;
   touch-action: manipulation;
   position: absolute;
@@ -3610,7 +3610,7 @@ a.button:hover, a.button:focus {
   outline: 0;
 }
 .slider-handle:hover {
-  background-color: rgb(21.25, 110.5, 166.6);
+  background-color: rgb(19.55, 102.85, 158.1);
 }
 .slider-handle.is-dragging {
   transition: all 0s linear;
@@ -3690,7 +3690,7 @@ input + .switch-paddle {
   content: "";
 }
 input:checked ~ .switch-paddle {
-  background: rgb(25, 130, 196);
+  background: #1779ba;
 }
 input:checked ~ .switch-paddle::after {
   left: 2.25rem;
@@ -3702,7 +3702,7 @@ input:focus-visible ~ .switch-paddle::after {
   background: #fefefe;
 }
 input:checked:focus-visible ~ .switch-paddle {
-  background: rgb(21.25, 110.5, 166.6);
+  background: rgb(19.55, 102.85, 158.1);
 }
 input:disabled ~ .switch-paddle {
   cursor: not-allowed;
@@ -3893,28 +3893,28 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   border-radius: 50%;
   font-size: 0.6rem;
   text-align: center;
-  background: rgb(25, 130, 196);
+  background: #1779ba;
   color: #fefefe;
 }
 .badge.primary {
-  background: rgb(25, 130, 196);
-  color: #0a0a0a;
+  background: #1779ba;
+  color: #fefefe;
 }
 .badge.secondary {
-  background: rgb(106, 76, 147);
+  background: #767676;
   color: #fefefe;
 }
 .badge.success {
-  background: rgb(138, 201, 38);
+  background: #3adb76;
   color: #0a0a0a;
 }
 .badge.warning {
-  background: rgb(255, 202, 58);
+  background: #ffae00;
   color: #0a0a0a;
 }
 .badge.alert {
-  background: rgb(255, 89, 94);
-  color: #0a0a0a;
+  background: #cc4b37;
+  color: #fefefe;
 }
 
 .breadcrumbs {
@@ -3945,7 +3945,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   color: #cacaca;
 }
 .breadcrumbs a {
-  color: rgb(25, 130, 196);
+  color: #1779ba;
 }
 .breadcrumbs a:hover {
   text-decoration: underline;
@@ -4113,7 +4113,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 .pagination .current {
   padding: 0.1875rem 0.625rem;
-  background: rgb(25, 130, 196);
+  background: #1779ba;
   color: #fefefe;
   cursor: default;
 }
@@ -4272,7 +4272,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   border-bottom: 0;
   font-size: 0.75rem;
   line-height: 1;
-  color: rgb(25, 130, 196);
+  color: #1779ba;
 }
 :last-child:not(.is-active) > .accordion-title {
   border-bottom: 1px solid #e6e6e6;
@@ -4490,13 +4490,13 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 
 .tabs.primary {
-  background: rgb(25, 130, 196);
+  background: #1779ba;
 }
 .tabs.primary > li > a {
-  color: #0a0a0a;
+  color: #fefefe;
 }
 .tabs.primary > li > a:hover, .tabs.primary > li > a:focus {
-  background: rgb(23.75, 123.5, 186.2);
+  background: rgb(21.85, 114.95, 176.7);
 }
 
 .tabs-title {
@@ -4507,18 +4507,18 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   padding: 1.25rem 1.5rem;
   font-size: 0.75rem;
   line-height: 1;
-  color: rgb(25, 130, 196);
+  color: #1779ba;
 }
 [data-whatinput=mouse] .tabs-title > a {
   outline: 0;
 }
 .tabs-title > a:hover {
   background: #fefefe;
-  color: rgb(21.5, 111.8, 168.56);
+  color: rgb(19.78, 104.06, 159.96);
 }
 .tabs-title > a:focus, .tabs-title > a[aria-selected=true] {
   background: #e6e6e6;
-  color: rgb(25, 130, 196);
+  color: #1779ba;
 }
 
 .tabs-content {
@@ -4556,7 +4556,7 @@ a.thumbnail {
   transition: box-shadow 200ms ease-out;
 }
 a.thumbnail:hover, a.thumbnail:focus {
-  box-shadow: 0 0 6px 1px rgba(25, 130, 196, 0.5);
+  box-shadow: 0 0 6px 1px rgba(23, 121, 186, 0.5);
 }
 a.thumbnail image {
   box-shadow: none;
@@ -4710,12 +4710,12 @@ a.thumbnail image {
   text-align: center;
 }
 .menu .is-active > a {
-  background: rgb(25, 130, 196);
-  color: #0a0a0a;
+  background: #1779ba;
+  color: #fefefe;
 }
 .menu .active > a {
-  background: rgb(25, 130, 196);
-  color: #0a0a0a;
+  background: #1779ba;
+  color: #fefefe;
 }
 .menu.align-left {
   justify-content: flex-start;
@@ -4850,7 +4850,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-bottom-width: 0;
-  border-color: rgb(25, 130, 196) transparent transparent;
+  border-color: #1779ba transparent transparent;
   position: absolute;
   top: 50%;
   margin-top: -3px;
@@ -4893,7 +4893,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-bottom-width: 0;
-  border-color: rgb(25, 130, 196) transparent transparent;
+  border-color: #1779ba transparent transparent;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -4968,7 +4968,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-right-width: 0;
-  border-color: transparent transparent transparent rgb(25, 130, 196);
+  border-color: transparent transparent transparent #1779ba;
   position: absolute;
   top: 50%;
   margin-top: -6px;
@@ -4982,7 +4982,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-right-width: 0;
-  border-color: transparent transparent transparent rgb(25, 130, 196);
+  border-color: transparent transparent transparent #1779ba;
   right: 1rem;
   left: auto;
 }
@@ -4994,7 +4994,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-left-width: 0;
-  border-color: transparent rgb(25, 130, 196) transparent transparent;
+  border-color: transparent #1779ba transparent transparent;
   right: auto;
   left: 1rem;
 }
@@ -5006,7 +5006,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-left-width: 0;
-  border-color: transparent rgb(25, 130, 196) transparent transparent;
+  border-color: transparent #1779ba transparent transparent;
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.75rem;
@@ -5034,7 +5034,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-bottom-width: 0;
-  border-color: rgb(25, 130, 196) transparent transparent;
+  border-color: #1779ba transparent transparent;
   right: 5px;
   left: auto;
   margin-top: -3px;
@@ -5047,7 +5047,7 @@ a.thumbnail image {
 }
 .dropdown.menu > li.is-active > a {
   background: transparent;
-  color: rgb(25, 130, 196);
+  color: #1779ba;
 }
 .no-js .dropdown.menu ul {
   display: none;
@@ -5079,7 +5079,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-left-width: 0;
-  border-color: transparent rgb(25, 130, 196) transparent transparent;
+  border-color: transparent #1779ba transparent transparent;
   right: auto;
   left: 5px;
 }
@@ -5091,7 +5091,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-right-width: 0;
-  border-color: transparent transparent transparent rgb(25, 130, 196);
+  border-color: transparent transparent transparent #1779ba;
 }
 @media print, screen and (min-width: 40em) {
   .dropdown.menu.medium-horizontal > li.opens-left > .is-dropdown-submenu {
@@ -5116,7 +5116,7 @@ a.thumbnail image {
     border-width: 6px;
     content: "";
     border-bottom-width: 0;
-    border-color: rgb(25, 130, 196) transparent transparent;
+    border-color: #1779ba transparent transparent;
     right: 5px;
     left: auto;
     margin-top: -3px;
@@ -5144,7 +5144,7 @@ a.thumbnail image {
     border-width: 6px;
     content: "";
     border-left-width: 0;
-    border-color: transparent rgb(25, 130, 196) transparent transparent;
+    border-color: transparent #1779ba transparent transparent;
     right: auto;
     left: 5px;
   }
@@ -5156,7 +5156,7 @@ a.thumbnail image {
     border-width: 6px;
     content: "";
     border-right-width: 0;
-    border-color: transparent transparent transparent rgb(25, 130, 196);
+    border-color: transparent transparent transparent #1779ba;
   }
 }
 @media print, screen and (min-width: 64em) {
@@ -5182,7 +5182,7 @@ a.thumbnail image {
     border-width: 6px;
     content: "";
     border-bottom-width: 0;
-    border-color: rgb(25, 130, 196) transparent transparent;
+    border-color: #1779ba transparent transparent;
     right: 5px;
     left: auto;
     margin-top: -3px;
@@ -5210,7 +5210,7 @@ a.thumbnail image {
     border-width: 6px;
     content: "";
     border-left-width: 0;
-    border-color: transparent rgb(25, 130, 196) transparent transparent;
+    border-color: transparent #1779ba transparent transparent;
     right: auto;
     left: 5px;
   }
@@ -5222,7 +5222,7 @@ a.thumbnail image {
     border-width: 6px;
     content: "";
     border-right-width: 0;
-    border-color: transparent transparent transparent rgb(25, 130, 196);
+    border-color: transparent transparent transparent #1779ba;
   }
 }
 .dropdown.menu.align-right .is-dropdown-submenu.first-sub {
@@ -5285,7 +5285,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-left-width: 0;
-  border-color: transparent rgb(25, 130, 196) transparent transparent;
+  border-color: transparent #1779ba transparent transparent;
   right: auto;
   left: 5px;
 }
@@ -5297,7 +5297,7 @@ a.thumbnail image {
   border-width: 6px;
   content: "";
   border-right-width: 0;
-  border-color: transparent transparent transparent rgb(25, 130, 196);
+  border-color: transparent transparent transparent #1779ba;
 }
 .is-dropdown-submenu .is-dropdown-submenu {
   margin-top: -1px;
@@ -6533,7 +6533,7 @@ ol.list-upper-roman {
 .separator-center::after {
   position: relative !important;
   width: 3rem;
-  border-bottom: 0.125rem solid rgb(25, 130, 196);
+  border-bottom: 0.125rem solid #1779ba;
   margin: 1rem auto 0;
 }
 
@@ -6552,7 +6552,7 @@ ol.list-upper-roman {
 .separator-left::after {
   position: relative !important;
   width: 3rem;
-  border-bottom: 0.125rem solid rgb(25, 130, 196);
+  border-bottom: 0.125rem solid #1779ba;
   margin: 1rem auto 0;
   margin-left: 0 !important;
 }
@@ -6572,7 +6572,7 @@ ol.list-upper-roman {
 .separator-right::after {
   position: relative !important;
   width: 3rem;
-  border-bottom: 0.125rem solid rgb(25, 130, 196);
+  border-bottom: 0.125rem solid #1779ba;
   margin: 1rem auto 0;
   margin-right: 0 !important;
 }

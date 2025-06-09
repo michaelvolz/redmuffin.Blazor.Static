@@ -1,12 +1,4 @@
 {
-  "inputs": [
-    {
-      "id": "github_pat",
-      "description": "GitHub personal access token",
-      "type": "promptString",
-      "password": true
-    }
-  ],
   "servers": {
     "fetch": {
       "command": "docker",
@@ -20,20 +12,16 @@
         "-i",
         "--rm",
         "-e",
-        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "GITHUB_TOKEN",
         "ghcr.io/github/github-mcp-server"
       ],
       "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_pat}"
+        "GITHUB_TOKEN": "${env:GITHUB_TOKEN}"
       }
     },
     "time": {
       "command": "docker",
       "args": [ "run", "-i", "--rm", "mcp/time" ]
-    },
-    "context7": {
-      "type": "http",
-      "url": "https://mcp.context7.com/mcp"
     },
     "memory": {
       "command": "docker",

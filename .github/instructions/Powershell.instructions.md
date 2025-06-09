@@ -12,7 +12,7 @@ applyTo: "**/*.{ps,ps1,psm}"
 - Use `Write-Verbose`, `Write-Output`, and `Write-Error` appropriately based on the context.
 
 ## Code Style and Structure
-- Use Tabs for indentation—be consistent across scripts.
+- Use Tabs for indentationï¿½be consistent across scripts.
 - Avoid one-liners for complex logic; prefer clarity over brevity.
 - Use `Begin`, `Process`, `End` blocks when writing advanced functions.
 - Prefer `param()` blocks with type constraints and default values.
@@ -37,12 +37,12 @@ applyTo: "**/*.{ps,ps1,psm}"
 - Break large scripts into reusable functions or modules.
 - Use `Try/Catch/Finally` for error handling instead of checking `$?` or `$LASTEXITCODE`.
 - Comment and document non-trivial logic using inline comments.
-- Avoid excessive pipeline chaining—use intermediate variables when needed.
+- Avoid excessive pipeline chainingï¿½use intermediate variables when needed.
 
 ## Clean Output
 - Always return structured data (e.g., hashtables or custom objects), not raw strings.
 - Avoid unnecessary `Write-Host` (use `Write-Output` or return values).
-- Do not use `Write-Output` for logging—use `Write-Verbose` or `Write-Information`.
+- Do not use `Write-Output` for loggingï¿½use `Write-Verbose` or `Write-Information`.
 
 ## Performance Considerations
 - Use `[ordered]` and `[hashtable]` appropriately when working with key-value pairs.

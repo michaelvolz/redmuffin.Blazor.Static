@@ -34,7 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instructions", "Instruction
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prompts", "Prompts", "{1042B09C-CD63-0B34-1D4B-7FE7A2FDFA8E}"
 	ProjectSection(SolutionItems) = preProject
-		SecurityReviewAPI.prompt.md = SecurityReviewAPI.prompt.md
+		.github\prompts\SecurityReviewAPI.prompt.md = .github\prompts\SecurityReviewAPI.prompt.md
 	EndProjectSection
 EndProject
 Global
