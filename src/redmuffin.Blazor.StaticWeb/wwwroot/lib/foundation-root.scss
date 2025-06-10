@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@import "foundation-sites/scss/foundation";
+@import "_site-colors.scss";
+$foundation-palette: ( "primary": $steel-blue, "secondary": $ultra-violet, "success": $yellow-green, "warning": $sunglow, "alert": $bittersweet, );
+@include foundation-everything(true, true);
+
+html, body {
+    background-color: white;
+}
+
+h1 {
+    outline: 0px;
+}

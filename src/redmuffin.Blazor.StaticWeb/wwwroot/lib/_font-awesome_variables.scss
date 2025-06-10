@@ -3,7 +3,7 @@
 
 $fa-css-prefix            : fa !default;
 $fa-style                 : 900 !default;
-$fa-style-family          : "Font Awesome 6 Free", sans-serif !default;
+$fa-style-family          : "Font Awesome 6 Free" !default;
 $fa-icon-property         : --fa;
 $fa-duotone-icon-property : --fa--fa;
 
@@ -48,7 +48,7 @@ $fa-stack-width           : ($fa-fw-width * 2) !default;
 $fa-stack-z-index         : auto !default;
 
 $fa-font-display          : block !default;
-$fa-font-path: "/lib/fontawesome-free/webfonts" !default;
+$fa-font-path             : "/lib/fontAwesome-free/webfonts" !default;
 
 $fa-var-0: \30;
 $fa-var-1: \31;

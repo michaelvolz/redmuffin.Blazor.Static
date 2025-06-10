@@ -1,13 +1,20 @@
 ﻿[
   {
     "outputFile": "wwwroot/css/foundation-root.css",
-    "inputFile": "wwwroot/css/foundation-root.scss",
+    "inputFile": "wwwroot/lib/foundation-root.scss",
+    "useNodeSass": true,
     "options": {
-      "loadPaths": "lib/font-awesome-sass/assets/stylesheets"
+      "sourceMap": false,
+      "relativeUrls": false
     }
   },
   {
     "outputFile": "wwwroot/css/app.css",
-    "inputFile": "wwwroot/css/app.scss"
+    "inputFile": "wwwroot/lib/app.scss",
+    "useNodeSass": true,
+    "options": {
+      "sourceMap": false,
+      "relativeUrls": false
+    }
   }
 ]
