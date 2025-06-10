@@ -3,7 +3,7 @@
 
 .#{$fa-css-prefix} {
     display: inline-block;
-    font-family: "FontAwesome, sans serif";
+    font-family: 'FontAwesome', sans-serif;
     font-size: #{$fa-font-size-base}/#{$fa-line-height-base};
     font-size: inherit; // can't have font-size inherit on line above, so need to override
     text-rendering: auto; // optimizelegibility throws things off #1094
