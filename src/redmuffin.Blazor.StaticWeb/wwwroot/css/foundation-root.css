@@ -6959,7 +6959,7 @@ ol.list-upper-roman {
 /** Order is important! ***/
 /* fixed font path */
 .fa {
-  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-family: var(--fa-style-family, "Font Awesome 6 Free, sans-serif");
   font-weight: var(--fa-style, 900);
 }
 
@@ -17383,8 +17383,8 @@ readers do not read off random characters that represent icons */
  * Copyright 2024 Fonticons, Inc.
  */
 :root, :host {
-  --fa-style-family-classic: "Font Awesome 6 Free";
-  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  --fa-style-family-classic: "Font Awesome 6 Free, sans-serif";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free, sans-serif";
 }
 
 @font-face {
