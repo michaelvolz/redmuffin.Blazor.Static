@@ -6963,7 +6963,7 @@ ol.list-upper-roman {
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  font-family: "FontAwesome";
+  font-family: "FontAwesome, sans-serif";
   src: url("/lib/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0");
   src: url("/lib/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0#iefix") format("embedded-opentype"), url("/lib/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("/lib/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("/lib/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("/lib/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
@@ -6971,7 +6971,7 @@ ol.list-upper-roman {
 }
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome, sans-serif;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
