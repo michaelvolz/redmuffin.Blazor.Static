@@ -226,7 +226,10 @@ project-root/
   - Use filenames and line numbers
 - **Adherence to Project Standards:**
   - Follow all coding, testing, and documentation practices
-  - Where possible, favor Blazor over JavaScript 
+  - Where possible, favor Blazor over JavaScript
+- **GitHub MCP Server:**
+  - The owner of this repository is michaelvolz
+  - This repository is named redmuffin.Blazor.StaticWeb
 
 ---
 
