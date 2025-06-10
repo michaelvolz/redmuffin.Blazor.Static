@@ -29,17 +29,6 @@
     "time": {
       "command": "docker",
       "args": [ "run", "-i", "--rm", "mcp/time" ]
-    },
-    "memory": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "-v",
-        "/memory:/memory",
-        "mcp/memory"
-      ]
     }
   }
 }
