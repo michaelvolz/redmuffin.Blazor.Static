@@ -5,7 +5,29 @@
 $foundation-palette: ( "primary": $steel-blue, "secondary": $ultra-violet, "success": $yellow-green, "warning": $sunglow, "alert": $bittersweet, );
 @include foundation-everything(true, true);
 
+/*****/
+
 @import "../lib/font-awesome-sass/assets/stylesheets/_font-awesome";
+// _core.scss fix for fontawesome
+.#{$fa-css-prefix} {
+    display: inline-block;
+    font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome, sans-serif; // shortening font declaration
+    font-size: inherit; // can't have font-size inherit on line above, so need to override
+    text-rendering: auto; // optimizelegibility throws things off #1094
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+// _mixin.scss fix for fontawesome
+@mixin fa-icon() {
+    display: inline-block;
+    font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome, sans-serif; // shortening font declaration
+    font-size: inherit; // can't have font-size inherit on line above, so need to override
+    text-rendering: auto; // optimizelegibility throws things off #1094
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*****/
 
 html, body {
     background-color: white;

@@ -6956,6 +6956,7 @@ ol.list-upper-roman {
   padding-bottom: 3rem !important;
 }
 
+/*****/
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -6971,7 +6972,7 @@ ol.list-upper-roman {
 }
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome, sans-serif;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -9997,6 +9998,16 @@ ol.list-upper-roman {
   clip: auto;
 }
 
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome, sans-serif;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*****/
 html, body {
   background-color: white;
 }
