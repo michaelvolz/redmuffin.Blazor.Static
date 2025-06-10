@@ -7,25 +7,19 @@ $foundation-palette: ( "primary": $steel-blue, "secondary": $ultra-violet, "succ
 
 /*****/
 
-@import "../lib/font-awesome-sass/assets/stylesheets/_font-awesome";
-// _core.scss fix for fontawesome
-.#{$fa-css-prefix} {
-    display: inline-block;
-    font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome, sans-serif; // shortening font declaration
-    font-size: inherit; // can't have font-size inherit on line above, so need to override
-    text-rendering: auto; // optimizelegibility throws things off #1094
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-// _mixin.scss fix for fontawesome
-@mixin fa-icon() {
-    display: inline-block;
-    font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome, sans-serif; // shortening font declaration
-    font-size: inherit; // can't have font-size inherit on line above, so need to override
-    text-rendering: auto; // optimizelegibility throws things off #1094
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_variables";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_mixins";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_path";
+@import "includes/fontawesome_core.scss";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_larger";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_fixed-width";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_list";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_bordered-pulled";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_animated";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_rotated-flipped";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_stacked";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_icons";
+@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_screen-reader";
 
 /*****/
 
