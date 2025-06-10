@@ -6994,12 +6994,12 @@ ol.list-upper-roman {
 .fa-solid,
 .far,
 .fa-regular {
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 6 Free", sans-serif;
 }
 
 .fa-brands,
 .fab {
-  font-family: "Font Awesome 6 Brands";
+  font-family: "Font Awesome 6 Brands", sans-serif;
 }
 
 .fa-1x {
@@ -17388,7 +17388,7 @@ readers do not read off random characters that represent icons */
 }
 
 @font-face {
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 6 Free", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-display: block;

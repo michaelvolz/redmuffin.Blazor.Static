@@ -37,11 +37,11 @@
 .#{$fa-css-prefix}-solid,
 .far,
 .#{$fa-css-prefix}-regular {
-  font-family: 'Font Awesome 6 Free';
+  font-family: 'Font Awesome 6 Free', sans-serif;
 }
 .#{$fa-css-prefix}-brands,
 .fab {
-  font-family: 'Font Awesome 6 Brands';
+  font-family: 'Font Awesome 6 Brands', sans-serif;
 }
 
 %fa-icon {

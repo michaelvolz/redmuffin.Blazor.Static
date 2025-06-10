@@ -4,7 +4,7 @@
  * Copyright 2024 Fonticons, Inc.
  */
 @import 'functions';
-@import 'variables';
+@import '../../../css/includes/font-awesome_variables';
 
 :root, :host {
   --#{$fa-css-prefix}-style-family-brands: 'Font Awesome 6 Brands';
