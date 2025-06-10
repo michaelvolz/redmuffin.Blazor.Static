@@ -9,11 +9,6 @@
         "scss/**/*.scss",
         "_vendor/**/*.scss"
       ]
-    },
-    {
-      "provider": "unpkg",
-      "library": "font-awesome-sass@4.7.0",
-      "destination": "wwwroot/lib/font-awesome-sass/"
     }
   ]
 }

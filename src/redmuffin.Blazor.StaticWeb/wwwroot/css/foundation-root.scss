@@ -5,21 +5,24 @@
 $foundation-palette: ( "primary": $steel-blue, "secondary": $ultra-violet, "success": $yellow-green, "warning": $sunglow, "alert": $bittersweet, );
 @include foundation-everything(true, true);
 
-/*****/
+/** Order is important! ***/
 
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_variables";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_mixins";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_path";
-@import "includes/fontawesome_core.scss";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_larger";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_fixed-width";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_list";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_bordered-pulled";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_animated";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_rotated-flipped";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_stacked";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_icons";
-@import "../lib/font-awesome-sass/assets/stylesheets/font-awesome/_screen-reader";
+@import '../lib/fontawesome-free/scss/_functions.scss';
+@import "includes/font-awesome_variables"; /* fixed font path */
+@import '../lib/fontawesome-free/scss/_mixins';
+@import '../lib/fontawesome-free/scss/_core';
+@import '../lib/fontawesome-free/scss/_sizing';
+@import '../lib/fontawesome-free/scss/_fixed-width';
+@import '../lib/fontawesome-free/scss/_list';
+@import '../lib/fontawesome-free/scss/_bordered-pulled';
+@import '../lib/fontawesome-free/scss/_animated';
+@import '../lib/fontawesome-free/scss/_rotated-flipped';
+@import '../lib/fontawesome-free/scss/_stacked';
+@import '../lib/fontawesome-free/scss/_icons';
+@import '../lib/fontawesome-free/scss/_screen-reader';
+
+@import '../lib/fontawesome-free/scss/brands.scss'; /* free */
+@import '../lib/fontawesome-free/scss/solid.scss'; /* free */
 
 /*****/
 
@@ -30,4 +33,3 @@ html, body {
 h1 {
     outline: 0px;
 }
-
