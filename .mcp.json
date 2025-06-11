@@ -31,13 +31,8 @@
       "args": [ "run", "-i", "--rm", "mcp/time" ]
     },
     "context7": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "mcp/context7"
-      ]
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
     }
   }
 }
