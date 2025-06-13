@@ -46,7 +46,7 @@
 - CodeQL-enabled for advanced code security analysis
 - EditorConfig for consistent code style and formatting
 - Directory.Build.props for centralized project configuration
-- Unit testing with xUnit and coverage analysis with Coverlet
+- Unit testing with TUnit
 
 ---
 
@@ -129,11 +129,8 @@ The project follows a [feature folder structure](https://dev.to/smotastic/layer-
 
 ### Testing and Coverage
 
-- **[xUnit](https://xunit.net/)**  
+- **[TUnit](https://tunit.net/)**  
   A free, open-source, community-focused unit testing tool for .NET. Used for testing the application.
-
-- **[Coverlet](https://github.com/coverlet-coverage/coverlet)**  
-  A cross-platform code coverage framework for .NET, integrated with xUnit.
 
 ### Development Tools
 
@@ -176,6 +173,5 @@ This project is licensed under the [Unlicense](https://unlicense.org/).
 - [Zurb Foundation](https://get.foundation/) for the CSS framework
 - [GitHub Copilot](https://github.com/features/copilot) for AI code assistance
 - [Visual Studio](https://visualstudio.microsoft.com/) for development environment
-- [Coverlet](https://github.com/coverlet-coverage/coverlet) for code coverage
 
 ---

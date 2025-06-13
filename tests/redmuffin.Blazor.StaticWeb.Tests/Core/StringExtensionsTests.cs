@@ -4,14 +4,14 @@ namespace redmuffin.Blazor.StaticWeb.Tests.Core;
 
 public class StringExtensionsTests
 {
-	[Theory]
-	[InlineData("Blazor", "rozalB")]
-	[InlineData("racecar", "racecar")]
-	[InlineData("", "")]
-	[InlineData(null, null)]
-	public void ReverseString_ReturnsExpectedResult(string? input, string? expected)
+	[Test]
+	[Arguments("Blazor", "rozalB")]
+	[Arguments("racecar", "racecar")]
+	[Arguments("", "")]
+	[Arguments(null, null)]
+	public async Task ReverseString_ReturnsExpectedResult(string? input, string? expected)
 	{
 		var result = input.ReverseString();
-		Assert.Equal(expected, result);
+		await Assert.That(result).IsEqualTo(expected);
 	}
 }
