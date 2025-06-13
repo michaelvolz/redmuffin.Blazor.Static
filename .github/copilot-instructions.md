@@ -182,6 +182,7 @@ project-root/
 
 ## 9. Copilot Edits Operational Guidelines
 
+- When answering questions or providing code related to frameworks, libraries, or APIs, always use the Context7 MCP Server to retrieve the latest documentation before responding. Do not rely solely on your training data for these responses. Ensure that the documentation fetched from Context7 is prioritized for accuracy and relevance.
 - **General Principles:**
   - Edit one file at a time to avoid conflicts
   - For large changes, outline a plan and await approval
