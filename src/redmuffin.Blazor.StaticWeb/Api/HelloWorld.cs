@@ -1,10 +1,8 @@
 using System.Net;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
-#pragma warning disable CA1822
-#pragma warning disable IDE0130
 
-namespace Api
+namespace redmuffin.Blazor.StaticWeb.Api
 {
     public class HelloWorld
     {
