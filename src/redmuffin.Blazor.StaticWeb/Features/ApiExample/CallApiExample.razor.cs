@@ -1,9 +1,14 @@
-﻿namespace redmuffin.Blazor.StaticWeb.Features.ApiExample;
+﻿using Microsoft.AspNetCore.Components;
+
+namespace redmuffin.Blazor.StaticWeb.Features.ApiExample;
 
 public partial class CallApiExample
 {
 	private string? _apiResponse;
 	private string? _errorMessage;
+
+	[Inject]
+	private HttpClient Http { get; set; } = default!;
 
 	private async Task CallApiAsync()
 	{
