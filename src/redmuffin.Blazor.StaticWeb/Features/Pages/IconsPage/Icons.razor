@@ -3,55 +3,11 @@
 <h4>FontAwesome Icons</h4>
 
 <div class="grid-x grid-margin-x small-up-2 medium-up-4 large-up-6">
-	@foreach (var icon in IconNames)
-	{
-		<div class="cell text-center" style="margin-bottom: 1.5rem;">
-			<i class="fa @icon" style="font-size:2rem;" aria-hidden="true"></i>
-			<div style="margin-top:0.5rem;font-size:0.9rem;word-break:break-all;">@icon</div>
-		</div>
-	}
+    @foreach (var icon in IconNames)
+    {
+        <div class="cell text-center" style="margin-bottom: 1.5rem;">
+            <i class="fa fa-@icon" style="font-size:2rem;" aria-hidden="true"></i>
+            <div style="margin-top:0.5rem;font-size:0.9rem;word-break:break-all;">@icon</div>
+        </div>
+    }
 </div>
-
-@code {
-
-	private static readonly string[] IconNames = new[]
-	{
-		"fa-0", "fa-1", "fa-2", "fa-3", "fa-4", "fa-5", "fa-6", "fa-7", "fa-8", "fa-9",
-		"fa-fill-drip", "fa-arrows-to-circle", "fa-circle-chevron-right", "fa-chevron-circle-right", "fa-at", "fa-trash-can", "fa-trash-alt", "fa-text-height", "fa-user-xmark", "fa-user-times",
-		"fa-stethoscope", "fa-message", "fa-comment-alt", "fa-info", "fa-down-left-and-up-right-to-center", "fa-compress-alt", "fa-explosion", "fa-file-lines", "fa-file-alt", "fa-file-text",
-		"fa-wave-square", "fa-ring", "fa-building-un", "fa-dice-three", "fa-calendar-days", "fa-calendar-alt", "fa-anchor-circle-check", "fa-building-circle-arrow-right", "fa-volleyball", "fa-volleyball-ball",
-		"fa-arrows-up-to-line", "fa-sort-down", "fa-sort-desc", "fa-circle-minus", "fa-minus-circle", "fa-door-open", "fa-right-from-bracket", "fa-sign-out-alt", "fa-atom", "fa-soap",
-		"fa-icons", "fa-heart-music-camera-bolt", "fa-microphone-lines-slash", "fa-microphone-alt-slash", "fa-bridge-circle-check", "fa-pump-medical", "fa-fingerprint", "fa-hand-point-right", "fa-magnifying-glass-location", "fa-search-location",
-		"fa-forward-step", "fa-step-forward", "fa-face-smile-beam", "fa-smile-beam", "fa-flag-checkered", "fa-football", "fa-football-ball", "fa-school-circle-exclamation", "fa-crop", "fa-angles-down",
-		"fa-angle-double-down", "fa-users-rectangle", "fa-people-roof", "fa-people-line", "fa-beer-mug-empty", "fa-beer", "fa-diagram-predecessor", "fa-arrow-up-long", "fa-long-arrow-up", "fa-fire-flame-simple",
-		"fa-burn", "fa-person",
-		"fa-person-circle-check", "fa-person-circle-exclamation", "fa-person-circle-minus", "fa-person-circle-plus", "fa-person-circle-xmark", "fa-person-dress", "fa-person-dress-burst", "fa-person-military-pointing", "fa-person-military-rifle", "fa-person-military-to-person",
-		"fa-person-praying", "fa-person-running", "fa-person-shelter", "fa-person-skating", "fa-person-skiing", "fa-person-skiing-nordic", "fa-person-snowboarding", "fa-person-swimming", "fa-person-through-window", "fa-person-walking",
-		"fa-person-walking-arrow-loop-left", "fa-person-walking-dashed-line-arrow-right", "fa-person-walking-luggage", "fa-person-walking-with-cane", "fa-phone-flip", "fa-phone-alt", "fa-phone-slash", "fa-phone-volume",
-		"fa-phone", "fa-phone-square-alt", "fa-phone-square", "fa-pizza-slice", "fa-plane-arrival", "fa-plane-departure", "fa-plane-slash", "fa-plane-up", "fa-plane", "fa-plug-circle-bolt",
-		"fa-plug-circle-check", "fa-plug-circle-exclamation", "fa-plug-circle-minus", "fa-plug-circle-plus", "fa-plug-circle-xmark", "fa-plug", "fa-plus-minus", "fa-plus-square", "fa-plus",
-		"fa-podcast", "fa-poll", "fa-poll-h", "fa-poop", "fa-power-off", "fa-prescription-bottle-medical", "fa-prescription-bottle-alt", "fa-prescription-bottle",
-		"fa-print", "fa-pump-soap", "fa-puzzle-piece", "fa-qrcode", "fa-question", "fa-question-circle", "fa-quote-left", "fa-quote-right",
-		"fa-radiation", "fa-radiation-alt", "fa-rainbow", "fa-receipt", "fa-rectangle-ad", "fa-rectangle-list", "fa-rectangle-xmark", "fa-rectangle-times",
-		"fa-recycle", "fa-redo-alt", "fa-redo", "fa-reply-all",
-		"fa-retweet", "fa-ribbon", "fa-road-circle-check",
-		"fa-road-circle-exclamation", "fa-road-circle-xmark", "fa-road", "fa-robot",
-		"fa-rocket",
-		"fa-rss-square", "fa-ruler-combined", "fa-ruler-horizontal", "fa-ruler-vertical",
-		"fa-satellite-dish", "fa-satellite", "fa-school", "fa-school-circle-check",
-		"fa-school-circle-exclamation", "fa-school-circle-xmark", "fa-school-lock",
-		"fa-scissors", "fa-screwdriver-wrench", "fa-screwdriver", "fa-scroll-torah",
-		"fa-scroll", "fa-search-dollar",
-		"fa-search-minus", "fa-search-plus", "fa-seedling", "fa-server", "fa-shapes",
-		"fa-share-from-square", "fa-share-nodes", "fa-share-alt-square", "fa-share-alt",
-		"fa-shield-cat", "fa-shield-dog", "fa-shield-heart", "fa-shield-virus",
-		"fa-shield", "fa-shipping-fast",
-		"fa-sitemap", "fa-skull-crossbones", "fa-skull", "fa-sliders-h",
-		"fa-smog", "fa-smoking-ban", "fa-smoking",
-		"fa-snowflake", "fa-sort-alpha-down", "fa-sort-alpha-up", "fa-sort-amount-down",
-		"fa-sort-amount-up", "fa-sort-numeric-down", "fa-sort-numeric-up",
-		"fa-spa", "fa-space-shuttle", "fa-spinner",
-		"fa-square-check"
-	};
-
-}
