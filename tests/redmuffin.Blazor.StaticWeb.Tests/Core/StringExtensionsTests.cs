@@ -1,4 +1,5 @@
 using redmuffin.Blazor.StaticWeb.Core;
+#pragma warning disable VSTHRD200
 
 namespace redmuffin.Blazor.StaticWeb.Tests.Core;
 
