@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -16,6 +16,10 @@
     <PublishTrimmed>true</PublishTrimmed>
     <TrimMode>partial</TrimMode>
   </PropertyGroup>
+
+  <Target Name="CompileStaticAssets" AfterTargets="AfterBuild">
+    <Exec Command="webcompiler -r wwwroot -a disable" StandardOutputImportance="high" />
+  </Target>
 
   <ItemGroup>
     <PackageReference Include="Markdig" Version="0.41.2" />
