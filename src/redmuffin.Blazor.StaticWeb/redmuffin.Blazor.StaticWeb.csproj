@@ -49,7 +49,6 @@
 
   <ItemGroup>
     <Folder Include="Features\Shared\" />
-    <Folder Include="Api\" />
   </ItemGroup>
 
 </Project>
