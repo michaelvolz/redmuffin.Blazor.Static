@@ -1,38 +1,19 @@
 @page "/call-api-example"
 @inject HttpClient Http
-@using Microsoft.AspNetCore.Components
 
 <h3>Call API Example</h3>
 
-<button class="button" @onclick="CallApi">Call Hello World API</button>
+<button class="button" @onclick="CallApiAsync">Call Hello World API</button>
 
 @if (!string.IsNullOrEmpty(_apiResponse))
 {
-    <p><strong>API Response:</strong> @_apiResponse</p>
+	<p>
+		<strong>API Response:</strong> @_apiResponse
+	</p>
 }
 @if (!string.IsNullOrEmpty(_errorMessage))
 {
-    <p style="color: red;"><strong>Error:</strong> @_errorMessage</p>
-}
-
-@code {
-    private string? _apiResponse;
-    private string? _errorMessage;
-
-    private async Task CallApi()
-    {
-        _apiResponse = null;
-        _errorMessage = null;
-        try
-        {
-            // The API endpoint is relative to the application's base URI
-            _apiResponse = await Http.GetStringAsync("api/HelloWorld");
-        }
-        catch (HttpRequestException ex)
-        {
-            _errorMessage = $"Error calling API: {ex.Message}";
-            // Log the full exception if needed for debugging
-            Console.WriteLine(ex);
-        }
-    }
+	<p style="color: red;">
+		<strong>Error:</strong> @_errorMessage
+	</p>
 }

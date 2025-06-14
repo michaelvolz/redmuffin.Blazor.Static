@@ -57,6 +57,7 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
+      "/api/*",
       "/sample-data/*",
       "/css/*",
       "/lib/fontAwesome-free/webfonts/*"
