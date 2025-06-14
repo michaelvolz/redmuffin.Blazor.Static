@@ -1,0 +1,27 @@
+﻿@page "/redirect"
+
+<PageTitle>Redirect</PageTitle>
+
+@if (!string.IsNullOrEmpty(_accessToken))
+{
+    <div class="callout success">
+        <strong>Access Token:</strong>
+        <pre>@_accessToken</pre>
+    </div>
+}
+else if (!string.IsNullOrEmpty(_error))
+{
+    <div class="callout alert">
+        <strong>Error:</strong> @_error
+    </div>
+}
+else if (!string.IsNullOrEmpty(_authCode))
+{
+    <div class="callout warning">
+        <strong>Authorization code received, requesting token...</strong>
+    </div>
+}
+else
+{
+    <div>No code found in URL.</div>
+}

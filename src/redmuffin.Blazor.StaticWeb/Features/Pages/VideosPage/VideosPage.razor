@@ -1,0 +1,25 @@
+@page "/videos"
+
+<PageTitle>Videos</PageTitle>
+
+<h1>Videos</h1>
+
+<button class="button primary" @onclick="LoginWithRaindrop">Login with Raindrop.io</button>
+
+@code {
+    private void LoginWithRaindrop()
+    {
+        var clientId = "684c73df642469e7c1969f8e";
+        var redirectPath = "/redirect";
+        var baseUri = Navigation.BaseUri.TrimEnd('/');
+        var redirectUri = $"{baseUri}{redirectPath}";
+        var authUrl = $"https://raindrop.io/oauth/authorize?client_id={clientId}&redirect_uri={Uri.EscapeDataString(redirectUri)}&response_type=code";
+
+        JS.InvokeVoidAsync("open", authUrl, "_self");
+    }
+
+    [Inject]
+    private IJSRuntime JS { get; set; } = default!;
+    [Inject]
+    private NavigationManager Navigation { get; set; } = default!;
+}
