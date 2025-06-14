@@ -17,10 +17,6 @@
     <TrimMode>partial</TrimMode>
   </PropertyGroup>
 
-  <Target Name="CompileStaticAssets" AfterTargets="AfterBuild">
-    <Exec Command="webcompiler -r wwwroot -a disable" StandardOutputImportance="high" />
-  </Target>
-
   <ItemGroup>
     <PackageReference Include="Markdig" Version="0.41.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.0" />
