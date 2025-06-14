@@ -1,4 +1,80 @@
 @page "/icons"
 
-<h1>Brand Icons</h1>
+<h4>FontAwesome Icons</h4>
+
+<div class="grid-x grid-margin-x small-up-2 medium-up-4 large-up-6">
+    @foreach (var icon in IconNames)
+    {
+        <div class="cell text-center" style="margin-bottom: 1.5rem;">
+            <i class="fa @icon" style="font-size:2rem;" aria-hidden="true"></i>
+            <div style="margin-top:0.5rem;font-size:0.9rem;word-break:break-all;">@icon</div>
+        </div>
+    }
+</div>
+
+@code {
+    private static readonly string[] IconNames = new[]
+    {
+        "fa-0","fa-1","fa-2","fa-3","fa-4","fa-5","fa-6","fa-7","fa-8","fa-9",
+        "fa-fill-drip","fa-arrows-to-circle","fa-circle-chevron-right","fa-chevron-circle-right","fa-at","fa-trash-can","fa-trash-alt","fa-text-height","fa-user-xmark","fa-user-times",
+        "fa-stethoscope","fa-message","fa-comment-alt","fa-info","fa-down-left-and-up-right-to-center","fa-compress-alt","fa-explosion","fa-file-lines","fa-file-alt","fa-file-text",
+        "fa-wave-square","fa-ring","fa-building-un","fa-dice-three","fa-calendar-days","fa-calendar-alt","fa-anchor-circle-check","fa-building-circle-arrow-right","fa-volleyball","fa-volleyball-ball",
+        "fa-arrows-up-to-line","fa-sort-down","fa-sort-desc","fa-circle-minus","fa-minus-circle","fa-door-open","fa-right-from-bracket","fa-sign-out-alt","fa-atom","fa-soap",
+        "fa-icons","fa-heart-music-camera-bolt","fa-microphone-lines-slash","fa-microphone-alt-slash","fa-bridge-circle-check","fa-pump-medical","fa-fingerprint","fa-hand-point-right","fa-magnifying-glass-location","fa-search-location",
+        "fa-forward-step","fa-step-forward","fa-face-smile-beam","fa-smile-beam","fa-flag-checkered","fa-football","fa-football-ball","fa-school-circle-exclamation","fa-crop","fa-angles-down",
+        "fa-angle-double-down","fa-users-rectangle","fa-people-roof","fa-people-line","fa-beer-mug-empty","fa-beer","fa-diagram-predecessor","fa-arrow-up-long","fa-long-arrow-up","fa-fire-flame-simple",
+        "fa-burn","fa-person",
+        /*
+        // Font Awesome Brands (from brands.css)
+        "fa-monero","fa-hooli","fa-yelp","fa-cc-visa","fa-lastfm","fa-shopware","fa-creative-commons-nc","fa-aws","fa-redhat","fa-yoast","fa-cloudflare","fa-ups","fa-pixiv","fa-wpexplorer",
+        "fa-dyalog","fa-bity","fa-stackpath","fa-buysellads","fa-first-order","fa-modx","fa-guilded","fa-vnv","fa-square-js","fa-js-square","fa-microsoft","fa-qq","fa-orcid","fa-java",
+        "fa-invision","fa-creative-commons-pd-alt","fa-centercode","fa-glide-g","fa-drupal","fa-jxl","fa-dart-lang","fa-hire-a-helper","fa-creative-commons-by","fa-unity","fa-whmcs",
+        "fa-rocketchat","fa-vk","fa-untappd","fa-mailchimp","fa-css3-alt","fa-square-reddit","fa-reddit-square","fa-vimeo-v","fa-contao","fa-square-font-awesome","fa-deskpro","fa-brave",
+        "fa-sistrix","fa-square-instagram","fa-instagram-square","fa-battle-net","fa-the-red-yeti","fa-square-hacker-news","fa-hacker-news-square","fa-edge","fa-threads","fa-napster",
+        "fa-square-snapchat","fa-snapchat-square","fa-google-plus-g","fa-artstation","fa-markdown","fa-sourcetree","fa-google-plus","fa-diaspora","fa-foursquare","fa-stack-overflow",
+        "fa-github-alt","fa-phoenix-squadron","fa-pagelines","fa-algolia","fa-red-river","fa-creative-commons-sa","fa-safari","fa-google","fa-square-font-awesome-stroke",
+        "fa-font-awesome-alt","fa-atlassian","fa-linkedin-in","fa-digital-ocean","fa-nimblr","fa-chromecast","fa-evernote","fa-hacker-news","fa-creative-commons-sampling","fa-adversal",
+        "fa-creative-commons","fa-watchman-monitoring","fa-fonticons","fa-weixin","fa-shirtsinbulk","fa-codepen","fa-git-alt","fa-lyft","fa-rev","fa-windows","fa-wizards-of-the-coast",
+        "fa-square-viadeo","fa-viadeo-square","fa-meetup","fa-centos","fa-adn","fa-cloudsmith","fa-opensuse","fa-pied-piper-alt","fa-square-dribbble","fa-dribbble-square","fa-codiepie",
+        "fa-node","fa-mix","fa-steam","fa-cc-apple-pay","fa-scribd","fa-debian","fa-openid","fa-instalod","fa-files-pinwheel","fa-expeditedssl","fa-sellcast","fa-square-twitter",
+        "fa-twitter-square","fa-r-project","fa-delicious","fa-freebsd","fa-vuejs","fa-accusoft","fa-ioxhost","fa-fonticons-fi","fa-app-store","fa-cc-mastercard","fa-itunes-note",
+        "fa-golang","fa-kickstarter","fa-square-kickstarter","fa-grav","fa-weibo","fa-uncharted","fa-firstdraft","fa-square-youtube","fa-youtube-square","fa-wikipedia-w","fa-wpressr",
+        "fa-rendact","fa-angellist","fa-galactic-republic","fa-nfc-directional","fa-skype","fa-joget","fa-fedora","fa-stripe-s","fa-meta","fa-laravel","fa-hotjar","fa-bluetooth-b",
+        "fa-square-letterboxd","fa-sticker-mule","fa-creative-commons-zero","fa-hips","fa-css","fa-behance","fa-reddit","fa-discord","fa-chrome","fa-app-store-ios","fa-cc-discover",
+        "fa-wpbeginner","fa-confluence","fa-shoelace","fa-mdb","fa-dochub","fa-accessible-icon","fa-ebay","fa-amazon","fa-unsplash","fa-yarn","fa-square-steam","fa-steam-square",
+        "fa-500px","fa-square-vimeo","fa-vimeo-square","fa-asymmetrik","fa-font-awesome","fa-font-awesome-flag","fa-font-awesome-logo-full","fa-gratipay","fa-apple","fa-hive",
+        "fa-gitkraken","fa-keybase","fa-apple-pay","fa-padlet","fa-amazon-pay","fa-square-github","fa-github-square","fa-stumbleupon","fa-fedex","fa-phoenix-framework","fa-shopify",
+        "fa-neos","fa-square-threads","fa-hackerrank","fa-researchgate","fa-swift","fa-angular","fa-speakap","fa-angrycreative","fa-y-combinator","fa-empire","fa-envira",
+        "fa-google-scholar","fa-square-gitlab","fa-gitlab-square","fa-studiovinari","fa-pied-piper","fa-wordpress","fa-product-hunt","fa-firefox","fa-linode","fa-goodreads",
+        "fa-square-odnoklassniki","fa-odnoklassniki-square","fa-jsfiddle","fa-sith","fa-themeisle","fa-page4","fa-hashnode","fa-react","fa-cc-paypal","fa-squarespace",
+        "fa-cc-stripe","fa-creative-commons-share","fa-bitcoin","fa-keycdn","fa-opera","fa-itch-io","fa-umbraco","fa-galactic-senate","fa-ubuntu","fa-draft2digital","fa-stripe",
+        "fa-houzz","fa-gg","fa-dhl","fa-square-pinterest","fa-pinterest-square","fa-xing","fa-blackberry","fa-creative-commons-pd","fa-playstation","fa-quinscape","fa-less",
+        "fa-blogger-b","fa-opencart","fa-vine","fa-signal-messenger","fa-paypal","fa-gitlab","fa-typo3","fa-reddit-alien","fa-yahoo","fa-dailymotion","fa-affiliatetheme",
+        "fa-pied-piper-pp","fa-bootstrap","fa-odnoklassniki","fa-nfc-symbol","fa-mintbit","fa-ethereum","fa-speaker-deck","fa-creative-commons-nc-eu","fa-patreon","fa-avianex",
+        "fa-ello","fa-gofore","fa-bimobject","fa-brave-reverse","fa-facebook-f","fa-square-google-plus","fa-google-plus-square","fa-web-awesome","fa-mandalorian","fa-first-order-alt",
+        "fa-osi","fa-google-wallet","fa-d-and-d-beyond","fa-periscope","fa-fulcrum","fa-cloudscale","fa-forumbee","fa-mizuni","fa-schlix","fa-square-xing","fa-xing-square","fa-bandcamp",
+        "fa-wpforms","fa-cloudversify","fa-usps","fa-megaport","fa-magento","fa-spotify","fa-optin-monster","fa-fly","fa-square-bluesky","fa-aviato","fa-itunes","fa-cuttlefish",
+        "fa-blogger","fa-flickr","fa-viber","fa-soundcloud","fa-digg","fa-tencent-weibo","fa-letterboxd","fa-symfony","fa-maxcdn","fa-etsy","fa-facebook-messenger","fa-audible",
+        "fa-think-peaks","fa-bilibili","fa-erlang","fa-x-twitter","fa-cotton-bureau","fa-dashcube","fa-42-group","fa-innosoft","fa-stack-exchange","fa-elementor","fa-square-pied-piper",
+        "fa-pied-piper-square","fa-creative-commons-nd","fa-palfed","fa-superpowers","fa-resolving","fa-xbox","fa-square-web-awesome-stroke","fa-searchengin","fa-tiktok",
+        "fa-square-facebook","fa-facebook-square","fa-renren","fa-linux","fa-glide","fa-linkedin","fa-hubspot","fa-deploydog","fa-twitch","fa-flutter","fa-ravelry","fa-mixer",
+        "fa-square-lastfm","fa-lastfm-square","fa-vimeo","fa-mendeley","fa-uniregistry","fa-figma","fa-creative-commons-remix","fa-cc-amazon-pay","fa-dropbox","fa-instagram",
+        "fa-cmplid","fa-upwork","fa-facebook","fa-gripfire","fa-jedi-order","fa-uikit","fa-fort-awesome-alt","fa-phabricator","fa-ussunnah","fa-earlybirds","fa-trade-federation",
+        "fa-autoprefixer","fa-whatsapp","fa-square-upwork","fa-slideshare","fa-google-play","fa-viadeo","fa-line","fa-google-drive","fa-servicestack","fa-simplybuilt","fa-bitbucket",
+        "fa-imdb","fa-deezer","fa-raspberry-pi","fa-jira","fa-docker","fa-screenpal","fa-bluetooth","fa-gitter","fa-d-and-d","fa-microblog","fa-cc-diners-club","fa-gg-circle",
+        "fa-pied-piper-hat","fa-kickstarter-k","fa-yandex","fa-readme","fa-html5","fa-sellsy","fa-square-web-awesome","fa-sass","fa-wirsindhandwerk","fa-wsh","fa-buromobelexperte",
+        "fa-salesforce","fa-octopus-deploy","fa-medapps","fa-ns8","fa-pinterest-p","fa-apper","fa-fort-awesome","fa-waze","fa-bluesky","fa-cc-jcb","fa-snapchat","fa-snapchat-ghost",
+        "fa-fantasy-flight-games","fa-rust","fa-wix","fa-square-behance","fa-behance-square","fa-supple","fa-webflow","fa-rebel","fa-css3","fa-staylinked","fa-kaggle",
+        "fa-space-awesome","fa-deviantart","fa-cpanel","fa-goodreads-g","fa-square-git","fa-git-square","fa-square-tumblr","fa-tumblr-square","fa-trello","fa-creative-commons-nc-jp",
+        "fa-get-pocket","fa-perbyte","fa-grunt","fa-weebly","fa-connectdevelop","fa-leanpub","fa-black-tie","fa-themeco","fa-python","fa-android","fa-bots","fa-free-code-camp",
+        "fa-hornbill","fa-js","fa-ideal","fa-git","fa-dev","fa-sketch","fa-yandex-international","fa-cc-amex","fa-uber","fa-github","fa-php","fa-alipay","fa-youtube","fa-skyatlas",
+        "fa-firefox-browser","fa-replyd","fa-suse","fa-jenkins","fa-twitter","fa-rockrms","fa-pinterest","fa-buffer","fa-npm","fa-yammer","fa-btc","fa-dribbble","fa-stumbleupon-circle",
+        "fa-internet-explorer","fa-stubber","fa-telegram","fa-telegram-plane","fa-old-republic","fa-odysee","fa-square-whatsapp","fa-whatsapp-square","fa-node-js","fa-edge-legacy",
+        "fa-slack","fa-slack-hash","fa-medrt","fa-usb","fa-tumblr","fa-vaadin","fa-quora","fa-square-x-twitter","fa-reacteurope","fa-medium","fa-medium-m","fa-amilia","fa-mixcloud",
+        "fa-flipboard","fa-viacoin","fa-critical-role","fa-sitrox","fa-discourse","fa-joomla","fa-mastodon","fa-airbnb","fa-wolf-pack-battalion","fa-buy-n-large","fa-gulp",
+        "fa-creative-commons-sampling-plus","fa-strava","fa-ember","fa-canadian-maple-leaf","fa-teamspeak","fa-pushed","fa-wordpress-simple","fa-nutritionix","fa-wodu","fa-google-pay",
+        "fa-intercom","fa-zhihu","fa-korvue","fa-pix","fa-steam-symbol"
+    */
+    };
+}
 
