@@ -1,32 +1,14 @@
 ﻿[
   {
     "outputFile": "wwwroot/css/foundation-root.min.css",
-    "inputFile": "wwwroot/lib/foundation-root.scss",
-    "useNodeSass": true,
-    "options": {
-      "sourceMap": false,
-      "relativeUrls": false,
-      "outputStyle": "compressed"
-    }
+    "inputFile": "wwwroot/lib/foundation-root.scss"
   },
   {
     "outputFile": "wwwroot/css/app.min.css",
-    "inputFile": "wwwroot/lib/app.scss",
-    "useNodeSass": true,
-    "options": {
-      "sourceMap": false,
-      "relativeUrls": false,
-      "outputStyle": "compressed"
-    }
+    "inputFile": "wwwroot/lib/app.scss"
   },
   {
     "outputFile": "wwwroot/css/media-query-debugger.min.css",
-    "inputFile": "wwwroot/lib/media-query-debugger.scss",
-    "useNodeSass": true,
-    "options": {
-      "sourceMap": false,
-      "relativeUrls": false,
-      "outputStyle": "compressed"
-    }
+    "inputFile": "wwwroot/lib/media-query-debugger.scss"
   }
 ]
