@@ -4,7 +4,7 @@ public partial class Icons
 {
 	private static readonly string[] IconNames =
 	[
-		"42-group", "ad", "add", "address-book", "address-card", "adjust", "air-freshener", "allergies", "ambulance",
+		"ad", "add", "address-book", "address-card", "adjust", "air-freshener", "allergies", "ambulance",
 		"american-sign-language-interpreting", "angle-double-down", "angle-double-left", "angle-double-right", "angle-double-up", "angry",
 		"apple-alt", "archive", "area-chart", "arrow-alt-circle-down", "arrow-alt-circle-left", "arrow-alt-circle-right",
 		"arrow-alt-circle-up", "arrow-circle-down", "arrow-circle-left", "arrow-circle-right", "arrow-circle-up", "arrow-down-1-9",
@@ -66,7 +66,7 @@ public partial class Icons
 		"person-skating", "person-skiing", "person-skiing-nordic", "person-snowboarding", "person-swimming", "person-walking", "phone-alt",
 		"phone-square", "phone-square-alt", "phone-volume", "photo-film", "pied-piper-square", "ping-pong-paddle-ball", "pinterest-square",
 		"plus-square", "poll", "poll-h", "poo-bolt", "pound-sign", "prescription-bottle-alt", "quidditch", "quote-left",
-		"quote-right", "random", "rectangle-times", "rectangle-xmark", "reddit-square", "redo-alt", "refresh",  "remove",
+		"quote-right", "random", "rectangle-times", "rectangle-xmark", "reddit-square", "redo-alt", "refresh", "remove",
 		"remove-format", "rendact", "reorder", "right-from-bracket", "right-to-bracket", "rmb", "rod-asclepius", "rod-snake",
 		"rotate", "rotate-back", "rotate-backward", "rotate-forward", "rotate-left", "rouble", "rss-square", "rub", "ruble",
 		"rupee", "screwdriver-wrench", "scroll-torah", "seedling", "shapes", "share-alt", "share-alt-square",
