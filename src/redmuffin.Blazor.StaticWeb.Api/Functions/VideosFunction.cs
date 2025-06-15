@@ -1,16 +1,19 @@
 using System.Net;
 using System.Net.Http.Headers;
 using System.Text.Json;
+
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
+using redmuffin.Blazor.StaticWeb.Api.Core;
+
 #pragma warning disable CA1848 // Use the LoggerMessage delegates
 #pragma warning disable CA1001 // Types that own disposable fields should be disposable
 #pragma warning disable MA0004 // Use Task.ConfigureAwait(false)
 
-namespace redmuffin.Blazor.StaticWeb.Api;
+namespace redmuffin.Blazor.StaticWeb.Api.Functions;
 
 public class VideosFunction(ILogger<VideosFunction> logger, IOptions<Settings> settings)
 {
@@ -19,10 +22,21 @@ public class VideosFunction(ILogger<VideosFunction> logger, IOptions<Settings> s
 	private readonly HttpClient _httpClient = new();
 	private readonly Settings _settings = settings.Value;
 
+	/// <summary>
+	/// This method handles HTTP GET requests to fetch a list of videos from the Raindrop API.
+	/// It uses an HttpClient to send a request to the API, retrieves the response, and processes the JSON data.
+	/// If the request is successful, it returns the list of videos in the response.
+	/// If the request fails or an error occurs, it returns an appropriate error message.
+	/// Key steps:
+	/// 1. Set up authorization headers using a token from the settings.
+	/// 2. Send a GET request to the Raindrop API endpoint.
+	/// 3. Parse the JSON response and extract video items.
+	/// 4. Handle errors gracefully with proper logging and HTTP status codes.
+	/// </summary>
 	[Function("ListVideos")]
 	public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req)
 	{
-		logger.LogInformation("Videos function processed a request. Settings: {RainDropTestToken}", _settings.RainDropTestToken);
+		logger.LogInformation("Videos function processed a request.");
 
 		_httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _settings.RainDropTestToken);
 

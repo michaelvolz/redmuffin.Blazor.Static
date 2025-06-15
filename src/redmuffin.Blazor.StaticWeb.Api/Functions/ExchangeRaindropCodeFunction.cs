@@ -1,16 +1,19 @@
 using System.Net;
 using System.Text;
 using System.Text.Json;
+
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
+using redmuffin.Blazor.StaticWeb.Api.Core;
+
 #pragma warning disable CA1848
 #pragma warning disable CA1001
 #pragma warning disable MA0004
 
-namespace redmuffin.Blazor.StaticWeb.Api;
+namespace redmuffin.Blazor.StaticWeb.Api.Functions;
 
 public class ExchangeRaindropCodeFunction(ILogger<ExchangeRaindropCodeFunction> logger, IOptions<Settings> settings)
 {

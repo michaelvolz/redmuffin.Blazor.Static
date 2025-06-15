@@ -1,4 +1,4 @@
-namespace redmuffin.Blazor.StaticWeb.Api;
+namespace redmuffin.Blazor.StaticWeb.Api.Core;
 
 public class RaindropItem
 {
