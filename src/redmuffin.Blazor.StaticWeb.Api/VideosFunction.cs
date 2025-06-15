@@ -19,7 +19,7 @@ public class VideosFunction(ILogger<VideosFunction> logger, IOptions<Settings> s
 	private readonly HttpClient _httpClient = new();
 	private readonly Settings _settings = settings.Value;
 
-	[Function("Videos")]
+	[Function("ListVideos")]
 	public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req)
 	{
 		logger.LogInformation("Videos function processed a request. Settings: {RainDropTestToken}", _settings.RainDropTestToken);
