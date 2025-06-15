@@ -1,26 +1,23 @@
 @page "/videos"
+@inject HttpClient Http
 
 <PageTitle>Videos</PageTitle>
 
 <h1>Videos</h1>
 
 <button class="button primary" @onclick="LoginWithRaindrop">Login with Raindrop.io</button>
+<button class="button primary" @onclick="FetchVideos">Fetch Videos</button>
 
-@code {
-    private static readonly string? RainDropClientId = "684ea82bb3333b01de5487c1";
-
-	private void LoginWithRaindrop()
-    {
-        var redirectPath = "/redirect";
-        var baseUri = Navigation.BaseUri.TrimEnd('/');
-        var redirectUri = $"{baseUri}{redirectPath}";
-        var authUrl = $"https://raindrop.io/oauth/authorize?client_id=684ea82bb3333b01de5487c1&redirect_uri={Uri.EscapeDataString(redirectUri)}&response_type=code";
-
-        JS.InvokeVoidAsync("open", authUrl, "_self");
-    }
-
-    [Inject]
-    private IJSRuntime JS { get; set; } = default!;
-    [Inject]
-    private NavigationManager Navigation { get; set; } = default!;
+@if (!string.IsNullOrEmpty(_videoData))
+{
+    <div>
+        <h2>Video Data:</h2>
+        <pre>@_videoData</pre>
+    </div>
+}
+else if (!string.IsNullOrEmpty(_errorMessage))
+{
+    <div class="callout alert">
+        <p>@_errorMessage</p>
+    </div>
 }

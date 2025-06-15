@@ -4,6 +4,7 @@ using System.Text.Json;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 #pragma warning disable CA1848
 #pragma warning disable CA1001
@@ -11,12 +12,10 @@ using Microsoft.Extensions.Logging;
 
 namespace redmuffin.Blazor.StaticWeb.Api;
 
-public class ExchangeRaindropCodeFunction(ILogger<ExchangeRaindropCodeFunction> logger)
+public class ExchangeRaindropCodeFunction(ILogger<ExchangeRaindropCodeFunction> logger, IOptions<Settings> settings)
 {
-	private static readonly string? RainDropClientId = Environment.GetEnvironmentVariable("RainDropClientID");
-	private static readonly string? RainDropClientSecret = Environment.GetEnvironmentVariable("RainDropClientSecret");
-
 	private readonly HttpClient _httpClient = new();
+	private readonly Settings _settings = settings.Value;
 
 	[Function("ExchangeRaindropCode")]
 	public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
@@ -44,7 +43,7 @@ public class ExchangeRaindropCodeFunction(ILogger<ExchangeRaindropCodeFunction> 
 		logger.LogInformation("Request code: {Code}, Redirect URI: {RedirectUri}", request.Code, redirectUri);
 
 		var content = new StringContent(
-			$"grant_type=authorization_code&code={request.Code}&client_id={RainDropClientId}&client_secret={RainDropClientSecret}&redirect_uri={Uri.EscapeDataString(redirectUri)}",
+			$"grant_type=authorization_code&code={request.Code}&client_id={_settings.RainDropClientId}&client_secret={_settings.RainDropClientSecret}&redirect_uri={Uri.EscapeDataString(redirectUri)}",
 			Encoding.UTF8, "application/x-www-form-urlencoded");
 
 		try
