@@ -12,7 +12,7 @@ var host = new HostBuilder()
 	{
 		services.AddApplicationInsightsTelemetryWorkerService();
 		services.ConfigureFunctionsApplicationInsights();
-		services.Configure<Settings>(hostContext.Configuration.GetSection("Settings"));
+		services.AddSingleton<Settings>();
 	})
 	.Build();
 

@@ -2,7 +2,7 @@ namespace redmuffin.Blazor.StaticWeb.Api;
 
 public class Settings
 {
-    public string RainDropClientId { get; set; } = string.Empty;
-    public string RainDropClientSecret { get; set; } = string.Empty;
-    public string RainDropTestToken { get; set; } = string.Empty;
+    public string? RainDropClientId { get; set; } = Environment.GetEnvironmentVariable("RainDropClientID");
+    public string? RainDropClientSecret { get; set; } = Environment.GetEnvironmentVariable("RainDropClientSecret");
+    public string? RainDropTestToken { get; set; } = Environment.GetEnvironmentVariable("RainDropTestToken");
 }
