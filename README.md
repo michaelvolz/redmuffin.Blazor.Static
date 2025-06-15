@@ -30,6 +30,7 @@
 - [Build and Deployment](#build-and-deployment)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
+- [Azure Functions Integration](#azure-functions-integration)
 
 ---
 
@@ -172,5 +173,28 @@ This project is licensed under the [Unlicense](https://unlicense.org/).
 - [Zurb Foundation](https://get.foundation/) for the CSS framework
 - [GitHub Copilot](https://github.com/features/copilot) for AI code assistance
 - [Visual Studio](https://visualstudio.microsoft.com/) for development environment
+
+---
+
+## Azure Functions Integration
+
+The API project leverages **Azure Functions** to provide serverless compute capabilities. This integration enables scalable and event-driven backend functionality for the Blazor WebAssembly application.
+
+### Key Features
+
+- **Azure Functions Worker SDK**: Provides the runtime for executing Azure Functions.
+- **HTTP Trigger**: Enables RESTful API endpoints for client-server communication.
+- **Application Insights**: Integrated for monitoring and diagnostics.
+
+### Example Function
+[Function("HelloWorld")]
+public IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req)
+{
+    _logger.LogInformation("C# HTTP trigger function processed a request.");
+    return new OkObjectResult("Welcome to Azure Functions!");
+}
+### Documentation
+
+For more details, refer to the [Azure Functions Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/).
 
 ---
