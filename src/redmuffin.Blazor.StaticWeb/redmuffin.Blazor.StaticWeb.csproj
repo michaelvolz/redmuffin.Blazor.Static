@@ -2,19 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <ImplicitUsings>enable</ImplicitUsings>
     <WasmEnableSIMD>true</WasmEnableSIMD>
     <PublishTrimmed>true</PublishTrimmed>
     <TrimMode>partial</TrimMode>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <WasmEnableSIMD>true</WasmEnableSIMD>
-    <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>partial</TrimMode>
   </PropertyGroup>
 
   <ItemGroup>
@@ -39,14 +37,6 @@
 
   <ItemGroup>
     <AdditionalFiles Remove="C:\Users\flynn\.nuget\packages\microsoft.visualstudio.threading.analyzers\17.8.14\build\AdditionalFiles\vs-threading.MembersRequiringMainThread.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Features\Shared\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="Meziantou.Analyzer" Version="2.0.202" />
   </ItemGroup>
 
 </Project>
