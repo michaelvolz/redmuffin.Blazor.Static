@@ -36,7 +36,7 @@ public partial class Redirect
 	private async Task ExchangeCodeForTokenAsync(string code)
 	{
 		var clientId = "684c73df642469e7c1969f8e";
-		var clientSecret = "";
+		var clientSecret = string.Empty;
 		var redirectUri = Navigation.BaseUri.TrimEnd('/') + "/redirect";
 
 		var content = new StringContent(
