@@ -3,8 +3,11 @@
     "redmuffin.Blazor.StaticWeb.Api": {
       "commandName": "Project",
       "commandLineArgs": "--port 7184",
-      "launchBrowser": false,
-      "applicationUrl": "http://localhost:7184"
+      "launchUrl": "http://localhost:7184",
+      "applicationUrl": "http://localhost:7184",
+      "environmentVariables": {
+        "FUNCTIONS_WORKER_GRPC_URI": "http://localhost:7184"
+      }
     }
   }
 }
