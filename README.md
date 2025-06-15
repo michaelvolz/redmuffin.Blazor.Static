@@ -31,6 +31,9 @@
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 - [Azure Functions Integration](#azure-functions-integration)
+- [Azure CLI Dependency](#azure-cli-dependency)
+- [Azure Static Web Apps CLI Dependency](#azure-static-web-apps-cli-dependency)
+- [Local Development: Starting the Project with Azure Static Web Apps CLI](#local-development-starting-the-project-with-azure-static-web-apps-cli)
 
 ---
 
@@ -198,3 +201,26 @@ public IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post"
 For more details, refer to the [Azure Functions Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/).
 
 ---
+
+## Azure Static Web Apps CLI Dependency
+
+The project requires **Azure Static Web Apps CLI** for local development and testing of Azure Static Web Apps. Ensure that the CLI is installed globally on your system.
+
+### Installation
+
+To install Azure Static Web Apps CLI, use the following command:
+npm install -g @azure/static-web-apps-cli
+For more details, refer to the [Azure Static Web Apps CLI Documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/cli).
+
+---
+
+## Local Development: Starting the Project with Azure Static Web Apps CLI
+
+First, start the Blazor WebAssembly frontend and the Azure Functions API backend locally. Ensure that both projects are running before starting the Azure Static Web Apps CLI.
+
+To run the project locally with the Azure Static Web Apps CLI, use the following command:
+swa start http://localhost:5233 --api-location http://localhost:7184/api
+- `http://localhost:5233` is the local URL for the Blazor WebAssembly frontend.
+- `http://localhost:7184/api` is the local URL for the Azure Functions API backend.
+
+This command will start both the frontend and API locally, simulating the Azure Static Web Apps environment for development and testing.
