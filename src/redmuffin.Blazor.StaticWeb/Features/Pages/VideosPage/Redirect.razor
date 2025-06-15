@@ -18,7 +18,11 @@ else if (!string.IsNullOrEmpty(_error))
 else if (!string.IsNullOrEmpty(_authCode))
 {
     <div class="callout warning">
-        <strong>Authorization code received, requesting token...</strong>
+        <strong>Authorization code received.</strong>
+    </div>
+    <div class="callout secondary">
+        <strong>Debug Auth Code:</strong>
+        <pre>@_authCode</pre>
     </div>
 }
 else
